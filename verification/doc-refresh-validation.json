@@ -1,0 +1,584 @@
+{
+  "status" : "PASS",
+  "projects" : 16,
+  "runtime" : "1.8.0_504",
+  "mavenRerun" : false,
+  "scope" : "Regenerated all candidates from tested manifest.spec; only README and its manifest/evidence digests may differ; Java/XML/properties/pom and test report bytes are unchanged.",
+  "allowedChanges" : [ "production-evidence-template.json", "generation-manifest.json", "README.md" ],
+  "results" : [ {
+    "fixture" : "contract-spec",
+    "matrix" : "generated",
+    "unchangedFiles" : 56,
+    "unchangedFileHashManifestSha256" : "434b355e205719622fc64a86184e451ff5f3b23233b99069cc1b315706c4dc77",
+    "changedFiles" : [ "README.md", "production-evidence-template.json", "generation-manifest.json" ],
+    "before" : {
+      "README.md" : "22e500d3e6bc71d973674d7ff9582a230f418a77204b0e4113b884011341b949",
+      "production-evidence-template.json" : "d64a1fe1e619860279669a831fa3544a5684a66a352bbb7bb8ca5c43b2e8a067",
+      "generation-manifest.json" : "9761a7bfc4c87693dfb9315af45be453bf193419d3fe1772a862bcac99402c1e"
+    },
+    "after" : {
+      "README.md" : "02d21e0fafb6105545fe82599b65930eb8fd3cccc9a1b40f21dab45a8cc68893",
+      "production-evidence-template.json" : "a5505ec254afd9bf949289527bf2ed85618e29e92be0dd8408c392b7e1e9746d",
+      "generation-manifest.json" : "cc99d6843b294cd588105b87fe1ce30c9f9039bc2ba0cde0a43863308331bb81"
+    },
+    "retainedSurefireReports" : {
+      "TEST-com.bank.contract.AssemblerTest.xml" : "b2f392470a44890d8dc427136ebdb5fa9660114fcc3f19d6ddfc07570242ccf6",
+      "TEST-com.bank.contract.CrudIntegrationTest.xml" : "8933894ec1d6ad79f1a01f70008ddbc0767993ed7d220a54bafeac4640924f59",
+      "TEST-com.bank.contract.MysqlAcceptanceTest.xml" : "31f2793709134d9f6838751ea989e4f2e2f045024dfe6cd964560afce8b38753",
+      "TEST-com.bank.contract.MysqlCrudAcceptanceTest.xml" : "69a73985664827705565650de8b4bc8ec671ec3f70ccb503ad01d5c2b13ed65f",
+      "TEST-com.bank.contract.RequestTraceFilterTest.xml" : "c22ff6e991c7fcc0a599b4bb6e492a666232e2ac54684c5795642fdb848870ec",
+      "TEST-com.bank.contract.ServiceUpdateTest.xml" : "d4e34985173d0fc016bac099934cf56435d42bef136657ea7f9c54f96698d396"
+    },
+    "priorMavenTestSummary" : {
+      "fixture" : "contract-spec",
+      "exitCode" : 0,
+      "tests" : 52,
+      "failures" : 0,
+      "errors" : 0,
+      "skipped" : 2,
+      "executed" : 50
+    },
+    "allGeneratedFilesVerified" : true,
+    "programAndConfigurationBytesUnchanged" : true,
+    "surefireReportsPreserved" : true
+  }, {
+    "fixture" : "contract-v2-spec",
+    "matrix" : "generated",
+    "unchangedFiles" : 60,
+    "unchangedFileHashManifestSha256" : "94cef80eb4ed273d32d79ea4f422de88e51d8bc46afc6cbbd5fd2ee0274f6772",
+    "changedFiles" : [ "README.md", "production-evidence-template.json", "generation-manifest.json" ],
+    "before" : {
+      "README.md" : "ebcd21c4ad9b152e068c646e9ec9079c68e420077907f5bd0e8196f709718c2f",
+      "production-evidence-template.json" : "ab8120a79cf7beff2eb30eb782288c7709dc95c30b51dc59a2cdbf351f19bae9",
+      "generation-manifest.json" : "4c19c863ab25c78bd71f034d4d6040dd1912387b48f42f2cd9b265cc3efe55b2"
+    },
+    "after" : {
+      "README.md" : "8b38495abf017a0427f07061d44350988f8501519da54d9fecac75a1ca7fb798",
+      "production-evidence-template.json" : "2a275ff784745534cf2d6956ecee7e01789eeda7658c5f4350e2786d8b4fa3bc",
+      "generation-manifest.json" : "4090cf6b15252a044f842d68dc8fd3143577b12f74ebb1789e79dcbabd7db518"
+    },
+    "retainedSurefireReports" : {
+      "TEST-com.bank.contract.AssemblerTest.xml" : "e16faad249f58733fbebc6ed49e031ff3cf8e54066c42977a5f864c93e80882c",
+      "TEST-com.bank.contract.CrudIntegrationTest.xml" : "2dedc4bef977c33b991c4c43d398bf5e3be81a3fb1684bdbe78b67093e40ef4b",
+      "TEST-com.bank.contract.MysqlAcceptanceTest.xml" : "187c104109eefbb77735247df21851b700092b4607c19b13da2549ea6e0f1866",
+      "TEST-com.bank.contract.MysqlCrudAcceptanceTest.xml" : "7b418d49234a0e361adef8ac720330d6207a207eea18191ee37913e237cba69d",
+      "TEST-com.bank.contract.RequestTraceFilterTest.xml" : "9015010d2a07598da9efbf3daecf85312f5052d0aaddc6129665f9e7442facb9",
+      "TEST-com.bank.contract.ServiceUpdateTest.xml" : "65082c824c2df72b5a022076ce4f687e277acc46cc14e643786e854aa3a72bc0"
+    },
+    "priorMavenTestSummary" : {
+      "fixture" : "contract-v2-spec",
+      "exitCode" : 0,
+      "tests" : 59,
+      "failures" : 0,
+      "errors" : 0,
+      "skipped" : 2,
+      "executed" : 57
+    },
+    "allGeneratedFilesVerified" : true,
+    "programAndConfigurationBytesUnchanged" : true,
+    "surefireReportsPreserved" : true
+  }, {
+    "fixture" : "detail-only",
+    "matrix" : "generated",
+    "unchangedFiles" : 48,
+    "unchangedFileHashManifestSha256" : "f7a34402a334ff6af505edaf67868da5b57c534f02fcf8ca1bd0b59022664bbc",
+    "changedFiles" : [ "README.md", "production-evidence-template.json", "generation-manifest.json" ],
+    "before" : {
+      "README.md" : "97eeddee43b53b699bb492767220e6ab0cf3d0b4863ae4787f854a05678b29e2",
+      "production-evidence-template.json" : "69a785fd20970c2d59e8a039ea0ea3e4cd131c891f9985e62a47e823dff95ec0",
+      "generation-manifest.json" : "644c72c19f175e84e8b2813187874b8d7b752c977a4cd94d5ed3626f5c9d3be7"
+    },
+    "after" : {
+      "README.md" : "3e033aa95715fce3bae57032e3c389b5dd9d3cc2b6101da89752d11e228c3985",
+      "production-evidence-template.json" : "a4f89e3de02779b8b365b0c3c7ef3c0e1bf4f105e041704f38e25face690b8b9",
+      "generation-manifest.json" : "d97a401d05bdb44b7af271e6add26872d087387145974562958e7ab01853a281"
+    },
+    "retainedSurefireReports" : {
+      "TEST-com.bank.contract.AssemblerTest.xml" : "a0542a7d59d0eacbac3ba73feb474c57c933746bc981de451f67b6242be66d95",
+      "TEST-com.bank.contract.CrudIntegrationTest.xml" : "c675e2af25028cd518a2e128799fc79950241e65b120a18b0a20e2db33a29bc9",
+      "TEST-com.bank.contract.MysqlAcceptanceTest.xml" : "e11f880aed5e06ae30478676e32a69f6cf4dc6f0c15c733d1f2e65ee3639ddd5",
+      "TEST-com.bank.contract.MysqlCrudAcceptanceTest.xml" : "d13c71138f04de3a6071bae2a8086a8fb319d28a4099d507e91ab89663da08bd",
+      "TEST-com.bank.contract.RequestTraceFilterTest.xml" : "66148eb74df4d2bffc354be6b414d54ac93374b7136e437c5dabd8a39a288a26"
+    },
+    "priorMavenTestSummary" : {
+      "fixture" : "detail-only",
+      "exitCode" : 0,
+      "tests" : 21,
+      "failures" : 0,
+      "errors" : 0,
+      "skipped" : 2,
+      "executed" : 19
+    },
+    "allGeneratedFilesVerified" : true,
+    "programAndConfigurationBytesUnchanged" : true,
+    "surefireReportsPreserved" : true
+  }, {
+    "fixture" : "full-update",
+    "matrix" : "generated",
+    "unchangedFiles" : 58,
+    "unchangedFileHashManifestSha256" : "7499896c22f70fdde7022ff7f57f76029a49e48b93e74d0e1773c6c10da9f0ba",
+    "changedFiles" : [ "README.md", "production-evidence-template.json", "generation-manifest.json" ],
+    "before" : {
+      "README.md" : "44f1319cd7d059c182555e2d20e40c1fbbbd91608873f292637e2c2ed1053b65",
+      "production-evidence-template.json" : "0ed76973d4ec58edaf14de0bee1e65eca834810a800424ff67216244d1c69417",
+      "generation-manifest.json" : "0ed80359992bdb11103e92f38aca304b5a7174fd10ea11430550e284421f3492"
+    },
+    "after" : {
+      "README.md" : "ec51fe7736ee7dee2f3b5bb3370be5048415ea41c79e9ecccd274da03537458f",
+      "production-evidence-template.json" : "5b8e7326e64af875474177d8575f23853c0a18054e326a85b0fde9b63f54857a",
+      "generation-manifest.json" : "65a57236c451d2c902d30ca233eebe5d3432dac87efd5dcf27fcf14ce0e93aab"
+    },
+    "retainedSurefireReports" : {
+      "TEST-com.bank.contract.AssemblerTest.xml" : "534cfd1ade286ca48f8a74daa320ccd123a7b93c4f5f461212dbc68c95f02bdd",
+      "TEST-com.bank.contract.CrudIntegrationTest.xml" : "301536b0b5ae069c970195beb64a25491921d955c729a5512c6effdf241967a2",
+      "TEST-com.bank.contract.MysqlAcceptanceTest.xml" : "68f7e46fef08e1dcea93662f6d516377021f28b4ddb3e5966eec874f89661d61",
+      "TEST-com.bank.contract.MysqlCrudAcceptanceTest.xml" : "445163c32446aa49b40636446e6cc7bec61e144bee41764185125166a23fc74a",
+      "TEST-com.bank.contract.RequestTraceFilterTest.xml" : "41e417edb6533c7b1d4ddec82a834a760936f216bf13ee5dbf00f66c80eb1c4d",
+      "TEST-com.bank.contract.ServiceUpdateTest.xml" : "9ef3f2b659a4b6f999f4a5b9896b0cd227d6d7230dd8915f948672d4862052db"
+    },
+    "priorMavenTestSummary" : {
+      "fixture" : "full-update",
+      "exitCode" : 0,
+      "tests" : 52,
+      "failures" : 0,
+      "errors" : 0,
+      "skipped" : 2,
+      "executed" : 50
+    },
+    "allGeneratedFilesVerified" : true,
+    "programAndConfigurationBytesUnchanged" : true,
+    "surefireReportsPreserved" : true
+  }, {
+    "fixture" : "interface-config-spec",
+    "matrix" : "generated",
+    "unchangedFiles" : 62,
+    "unchangedFileHashManifestSha256" : "1636aebfcc39bd21071dace1f72416dcb01c4b08ca523d67b7e5440c4a762abf",
+    "changedFiles" : [ "README.md", "production-evidence-template.json", "generation-manifest.json" ],
+    "before" : {
+      "README.md" : "d049559812f07ab68298780f14d456c7c6e3dd84c65c3f2bebe9daac7cb213ed",
+      "production-evidence-template.json" : "ac33b7b84730f9912107a64640d4fc98ea1452eef92063672a6729bbb7cda637",
+      "generation-manifest.json" : "70e0eb6c38f896a712b2880ebe7e7aca1da7dd260fbcb58228afeecbe7f8f771"
+    },
+    "after" : {
+      "README.md" : "7f76a4e4f9e3ac7626db48accdf822e846ed5de9c83c4e81637410e0ecaad330",
+      "production-evidence-template.json" : "61208a329a4d36efb7171fbe2b9e710e12b25c6202e75835286c0f167dc73661",
+      "generation-manifest.json" : "5da37fbe857b70a1508740d674502f3a20ae755aa8116e6d4ed81cd06688ac43"
+    },
+    "retainedSurefireReports" : {
+      "TEST-com.bank.contract.AssemblerTest.xml" : "6a18ba18a0806e50bd0378ac76c7ef2a58a7fb4ac1dfcdb7137def11c1e97bd9",
+      "TEST-com.bank.contract.CrudIntegrationTest.xml" : "6fdbcafa4e14678f455a6ce7be4ef49778ac02962b17e62561c3f7cc3c080fe5",
+      "TEST-com.bank.contract.MysqlAcceptanceTest.xml" : "0649563e9f2c061349d2b19774da5d3d9052ffcce9d8abed567b94ab31805066",
+      "TEST-com.bank.contract.MysqlCrudAcceptanceTest.xml" : "2caa89c205098edf4de39e214995a370d1d1683d21e3e9ee43b1cb3e4f236b44",
+      "TEST-com.bank.contract.RequestTraceFilterTest.xml" : "ba6536aa5addc6651c4ae786500f4e4e98dce4f43a59e7788b96de0380d3835a",
+      "TEST-com.bank.contract.ServiceUpdateTest.xml" : "b17a5ac0d9e56b24e13417b0d48ecc242203db6efa3a1ce14e7dcfd2549f9405"
+    },
+    "priorMavenTestSummary" : {
+      "fixture" : "interface-config-spec",
+      "exitCode" : 0,
+      "tests" : 64,
+      "failures" : 0,
+      "errors" : 0,
+      "skipped" : 2,
+      "executed" : 62
+    },
+    "allGeneratedFilesVerified" : true,
+    "programAndConfigurationBytesUnchanged" : true,
+    "surefireReportsPreserved" : true
+  }, {
+    "fixture" : "native-numbers",
+    "matrix" : "generated",
+    "unchangedFiles" : 59,
+    "unchangedFileHashManifestSha256" : "c4bc6095888b39d722de56d5841775e1fd25b716d3cdcb03ae3ce5d326793744",
+    "changedFiles" : [ "README.md", "production-evidence-template.json", "generation-manifest.json" ],
+    "before" : {
+      "README.md" : "dc3630e937ef85961cc09f20593247d60da9fecd8af1a1244271342fa2b2597c",
+      "production-evidence-template.json" : "3879df5a9413a34c6f4a4d983feacc53cca047bfc94e667a4acdf3d51a4b27e3",
+      "generation-manifest.json" : "0bc763ccd0ecac0e08c53feb38e7d39828776376ea1a63c453d2e166251e7bcb"
+    },
+    "after" : {
+      "README.md" : "ef67fcfeba418a8c20c48b7a10ef90a9696eaa4903b76fc032f0f6b408ab5467",
+      "production-evidence-template.json" : "913cbb6b3f0015a61aa490964edf1f8c5272470b335836852872b88a6d55895a",
+      "generation-manifest.json" : "33ac6c2ff7720cae2e5a56637e678af7673b85adb182f475d7895e27cccb46b1"
+    },
+    "retainedSurefireReports" : {
+      "TEST-com.bank.contract.AssemblerTest.xml" : "7f2d7484e45694518941232aa689589fb66964f61871a7b6b3aa87c185207eb3",
+      "TEST-com.bank.contract.CrudIntegrationTest.xml" : "221d49db9a28b330b4e407300375c21158763d29efd7b40c9e4c7af312a01c57",
+      "TEST-com.bank.contract.MysqlAcceptanceTest.xml" : "7ecf4861fd9361d0082f157fb0141aabb33c0ce1aa07c6df029791641b4ccf88",
+      "TEST-com.bank.contract.MysqlCrudAcceptanceTest.xml" : "5637fa54b3ccea9e208bf83fee67ced0bff34a7cc0958841a9a29815659d87ad",
+      "TEST-com.bank.contract.RequestTraceFilterTest.xml" : "dea8160181e74287fb0bed79f2baa93527c07c002ee283a484d39467bbe1c13e",
+      "TEST-com.bank.contract.ServiceUpdateTest.xml" : "5a49bd15c67afd6027fca2ef51932db8134c57de7361a8023395c57d1d47a3d1"
+    },
+    "priorMavenTestSummary" : {
+      "fixture" : "native-numbers",
+      "exitCode" : 0,
+      "tests" : 61,
+      "failures" : 0,
+      "errors" : 0,
+      "skipped" : 2,
+      "executed" : 59
+    },
+    "allGeneratedFilesVerified" : true,
+    "programAndConfigurationBytesUnchanged" : true,
+    "surefireReportsPreserved" : true
+  }, {
+    "fixture" : "production-safe-spec",
+    "matrix" : "generated",
+    "unchangedFiles" : 78,
+    "unchangedFileHashManifestSha256" : "32d758ca73d9dca346d426a4ce52608c1d39288045e329de71b5604f0a7402fb",
+    "changedFiles" : [ "README.md", "production-evidence-template.json", "generation-manifest.json" ],
+    "before" : {
+      "README.md" : "06ac90d19a0a5552cccd80ae77b30ef1e9632592f987f58cb4308748e21ee97b",
+      "production-evidence-template.json" : "0a81a98c333a35fc99414e3b3a99c63e10beeec37cc0f33cfdaba6e9516ad937",
+      "generation-manifest.json" : "0cba6151f3fa1b0192c02affae6bf328b1bc6eb8aeac9ad112a5ecae68861bae"
+    },
+    "after" : {
+      "README.md" : "9be45c87c1449aa1a3e563b0e99c4ecd5e8028eabae3094c09b4bcdb902104d4",
+      "production-evidence-template.json" : "07c437f42cb926a1c4784b0c9e953be3f6f7300a60a0e9529d1a7263e277fea5",
+      "generation-manifest.json" : "236e5893557ce1506c95178936dc19b8dea2f9246d2f75f9efc9c3f43ead192f"
+    },
+    "retainedSurefireReports" : {
+      "TEST-com.bank.contract.AssemblerTest.xml" : "c033b090beb1e8db8d1fe660a12a481002a92577a451cdc604cdf3a67a2d58df",
+      "TEST-com.bank.contract.CrudIntegrationTest.xml" : "a1d98acf8ae0829c336593f7c500f74d3f799cbaf17ea33e358ef33c1d3adcdc",
+      "TEST-com.bank.contract.MysqlAcceptanceTest.xml" : "60723b07b527053977fb9d47c5eee25abb8bc2ac729345b99a774411bbd6ff4e",
+      "TEST-com.bank.contract.MysqlCrudAcceptanceTest.xml" : "a55830188fc2cc377caeafec7966c20840d1d23caa641a31b861ef5e8e9ef2b6",
+      "TEST-com.bank.contract.OutboxDeliveryTest.xml" : "61e8e0af5c560a513a13b63dc62a6949e566925937cde6d1d4469cce3c4acd15",
+      "TEST-com.bank.contract.RequestTraceFilterTest.xml" : "c3b037ba3008cac336564e0e2a96dda5f1e194ddc07d99af2073883224aaec67",
+      "TEST-com.bank.contract.SecurityIntegrationTest.xml" : "17987e4c014c715b4eaeb5457d764170ef10db5a9ed3ed306aac548e6f7cab37",
+      "TEST-com.bank.contract.ServiceUpdateTest.xml" : "63097cd04fc426d451ab5a79b0ec7b6a932bf1d30a5ed466207d7f3dad7e8a48"
+    },
+    "priorMavenTestSummary" : {
+      "fixture" : "production-safe-spec",
+      "exitCode" : 0,
+      "tests" : 92,
+      "failures" : 0,
+      "errors" : 0,
+      "skipped" : 2,
+      "executed" : 90
+    },
+    "allGeneratedFilesVerified" : true,
+    "programAndConfigurationBytesUnchanged" : true,
+    "surefireReportsPreserved" : true
+  }, {
+    "fixture" : "production-spec",
+    "matrix" : "generated",
+    "unchangedFiles" : 68,
+    "unchangedFileHashManifestSha256" : "250bb4bea50886c334bf4994a36634b3d39ce3b39a86fa8bf4fbc78226968388",
+    "changedFiles" : [ "README.md", "production-evidence-template.json", "generation-manifest.json" ],
+    "before" : {
+      "README.md" : "e710f96b1cbc39bf94b4f0c391104e729b94baac5f3d01d5f4a357c0af91b60f",
+      "production-evidence-template.json" : "7052131260847a36847cc7d4053cdf555103918881c062b53f6e71b46879ab5c",
+      "generation-manifest.json" : "4a9d89b1a7d869360339c3e7a96cf41464453f0d2aa4f6beb7c926bcd951e5e0"
+    },
+    "after" : {
+      "README.md" : "019898923f3681800866e5a5b98c8da0fa4758b45a717c1ec45bf8e5a2eeda4e",
+      "production-evidence-template.json" : "a28b28adecb42ac3c81d6173335c1543bfcc340b9bd7d04243d68cc86c4b64cc",
+      "generation-manifest.json" : "41e4fd0b303b5db8ee7b58b44955a740fe9894319e3c96510681d203b2b3fad4"
+    },
+    "retainedSurefireReports" : {
+      "TEST-com.bank.contract.AssemblerTest.xml" : "f8b0d09f8c849e63b5e1c06905d65d9be52f6968b41c6ec7f0b802d166f2c096",
+      "TEST-com.bank.contract.CrudIntegrationTest.xml" : "b04aba63d8a564caf1622d2cf4f57e8f52a97d76927277589a0fcc5bc99b8189",
+      "TEST-com.bank.contract.MysqlAcceptanceTest.xml" : "dd9bfa8fc629eb535c588e17907f26d62b1ecd88f6c7930048da3cb41885e7ba",
+      "TEST-com.bank.contract.MysqlCrudAcceptanceTest.xml" : "0c34223a958d37f092673f7d12a52a6a6f78ebb0ddaf79edbf7de23a47e33f67",
+      "TEST-com.bank.contract.OutboxDeliveryTest.xml" : "9b2894f4ee23fcf38a99be7247215d3ee21c35187580c79d059531ee6a267758",
+      "TEST-com.bank.contract.RequestTraceFilterTest.xml" : "37e1717603d3405f08b9a63ccb316c4e1910e51af93ac2aa0b52ba2fc9d3171f",
+      "TEST-com.bank.contract.ServiceUpdateTest.xml" : "2db6cd312b80da5d9fd9ac8770b01bd12956defcbf3e093e50c32548415018c1"
+    },
+    "priorMavenTestSummary" : {
+      "fixture" : "production-spec",
+      "exitCode" : 0,
+      "tests" : 70,
+      "failures" : 0,
+      "errors" : 0,
+      "skipped" : 2,
+      "executed" : 68
+    },
+    "allGeneratedFilesVerified" : true,
+    "programAndConfigurationBytesUnchanged" : true,
+    "surefireReportsPreserved" : true
+  }, {
+    "fixture" : "record-access-without-audit",
+    "matrix" : "generated",
+    "unchangedFiles" : 75,
+    "unchangedFileHashManifestSha256" : "ef20b0824e6a376011636c01568da1f2dfcaf220f7cfb34c2794e44cb9824692",
+    "changedFiles" : [ "README.md", "production-evidence-template.json", "generation-manifest.json" ],
+    "before" : {
+      "README.md" : "06ac90d19a0a5552cccd80ae77b30ef1e9632592f987f58cb4308748e21ee97b",
+      "production-evidence-template.json" : "a8d15477aa10f58145c233ab51b6b61220c15ca58b694f1a5af6ef36f60c01f2",
+      "generation-manifest.json" : "7bf983afe9783e1db59d68f3937f23311b8e7dd5acc5a70695de8ed679ff4fb5"
+    },
+    "after" : {
+      "README.md" : "9be45c87c1449aa1a3e563b0e99c4ecd5e8028eabae3094c09b4bcdb902104d4",
+      "production-evidence-template.json" : "07a2a245a85f8507aff21d7860edb77cbf02928be04ae49d12348ed57da789b5",
+      "generation-manifest.json" : "ecfd868ee7469959c4f640c80f6034aba4b55cc09daec07f192f493735c1823c"
+    },
+    "retainedSurefireReports" : {
+      "TEST-com.bank.contract.AssemblerTest.xml" : "bfb2d437e164e47ccc05ca26fa8cec2217a61bcb91c6be74a8f0ecb8365c1515",
+      "TEST-com.bank.contract.CrudIntegrationTest.xml" : "b0a95ba95cc8c1e2e83ec96b934b890366b955a0427a9c0b0d9f752024001bd3",
+      "TEST-com.bank.contract.MysqlAcceptanceTest.xml" : "95b3c7a419974888e1bc82b60a029acbb86130b652fd65d2440e75ecc4d154cb",
+      "TEST-com.bank.contract.MysqlCrudAcceptanceTest.xml" : "a5c3c426724b2910c4fa89d994f2ed59aa7eac3466aaad834ed3260a8784b757",
+      "TEST-com.bank.contract.OutboxDeliveryTest.xml" : "f9620ae32c73e0ef280c38f617474d63dd53cb0472ccc85a86a4ca0b0fe63f59",
+      "TEST-com.bank.contract.RequestTraceFilterTest.xml" : "afcc0787c6abd5cc5df3cdc2e4159c139b7e25ac2ae51dbf550527ba1ef63e65",
+      "TEST-com.bank.contract.SecurityIntegrationTest.xml" : "0828cb27cc2c48f4aa8753568dab6b56ef5ffff2b6b661f2bea124f60cf82183",
+      "TEST-com.bank.contract.ServiceUpdateTest.xml" : "2245b428dd42ee49e58b942fe19f99298b635f2169de8a302f6955198d2a53c0"
+    },
+    "priorMavenTestSummary" : {
+      "fixture" : "record-access-without-audit",
+      "exitCode" : 0,
+      "tests" : 82,
+      "failures" : 0,
+      "errors" : 0,
+      "skipped" : 2,
+      "executed" : 80
+    },
+    "allGeneratedFilesVerified" : true,
+    "programAndConfigurationBytesUnchanged" : true,
+    "surefireReportsPreserved" : true
+  }, {
+    "fixture" : "all-types-in",
+    "matrix" : "boundary",
+    "unchangedFiles" : 60,
+    "unchangedFileHashManifestSha256" : "837365628f21d46ce5019adbc50ef8aeae7b11c3ab30ea1da5cec7ab1b77a244",
+    "changedFiles" : [ "README.md", "production-evidence-template.json", "generation-manifest.json" ],
+    "before" : {
+      "README.md" : "ebcd21c4ad9b152e068c646e9ec9079c68e420077907f5bd0e8196f709718c2f",
+      "production-evidence-template.json" : "31f476f167ea32f64d18f5179c997b9adac248ce8d7e58f08c851578f5477a34",
+      "generation-manifest.json" : "d03e002912179050d51fefda855322838e5eff897e751b0e9986be158101755e"
+    },
+    "after" : {
+      "README.md" : "8b38495abf017a0427f07061d44350988f8501519da54d9fecac75a1ca7fb798",
+      "production-evidence-template.json" : "52a81afe9f2098dfb06d16f814f86094ca2c5d65f066c923e88637ea2d582508",
+      "generation-manifest.json" : "699711e69f0da058daa3998371bd7dba1978cc0d0c827693ae15e3f3c128909e"
+    },
+    "retainedSurefireReports" : {
+      "TEST-com.bank.contract.AssemblerTest.xml" : "f6966811c0e2c2ce58771818e874990050d805d5e47f734b9793c512bd01e5fc",
+      "TEST-com.bank.contract.CrudIntegrationTest.xml" : "4eb7d85058f0b49dc5b5d66da11fc2f90b372ecfb3877a75a58a69dbc55035c7",
+      "TEST-com.bank.contract.MysqlAcceptanceTest.xml" : "ba54d965b9b3ed4880ccd2248a7db42683a55b8aadd96bde6e5ed2d4e2df6bf8",
+      "TEST-com.bank.contract.MysqlCrudAcceptanceTest.xml" : "62653e6bbf344130800bb51ee809c3dcab2937efc27f9015df6181a91fe820cc",
+      "TEST-com.bank.contract.RequestTraceFilterTest.xml" : "44e63c6187c3fc09a4a5c78850e4ffc5939c8f5aea1a91a4a952e25996265b2f",
+      "TEST-com.bank.contract.ServiceUpdateTest.xml" : "a3aa13421eda03a1aeda2a149dca2654d8b377acb125472e3b6f4475f45a8ecb"
+    },
+    "priorMavenTestSummary" : {
+      "fixture" : "all-types-in",
+      "exitCode" : 0,
+      "tests" : 65,
+      "failures" : 0,
+      "errors" : 0,
+      "skipped" : 2,
+      "executed" : 63
+    },
+    "allGeneratedFilesVerified" : true,
+    "programAndConfigurationBytesUnchanged" : true,
+    "surefireReportsPreserved" : true
+  }, {
+    "fixture" : "all-types-native-full",
+    "matrix" : "boundary",
+    "unchangedFiles" : 57,
+    "unchangedFileHashManifestSha256" : "f29aa3e1f03bd8482aa060e751fc74bce8bc9ad7f633d3e238e9b53003d896ba",
+    "changedFiles" : [ "README.md", "production-evidence-template.json", "generation-manifest.json" ],
+    "before" : {
+      "README.md" : "44f1319cd7d059c182555e2d20e40c1fbbbd91608873f292637e2c2ed1053b65",
+      "production-evidence-template.json" : "4337476382def0e7f1b9719a1cf35ab50fe23e72cd8f7491363a995417430df4",
+      "generation-manifest.json" : "918c1654990ebec9cb5680f62507e121330f4da26e9a7358a21ff74e9a933b24"
+    },
+    "after" : {
+      "README.md" : "ec51fe7736ee7dee2f3b5bb3370be5048415ea41c79e9ecccd274da03537458f",
+      "production-evidence-template.json" : "b780e98fb5ab16be275f095ee30584d3093c966b1de733df8937bda1040534be",
+      "generation-manifest.json" : "137df791149633d715d7cd2653e2637887a392e064d838f712f418f44ec79a73"
+    },
+    "retainedSurefireReports" : {
+      "TEST-com.bank.contract.AssemblerTest.xml" : "af2f598888e4f1c03c329cb782488214135f6fddb4fae6d4ee51f3f97bc8c62a",
+      "TEST-com.bank.contract.CrudIntegrationTest.xml" : "c2fc0d8d18a866e8a3850d80b4b4b0602f659a46efd16a2321af4986e65485ba",
+      "TEST-com.bank.contract.MysqlAcceptanceTest.xml" : "6dd7b9a7ce31f63f866fb68af746eb122e9e10a59964a41afca4c1618e90e1d8",
+      "TEST-com.bank.contract.MysqlCrudAcceptanceTest.xml" : "10d9782836b9f773e4a01ce62d9d3ae0b3d0038908cce486f00cc744f08372cd",
+      "TEST-com.bank.contract.RequestTraceFilterTest.xml" : "7d33707e023e6d1f6b6bfe2aae3d7a4c52ea29b1bf95fbce2df30cea10191914",
+      "TEST-com.bank.contract.ServiceUpdateTest.xml" : "b359861ab02849e751743d77e02d2eca8d254a86e31966557f7c0c4b3e8e4baf"
+    },
+    "priorMavenTestSummary" : {
+      "fixture" : "all-types-native-full",
+      "exitCode" : 0,
+      "tests" : 62,
+      "failures" : 0,
+      "errors" : 0,
+      "skipped" : 2,
+      "executed" : 60
+    },
+    "allGeneratedFilesVerified" : true,
+    "programAndConfigurationBytesUnchanged" : true,
+    "surefireReportsPreserved" : true
+  }, {
+    "fixture" : "all-types-range",
+    "matrix" : "boundary",
+    "unchangedFiles" : 62,
+    "unchangedFileHashManifestSha256" : "90e3c4bf9b03953d752aa1e143994f0a882662c875c4bf1c9b2b69d96805e5fc",
+    "changedFiles" : [ "README.md", "production-evidence-template.json", "generation-manifest.json" ],
+    "before" : {
+      "README.md" : "ebcd21c4ad9b152e068c646e9ec9079c68e420077907f5bd0e8196f709718c2f",
+      "production-evidence-template.json" : "8223d7f85b32388770bd02664d3bc54b2051d20f4f2d389a9fb16f3751591cdf",
+      "generation-manifest.json" : "48df4997a6765166cd437ebdd85745830eb6be7376f17440aefbb81ad5d971a6"
+    },
+    "after" : {
+      "README.md" : "8b38495abf017a0427f07061d44350988f8501519da54d9fecac75a1ca7fb798",
+      "production-evidence-template.json" : "f40eb4180d08bd6003ce7ba096361f082bb74262d4481b397ad5847aecd33bb6",
+      "generation-manifest.json" : "6319c9c9662cf7679f5e8b165d4b31d15467e73e4871e87f29a1a094e79e7970"
+    },
+    "retainedSurefireReports" : {
+      "TEST-com.bank.contract.AssemblerTest.xml" : "4e67cd894917c8b10ff012baa070e0286a476fa97ba1e6a58439b320d8ee996f",
+      "TEST-com.bank.contract.CrudIntegrationTest.xml" : "447d36b42562e8cd499ddd1013be5857329f362a46b55e81cc85fee2c7b38800",
+      "TEST-com.bank.contract.MysqlAcceptanceTest.xml" : "e7e5829e01cb6179e30976ca2b2a09785f7536d57c431f52514d4f5729ad76bb",
+      "TEST-com.bank.contract.MysqlCrudAcceptanceTest.xml" : "dbb4150d6b217934b06e5ac083fd43459dc16978f7cff58b073f5edade9e75da",
+      "TEST-com.bank.contract.RequestTraceFilterTest.xml" : "5f2bf4b6544f1d68c67238bde38fb85db62de132325be30444f0c0d7f203426a",
+      "TEST-com.bank.contract.ServiceUpdateTest.xml" : "31065039596495b03c6807e892f458a44e0a371a9bbd773a873c1a7c2feef7d2"
+    },
+    "priorMavenTestSummary" : {
+      "fixture" : "all-types-range",
+      "exitCode" : 0,
+      "tests" : 65,
+      "failures" : 0,
+      "errors" : 0,
+      "skipped" : 2,
+      "executed" : 63
+    },
+    "allGeneratedFilesVerified" : true,
+    "programAndConfigurationBytesUnchanged" : true,
+    "surefireReportsPreserved" : true
+  }, {
+    "fixture" : "create-only",
+    "matrix" : "boundary",
+    "unchangedFiles" : 50,
+    "unchangedFileHashManifestSha256" : "2bf65d8791618464a6bd248e2631adcdaddb7b8b2f5e33059d770337bdbeacb7",
+    "changedFiles" : [ "README.md", "production-evidence-template.json", "generation-manifest.json" ],
+    "before" : {
+      "README.md" : "76a1c6cfa32e71c4b8e692c32b7a89cc24e84d46163343e79a3df394815f25a4",
+      "production-evidence-template.json" : "912fe335cc399f22ce9796a8def31a8c6349df34a73a960f261b8442fa304bba",
+      "generation-manifest.json" : "bea74612d13a2bb039776c4a5786874c17513f45df8806ca6ebd9aaee8ba7461"
+    },
+    "after" : {
+      "README.md" : "e67b5742a7307057d8fa1413dfc6b6933562be544f8af1d130a60bd6918f866a",
+      "production-evidence-template.json" : "6bdfa30093932398d3a1a26d300ed32f1e1d3c0a912fcd106cba87910d8af55d",
+      "generation-manifest.json" : "557b0c6be96eef13a8cfe6b6cda98ace4874b5a770f4b97494806acec58eba40"
+    },
+    "retainedSurefireReports" : {
+      "TEST-com.bank.contract.AssemblerTest.xml" : "0bfa726d773e1b3d00bc581a5f752b1fad1cddc9254b776deb491b7a22557eef",
+      "TEST-com.bank.contract.CrudIntegrationTest.xml" : "3dd7fb20eec8ec4299aeca441844d215caebed22eb5b9c888ce530fba2208bb7",
+      "TEST-com.bank.contract.MysqlAcceptanceTest.xml" : "c9710ef34482a1571f7b11e57f6fd4a3a1e8fc71d4f22ba89450d6034ad2923f",
+      "TEST-com.bank.contract.MysqlCrudAcceptanceTest.xml" : "832ab20c8e1e6c8cb7557b1a4611e6f8f5477f61f54d186b48da7967073eea99",
+      "TEST-com.bank.contract.RequestTraceFilterTest.xml" : "dc45a9959eb0dac7624361a880801c166f0a75ff810ed367d627dd78fce29157"
+    },
+    "priorMavenTestSummary" : {
+      "fixture" : "create-only",
+      "exitCode" : 0,
+      "tests" : 26,
+      "failures" : 0,
+      "errors" : 0,
+      "skipped" : 2,
+      "executed" : 24
+    },
+    "allGeneratedFilesVerified" : true,
+    "programAndConfigurationBytesUnchanged" : true,
+    "surefireReportsPreserved" : true
+  }, {
+    "fixture" : "delete-only",
+    "matrix" : "boundary",
+    "unchangedFiles" : 47,
+    "unchangedFileHashManifestSha256" : "c109833a00b466226c614ab294a732ca8bc176620e99764e93b495964a51e724",
+    "changedFiles" : [ "README.md", "production-evidence-template.json", "generation-manifest.json" ],
+    "before" : {
+      "README.md" : "2e5424c704c53668e06064dcfa7428506cea7c0ea3e51a2c52250d6d67723564",
+      "production-evidence-template.json" : "070a2731ef6a2f6b5a433b53c5c108020a57ed22dc93f993edcf6cb1bcaa2cf6",
+      "generation-manifest.json" : "34a6002a2a89ede8bdc1434604bda2fb1564790e7170382c9563063d0fd58ee0"
+    },
+    "after" : {
+      "README.md" : "f53b0a4e7c14aee2e7aca60599f2cd4324cfb6f2696102387a07a4b50738462c",
+      "production-evidence-template.json" : "3844381c09989d0c9e3d17911fd35391fe0776234958aee4f8e185502cd54323",
+      "generation-manifest.json" : "a9bad9de61977a29b2797fa7d7ceb85a9a8fbd8d77627a182d33e68c518bed0a"
+    },
+    "retainedSurefireReports" : {
+      "TEST-com.bank.contract.CrudIntegrationTest.xml" : "9ed81ff2e6c9bd9a6bb5feea74d0366ae5181d0a98ec047c6294a3e23c5cf37c",
+      "TEST-com.bank.contract.MysqlAcceptanceTest.xml" : "a1f29f2d321182417ab8d7f01080a4cb7ccec1155ee4e0d4f127ae114abc6e15",
+      "TEST-com.bank.contract.MysqlCrudAcceptanceTest.xml" : "33bb1769ddf9b98db659cda6e650f544f03ce2b796cb878e047f45a35a4805c2",
+      "TEST-com.bank.contract.RequestTraceFilterTest.xml" : "3ecd43064fcca247786ddc8bed8593b467417c86daad72d1a866b1a4ffce588b"
+    },
+    "priorMavenTestSummary" : {
+      "fixture" : "delete-only",
+      "exitCode" : 0,
+      "tests" : 20,
+      "failures" : 0,
+      "errors" : 0,
+      "skipped" : 2,
+      "executed" : 18
+    },
+    "allGeneratedFilesVerified" : true,
+    "programAndConfigurationBytesUnchanged" : true,
+    "surefireReportsPreserved" : true
+  }, {
+    "fixture" : "page-only",
+    "matrix" : "boundary",
+    "unchangedFiles" : 54,
+    "unchangedFileHashManifestSha256" : "8778f34d8d9efec8035f7fbffcf658550a08a366d973b87a995a6f31fd1a43b3",
+    "changedFiles" : [ "README.md", "production-evidence-template.json", "generation-manifest.json" ],
+    "before" : {
+      "README.md" : "109802838fe50718ab986951531db2d93d4e917687e1c59f89dd9918ac7f8aa1",
+      "production-evidence-template.json" : "ab98429fb9f86b2deb9f7beb286e365f2cd71de4f4fdd42c5eb412449d1bd2aa",
+      "generation-manifest.json" : "0932baf1ac908808aad119600a5ee8685f2395ae24e28df608ef361ee86e30d0"
+    },
+    "after" : {
+      "README.md" : "3da05d3ae670c551c283ae7add17c4d32618ae8f98853b23f78fffe57a466b14",
+      "production-evidence-template.json" : "9ffa708defd73edfff8d0849a810b02d5a3a412a2c7ed5527ab6e9d1edc60b3a",
+      "generation-manifest.json" : "62c6b1e525a104c90d577a625dbb5ebb685e97398f233b1b31b803550741db60"
+    },
+    "retainedSurefireReports" : {
+      "TEST-com.bank.contract.AssemblerTest.xml" : "f4ed942e1ea6b02ced5b1a8f0f02fcb46e4ad3b4fde8fe78ecc1c58d1ef98579",
+      "TEST-com.bank.contract.CrudIntegrationTest.xml" : "84f1550772593db369e01774b8e68586e446fd08ed4a3501bf4903c2f79aaaae",
+      "TEST-com.bank.contract.MysqlAcceptanceTest.xml" : "0f7a24283ad9df73c719ad888905b9126f21217b04b7a4bd5819b201c937fc5a",
+      "TEST-com.bank.contract.MysqlCrudAcceptanceTest.xml" : "1959c60bcfbc4aab77a5a2d82466a5bbde5804728c50ef70223b0892cf37c86a",
+      "TEST-com.bank.contract.RequestTraceFilterTest.xml" : "b202f958a306493fa69e1e32ce9112ba0960caf388a53e8e0440927b4f418378"
+    },
+    "priorMavenTestSummary" : {
+      "fixture" : "page-only",
+      "exitCode" : 0,
+      "tests" : 23,
+      "failures" : 0,
+      "errors" : 0,
+      "skipped" : 2,
+      "executed" : 21
+    },
+    "allGeneratedFilesVerified" : true,
+    "programAndConfigurationBytesUnchanged" : true,
+    "surefireReportsPreserved" : true
+  }, {
+    "fixture" : "update-only",
+    "matrix" : "boundary",
+    "unchangedFiles" : 52,
+    "unchangedFileHashManifestSha256" : "793434b3b379c97da67341f4e6647eddfc3d26340afa55368063c9c8bfc36b84",
+    "changedFiles" : [ "README.md", "production-evidence-template.json", "generation-manifest.json" ],
+    "before" : {
+      "README.md" : "99d741822236af38fa2aabfa4a14d5f41d4ed600cf3a0eed41116a4e9dc145d1",
+      "production-evidence-template.json" : "bbcedf407919a1feb65554b2845fc8aef69bfdc93d1a0f72b4cc5bd5bcd7a1ea",
+      "generation-manifest.json" : "1a675f6b14c28445f1ad03e1373f0784a93f3ce95548bb3231182f20e45fe9a9"
+    },
+    "after" : {
+      "README.md" : "cf68f942a1a9313e35c7e4b9279a9a5e11bcd1029ce2d81718f6dd70855f73db",
+      "production-evidence-template.json" : "368dcca99cabc5d4b5b0f004ea36c778d91d66fec9bcc426ea29992e48962b87",
+      "generation-manifest.json" : "c77a191caf6722cd2b46384a2a2e1d97f6ab9e52e29aa62a5053e49c8b970afe"
+    },
+    "retainedSurefireReports" : {
+      "TEST-com.bank.contract.CrudIntegrationTest.xml" : "ab4f54b798e7907de89804e6b73940af787349ebad9e54aabfff72b1ddf56a56",
+      "TEST-com.bank.contract.MysqlAcceptanceTest.xml" : "7e822635ef440066a2bc6156a81c5f3925b81e3b4d4c2f764963c21ae6c05312",
+      "TEST-com.bank.contract.MysqlCrudAcceptanceTest.xml" : "789fe748b6f778c4791834a282f9da9466dd02d7defcbbbc0d109979fdccd3e8",
+      "TEST-com.bank.contract.RequestTraceFilterTest.xml" : "4133cacffd56f1f5fd5a86ac831bdd4c393e92b9ca8cc545e22d09f15fef71cc",
+      "TEST-com.bank.contract.ServiceUpdateTest.xml" : "ceb6c8215fec9b37a3a39c0c389997467b0b436b326bacaffa65ef0929600ff7"
+    },
+    "priorMavenTestSummary" : {
+      "fixture" : "update-only",
+      "exitCode" : 0,
+      "tests" : 37,
+      "failures" : 0,
+      "errors" : 0,
+      "skipped" : 2,
+      "executed" : 35
+    },
+    "allGeneratedFilesVerified" : true,
+    "programAndConfigurationBytesUnchanged" : true,
+    "surefireReportsPreserved" : true
+  } ]
+}

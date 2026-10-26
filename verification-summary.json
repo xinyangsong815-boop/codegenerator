@@ -1,0 +1,161 @@
+{
+  "version": "2.1.1-rebuild.8-java8",
+  "date": "2026-10-26",
+  "targetJava": "8",
+  "springBoot": "2.7.18",
+  "sourceCount": 59,
+  "jarSha256": "f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb",
+  "tests": {
+    "generator": {
+      "tests": 35,
+      "passed": 35,
+      "failed": 0
+    },
+    "previousProduction": {
+      "tests": 22,
+      "passed": 22,
+      "failed": 0
+    },
+    "previousUpgrade": {
+      "tests": 29,
+      "passed": 29,
+      "failed": 0
+    },
+    "contracts": {
+      "tests": 49,
+      "passed": 49,
+      "failed": 0
+    },
+    "regression": {
+      "tests": 20,
+      "passed": 20,
+      "failed": 0
+    },
+    "workflow": {
+      "tests": 15,
+      "passed": 15,
+      "failed": 0
+    },
+    "production": {
+      "tests": 24,
+      "passed": 24,
+      "failed": 0
+    },
+    "client": {
+      "tests": 19,
+      "passed": 19,
+      "failed": 0
+    },
+    "websiteState": {
+      "tests": 21,
+      "passed": 21,
+      "failed": 0
+    },
+    "workflowUI": {
+      "tests": 24,
+      "passed": 24,
+      "failed": 0
+    },
+    "packagedHTTP": {
+      "tests": 14,
+      "passed": 14,
+      "failed": 0
+    },
+    "websiteAPI": {
+      "tests": 36,
+      "passed": 36,
+      "failed": 0
+    },
+    "productionHTTP": {
+      "tests": 7,
+      "passed": 7,
+      "failed": 0
+    },
+    "dependencyScanner": {
+      "tests": 19,
+      "passed": 19,
+      "failed": 0
+    },
+    "codeAudit": {
+      "tests": 10,
+      "passed": 10,
+      "failed": 0
+    },
+    "nextContract": {
+      "tests": 28,
+      "passed": 28,
+      "failed": 0
+    },
+    "generatedNext": {
+      "tests": 12,
+      "passed": 12,
+      "failed": 0
+    },
+    "repository": {
+      "tests": 28,
+      "passed": 28,
+      "failed": 0
+    },
+    "productionNext": {
+      "tests": 6,
+      "passed": 6,
+      "failed": 0
+    },
+    "repositoryUI": {
+      "tests": 15,
+      "passed": 15,
+      "failed": 0
+    },
+    "repositoryHTTP": {
+      "tests": 12,
+      "passed": 12,
+      "failed": 0
+    },
+    "releaseSafety": {
+      "tests": 9,
+      "passed": 9,
+      "failed": 0
+    },
+    "generatedQuality": {
+      "tests": 22,
+      "passed": 22,
+      "failed": 0
+    },
+    "backendQuality": {
+      "tests": 54,
+      "passed": 54,
+      "failed": 0
+    },
+    "workflowRaces": {
+      "tests": 27,
+      "passed": 27,
+      "failed": 0
+    },
+    "testRunner": {
+      "tests": 5,
+      "passed": 5,
+      "failed": 0
+    },
+    "qualityHTTP": {
+      "tests": 7,
+      "passed": 7,
+      "failed": 0
+    },
+    "standard": {
+      "projects": 9,
+      "tests": 553,
+      "passed": 535,
+      "skipped": 18
+    },
+    "boundary": {
+      "projects": 7,
+      "tests": 298,
+      "passed": 284,
+      "skipped": 14
+    }
+  },
+  "nativeKylinExecuted": false,
+  "realMysqlExecuted": false,
+  "vulnerabilityScan": "NOT_RUN",
+  "deploymentReady": false
+}

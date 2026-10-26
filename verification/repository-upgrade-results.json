@@ -1,0 +1,91 @@
+{
+  "platform" : "8",
+  "runtime" : "1.8.0_504",
+  "tests" : 28,
+  "failed" : 0,
+  "results" : [ {
+    "name" : "empty-main-project-and-local-snapshot-scope",
+    "passed" : true
+  }, {
+    "name" : "immutable-history-persists-after-close-and-reopen",
+    "passed" : true
+  }, {
+    "name" : "branch-changes-are-independent",
+    "passed" : true
+  }, {
+    "name" : "stale-and-absent-head-preconditions-do-not-overwrite",
+    "passed" : true
+  }, {
+    "name" : "concurrent-expected-head-allows-exactly-one-writer",
+    "passed" : true
+  }, {
+    "name" : "operating-system-lock-blocks-a-second-jvm-and-releases",
+    "passed" : true
+  }, {
+    "name" : "restore-is-new-commit-and-preserves-old-history",
+    "passed" : true
+  }, {
+    "name" : "diff-covers-added-deleted-modified-and-unchanged",
+    "passed" : true
+  }, {
+    "name" : "diff-keeps-full-path-list-when-preview-is-too-large",
+    "passed" : true
+  }, {
+    "name" : "history-pagination-is-explicit-and-complete",
+    "passed" : true
+  }, {
+    "name" : "text-path-traversal-and-platform-aliases-are-rejected",
+    "passed" : true
+  }, {
+    "name" : "case-collision-and-file-directory-conflict-are-rejected",
+    "passed" : true
+  }, {
+    "name" : "git-internal-and-common-credential-files-are-rejected",
+    "passed" : true
+  }, {
+    "name" : "zip-import-validates-before-project-wrapper-stripping",
+    "passed" : true
+  }, {
+    "name" : "zip-import-roundtrips-nested-text-files-and-deletions",
+    "passed" : true
+  }, {
+    "name" : "single-source-directory-export-import-preserves-all-relative-paths",
+    "passed" : true
+  }, {
+    "name" : "default-import-preserves-multiple-directories-and-root-files",
+    "passed" : true
+  }, {
+    "name" : "explicit-strip-rejects-multiple-roots-and-root-files-without-publishing",
+    "passed" : true
+  }, {
+    "name" : "zip-traversal-invalid-utf8-and-binary-text-are-rejected",
+    "passed" : true
+  }, {
+    "name" : "file-count-and-size-limits-do-not-publish-a-head",
+    "passed" : true
+  }, {
+    "name" : "blob-tampering-is-explicit-and-blocks-export-and-restore",
+    "passed" : true
+  }, {
+    "name" : "commit-tampering-is-detected-after-restart",
+    "passed" : true
+  }, {
+    "name" : "missing-referenced-commit-is-not-a-successful-history",
+    "passed" : true
+  }, {
+    "name" : "broken-metadata-does-not-hide-healthy-projects",
+    "passed" : true
+  }, {
+    "name" : "metadata-schema-version-does-not-wrap-large-integers",
+    "passed" : true
+  }, {
+    "name" : "cross-project-commit-access-is-rejected",
+    "passed" : true
+  }, {
+    "name" : "closed-repository-rejects-operations",
+    "passed" : true
+  }, {
+    "name" : "controller-uses-409-and-safe-file-response",
+    "passed" : true
+  } ]
+}

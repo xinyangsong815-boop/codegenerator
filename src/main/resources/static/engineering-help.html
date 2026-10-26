@@ -1,0 +1,111 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>接入现有工程说明</title><style>body{font:15px/1.8 system-ui,"Microsoft YaHei",sans-serif;color:#263b51;background:#f4f7fa;margin:0}main{max-width:1000px;margin:auto;background:white;padding:36px 42px}h1{font-size:28px}h2{font-size:21px;margin-top:36px;border-bottom:1px solid #dde5ee;padding-bottom:8px}pre{background:#eef3f8;padding:18px;overflow:auto}code{font-family:monospace}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid #dce4ee;padding:10px;text-align:left}th{background:#eef3f8}li{margin-bottom:7px}@media(max-width:700px){main{padding:20px}table{display:block;overflow:auto}h1{font-size:23px}}</style></head><body><p style="padding:12px;background:#edf2f8">本页说明 EXISTING 接入模式。启动、依赖与完整流程见 <a href="/help.html">当前使用说明</a>。</p><main><h1>接入现有工程</h1>
+<p>EXISTING 模式输出可合入宿主工程的业务模块；STANDALONE 输出独立工程。本包 Java 8 / Spring Boot 2.7.18。Java 8 与 Java 17 分别构建、同步维护，宿主需要自行确认版本兼容。</p>
+<h2>使用步骤</h2>
+<ol>
+<li>停止旧工具，备份工具数据目录，替换对应平台 JAR。使用新版本内置模板；若启动时指定 tool.template-dir，先更新自定义模板并适配新增模型字段。</li>
+<li>打开“需求与代码生成 → 工程接入”，选择“接入现有工程”。填写模块独立包名和已有公共组件信息。</li>
+<li>先“载入工程适配示例”查看完整规格。com.example.host 是演示类名，必须换成工程中真实类名。</li>
+<li>核对接口方法、路径、参数位置和字段，生成并下载模块包。</li>
+<li>按模块 README 合入宿主工程，完成离线编译、宿主测试和现场接入验收。</li>
+</ol>
+<p>同一工程的公共组件配置可“导出工程适配配置”，在其他业务模块“导入工程适配配置”。该配置仅覆盖 integration，不覆盖业务字段和接口。输入限32KB；生成时服务端仍会校验。完整规格导出也保留 integration。</p>
+<h2>两种模式</h2>
+<table>
+<thead>
+<tr>
+<th>输出</th>
+<th>STANDALONE 独立工程</th>
+<th>EXISTING 现有工程模块</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Controller / DTO / Service / Mapper</td>
+<td>生成</td>
+<td>生成</td>
+</tr>
+<tr>
+<td>pom.xml、启动类</td>
+<td>生成</td>
+<td>不生成</td>
+</tr>
+<tr>
+<td>Result、BusinessException、全局 ApiErrors</td>
+<td>示例实现</td>
+<td>调用指定外部类，不生成</td>
+</tr>
+<tr>
+<td>PageResult</td>
+<td>示例实现</td>
+<td>指定外部泛型类，或保留模块自己的 PageResult</td>
+</tr>
+<tr>
+<td>application.properties</td>
+<td>独立工程配置</td>
+<td>integration 下只提供配置合并片段，不自动加载</td>
+</tr>
+<tr>
+<td>数据库结构</td>
+<td>sql/schema.sql</td>
+<td>integration/reference-schema.sql，仅作结构参考</td>
+</tr>
+<tr>
+<td>自动启动的 H2 集成测试</td>
+<td>生成</td>
+<td>不生成，需要宿主集成测试</td>
+</tr>
+<tr>
+<td>0行更新服务单元测试</td>
+<td>UPDATE 时生成</td>
+<td>UPDATE 时生成，使用指定异常类型</td>
+</tr>
+<tr>
+<td>OpenAPI、前端调用、请求样例、规格/哈希清单</td>
+<td>生成</td>
+<td>生成</td>
+</tr>
+</tbody></table>
+<h2>支持的公共组件签名</h2>
+<p>返回类必须是泛型，例如 ApiResult<T>；静态成功工厂接收 T 并返回兼容的 ApiResult<T>，如 ApiResult.ok(data)。修改、删除传 null。</p>
+<p>分页类是 HostPage<T>。支持两种形式：静态泛型工厂 HostPage.of(List<T>, long)，或公开构造器 new HostPage<T>(List<T>, long)。参数顺序固定为记录列表、总数；其他形式先在行内项目增加一个适配工厂。</p>
+<p>业务异常必须继承 RuntimeException。支持静态工厂 HostException.missing(String)，或公开构造器 new HostException(String)。notFoundMethod 未指定时默认 notFound；显式空字符串选择构造器。记录不存在的实际 HTTP 状态和错误协议由宿主全局异常处理器决定。</p>
+<p>公共类名必须为合法完整类名，位于生成模块包名之外；本版不支持内部类、非泛型返回类、多参工厂、反射、任意 Java 表达式或代码片段。</p>
+<h2>示例配置</h2>
+<pre><code class="language-json">{
+  &quot;integration&quot;: {
+    &quot;mode&quot;: &quot;EXISTING&quot;,
+    &quot;resultClass&quot;: &quot;com.example.host.ApiResult&quot;,
+    &quot;successMethod&quot;: &quot;ok&quot;,
+    &quot;exceptionClass&quot;: &quot;com.example.host.HostException&quot;,
+    &quot;notFoundMethod&quot;: &quot;missing&quot;,
+    &quot;pageClass&quot;: &quot;com.example.host.HostPage&quot;,
+    &quot;pageFactoryMethod&quot;: &quot;of&quot;,
+    &quot;dataProperty&quot;: &quot;body&quot;,
+    &quot;codeProperty&quot;: &quot;retCode&quot;,
+    &quot;codeType&quot;: &quot;STRING&quot;,
+    &quot;successCode&quot;: &quot;0000&quot;,
+    &quot;messageProperty&quot;: &quot;retMsg&quot;,
+    &quot;recordsProperty&quot;: &quot;rows&quot;,
+    &quot;totalProperty&quot;: &quot;totalCount&quot;
+  }
+}
+</code></pre>
+<p>示例是完整生成规格中的 integration 部分；完整可导入示例为 examples/engineering-spec.json。返回形状约定为 retCode/retMsg/body，分页 body.rows/body.totalCount。</p>
+<p>codeType 支持 STRING / INTEGER，successCode 始终在规格中填字符串文本，例如 &quot;0000&quot; 或 &quot;0&quot;。整数限制为 Long 范围。codeProperty 或 messageProperty 显式填空串，可不声明该属性；dataProperty 必须非空。省略字段时分别默认 code/message/data、INTEGER、&quot;0&quot;。</p>
+<p>未指定 pageClass 时使用本模块 PageResult，字段固定 records/total，不允许额外配置外部分页工厂或字段映射。指定分页类后，pageFactoryMethod 省略或空串都选择构造器。</p>
+<p>响应字段映射只用于生成声明的 OpenAPI 契约，不改变外部类的序列化行为。外部类的额外属性允许存在；生成器不读取行内 JAR，不验证静态工厂的实际签名或成功码。OpenAPI 标记 hostVerification=REQUIRED；错误响应采用 default 声明，不预设宿主的 404 或其他错误协议。</p>
+<h2>合入时需核对</h2>
+<ul>
+<li>宿主 Spring 与 MyBatis 版本应兼容平台基线；保留宿主 BOM，依赖由宿主管理。</li>
+<li>业务包必须在组件扫描和 Mapper 扫描范围内；Mapper XML 必须被已配置的 mapper-locations 加载。</li>
+<li>Service 方法校验依赖 Spring 的 @Validated 代理；直接 new ServiceImpl 不会执行完整约束。</li>
+<li>默认 MODULE 策略只约束本实体生成的请求 DTO，不改变宿主其他 DTO 的 JSON 行为；配置类和 Bean 名包含实体及包名。宿主统一治理时可选择 HOST 并自行验收 JSON 行为。模块不更改端口、数据源、事务、静态资源或全局错误策略。</li>
+<li>数据结构 SQL 仅作参考，使用宿主已有迁移流程。不要对已有业务表直接执行 CREATE TABLE。</li>
+<li>前端 api.js 注入宿主 HTTP 客户端，返回值保持宿主客户端的结果；响应拦截器是否解包须与页面约定一致。</li>
+<li>用真实响应核对成功码、字段名、null 序列化、空分页、无数据操作及错误响应。integration/verification-checklist.json 初始均为 NOT_VERIFIED。</li>
+</ul>
+<p>生成器仍提供单表 CRUD。生产选项可生成权限扩展点、审计、乐观锁、幂等与 Outbox 结构；可信身份、机构／对象权限、持久化策略和业务审批仍须接入宿主机制并验收。支持这些公共类型签名不等于已经接入你的行内工程。</p>
+<h2>重新生成</h2>
+<p>保留 generation-spec.json 和 generation-manifest.json，在工具“代码更新与冲突”中提交新规格与当前模块 ZIP，下载候选包和冲突报告，人工合并。模式切换也可能产生新增或建议删除项，不会直接覆盖宿主文件。</p>
+<h2>本次验证范围</h2>
+<p>测试结果以对应发行包 verification-summary.json 为准。示例宿主公共类及 H2 用于验证适配调用，不证明真实行内公共类、MySQL、网关或麒麟实机已经验收。检查清单初始状态需由项目实际验收补充。</p>
+</main></body></html>

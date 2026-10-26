@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "id": "contract-v2-flow",
+  "name": "合同 v2 新增查询修改回归",
+  "variables": {
+    "contractNo": {
+      "generator": "runUnique",
+      "prefix": "T-"
+    }
+  },
+  "failurePolicy": "STOP",
+  "cleanupPolicy": "RESET_TEST_DATABASE",
+  "steps": [
+    {
+      "id": "create",
+      "name": "新增合同",
+      "request": {
+        "method": "POST",
+        "path": "/contracts",
+        "body": {
+          "contractNo": {
+            "$var": "contractNo"
+          },
+          "amount": "123.45",
+          "signDate": "2026-01-01"
+        }
+      },
+      "assertions": [
+        {
+          "source": "status",
+          "op": "eq",
+          "expected": 200
+        },
+        {
+          "source": "body",
+          "pointer": "/code",
+          "op": "eq",
+          "expected": 0
+        }
+      ],
+      "extract": [
+        {
+          "name": "id",
+          "source": "body",
+          "pointer": "/data",
+          "type": "string",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "detail",
+      "name": "查询新合同",
+      "request": {
+        "method": "GET",
+        "path": "/contracts/{id}",
+        "pathVariables": {
+          "id": {
+            "$var": "id"
+          }
+        }
+      },
+      "assertions": [
+        {
+          "source": "status",
+          "op": "eq",
+          "expected": 200
+        },
+        {
+          "source": "body",
+          "pointer": "/code",
+          "op": "eq",
+          "expected": 0
+        },
+        {
+          "source": "body",
+          "pointer": "/data/contractNo",
+          "op": "eq",
+          "expected": {
+            "$var": "contractNo"
+          }
+        },
+        {
+          "source": "body",
+          "pointer": "/data/amount",
+          "op": "eq",
+          "expected": "123.45"
+        }
+      ]
+    },
+    {
+      "id": "update",
+      "name": "修改金额",
+      "request": {
+        "method": "PATCH",
+        "path": "/contracts/{id}",
+        "body": {
+          "amount": "234.56"
+        },
+        "pathVariables": {
+          "id": {
+            "$var": "id"
+          }
+        }
+      },
+      "assertions": [
+        {
+          "source": "status",
+          "op": "eq",
+          "expected": 200
+        },
+        {
+          "source": "body",
+          "pointer": "/code",
+          "op": "eq",
+          "expected": 0
+        }
+      ]
+    },
+    {
+      "id": "verify",
+      "name": "核对修改后金额",
+      "request": {
+        "method": "GET",
+        "path": "/contracts/{id}",
+        "pathVariables": {
+          "id": {
+            "$var": "id"
+          }
+        }
+      },
+      "assertions": [
+        {
+          "source": "status",
+          "op": "eq",
+          "expected": 200
+        },
+        {
+          "source": "body",
+          "pointer": "/code",
+          "op": "eq",
+          "expected": 0
+        },
+        {
+          "source": "body",
+          "pointer": "/data/contractNo",
+          "op": "eq",
+          "expected": {
+            "$var": "contractNo"
+          }
+        },
+        {
+          "source": "body",
+          "pointer": "/data/amount",
+          "op": "eq",
+          "expected": "234.56"
+        }
+      ]
+    }
+  ]
+}

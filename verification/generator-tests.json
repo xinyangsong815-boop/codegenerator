@@ -1,0 +1,111 @@
+{
+  "tests" : 35,
+  "passed" : 35,
+  "failed" : 0,
+  "results" : [ {
+    "name" : "json-decimals-preserve-value-and-scale",
+    "passed" : true
+  }, {
+    "name" : "partial-update-doc-requires-a-business-field",
+    "passed" : true
+  }, {
+    "name" : "openapi-native-integer-bounds",
+    "passed" : true
+  }, {
+    "name" : "size-assertion-does-not-overflow-int",
+    "passed" : true
+  }, {
+    "name" : "exists-false-honors-expected",
+    "passed" : true
+  }, {
+    "name" : "not-exists-is-supported",
+    "passed" : true
+  }, {
+    "name" : "invalid-type-assertion-rejected-before-run",
+    "passed" : true
+  }, {
+    "name" : "invalid-size-assertion-rejected-before-run",
+    "passed" : true
+  }, {
+    "name" : "invalid-comparison-assertion-rejected-before-run",
+    "passed" : true
+  }, {
+    "name" : "invalid-exists-assertion-rejected-before-run",
+    "passed" : true
+  }, {
+    "name" : "http-json-money-is-exact",
+    "passed" : true
+  }, {
+    "name" : "http-json-long-is-exact",
+    "passed" : true
+  }, {
+    "name" : "http-status-only-allows-text",
+    "passed" : true
+  }, {
+    "name" : "http-non-json-cannot-pass-absence-assertion",
+    "passed" : true
+  }, {
+    "name" : "http-duplicate-json-cannot-pass-body-assertion",
+    "passed" : true
+  }, {
+    "name" : "http-null-is-valid-json",
+    "passed" : true
+  }, {
+    "name" : "run-unique-is-independent-per-variable",
+    "passed" : true
+  }, {
+    "name" : "cancel-does-not-reopen-finished-job",
+    "passed" : true
+  }, {
+    "name" : "batch-is-rejected-before-any-http-when-invalid",
+    "passed" : true
+  }, {
+    "name" : "junit-includes-cleanup-step-results",
+    "passed" : true
+  }, {
+    "name" : "junit-name-is-valid-xml",
+    "passed" : true
+  }, {
+    "name" : "html-includes-cleanup-step-results",
+    "passed" : true
+  }, {
+    "name" : "credentials-not-persisted-in-run",
+    "passed" : true
+  }, {
+    "name" : "target-prefix-enforced",
+    "passed" : true
+  }, {
+    "name" : "all-generated-manifest-hashes-match",
+    "passed" : true
+  }, {
+    "name" : "source-scan-verifies-intact-generated-project",
+    "passed" : true
+  }, {
+    "name" : "source-scan-does-not-trust-stale-document-after-source-edit",
+    "passed" : true
+  }, {
+    "name" : "source-scan-retains-numeric-constraints",
+    "passed" : true
+  }, {
+    "name" : "requirement-template-roundtrip-xlsx",
+    "passed" : true
+  }, {
+    "name" : "requirement-template-roundtrip-docx",
+    "passed" : true
+  }, {
+    "name" : "generated-partial-contract-has-complete-supported-coverage",
+    "passed" : true
+  }, {
+    "name" : "required-anyof-rejects-metadata-only-object",
+    "passed" : true
+  }, {
+    "name" : "required-anyof-accepts-either-business-field",
+    "passed" : true
+  }, {
+    "name" : "mock-required-anyof-respects-property-budget",
+    "passed" : true
+  }, {
+    "name" : "unsupported-anyof-is-never-reported-pass",
+    "passed" : true
+  } ]
+}

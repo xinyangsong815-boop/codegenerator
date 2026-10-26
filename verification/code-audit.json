@@ -1,0 +1,49 @@
+{
+  "tests" : 10,
+  "passed" : 10,
+  "failed" : 0,
+  "results" : [ {
+    "fixture" : "create-only",
+    "passed" : true,
+    "compiles" : true
+  }, {
+    "fixture" : "update-only",
+    "passed" : true,
+    "compiles" : true
+  }, {
+    "fixture" : "page-only",
+    "passed" : true,
+    "compiles" : true
+  }, {
+    "fixture" : "delete-only",
+    "passed" : true,
+    "compiles" : true
+  }, {
+    "fixture" : "all-types-in",
+    "passed" : true,
+    "compiles" : true
+  }, {
+    "fixture" : "all-types-range",
+    "passed" : true,
+    "compiles" : true
+  }, {
+    "fixture" : "all-types-native-full",
+    "passed" : true,
+    "compiles" : true
+  }, {
+    "fixture" : "name-collision-LinkedHashMap",
+    "passed" : true,
+    "rejected" : true,
+    "message" : "实体名与模板引用的基础或公共类型冲突，请使用业务名称：LinkedHashMap"
+  }, {
+    "fixture" : "name-collision-ArrayList",
+    "passed" : true,
+    "rejected" : true,
+    "message" : "实体名与模板引用的基础或公共类型冲突，请使用业务名称：ArrayList"
+  }, {
+    "fixture" : "name-collision-Arrays",
+    "passed" : true,
+    "rejected" : true,
+    "message" : "实体名与模板引用的基础或公共类型冲突，请使用业务名称：Arrays"
+  } ]
+}

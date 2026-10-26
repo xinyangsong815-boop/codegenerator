@@ -1,0 +1,91 @@
+{
+  "javaVersion" : "1.8.0_504",
+  "tests" : 28,
+  "passed" : 28,
+  "failed" : 0,
+  "results" : [ {
+    "name" : "response-required-additional-field-must-not-disappear",
+    "passed" : true
+  }, {
+    "name" : "response-required-additional-field-can-be-strengthened",
+    "passed" : true
+  }, {
+    "name" : "response-required-declared-field-loss-still-fails",
+    "passed" : true
+  }, {
+    "name" : "response-header-required-to-optional-fails",
+    "passed" : true
+  }, {
+    "name" : "response-header-required-to-absent-fails",
+    "passed" : true
+  }, {
+    "name" : "optional-response-header-removal-retains-review",
+    "passed" : true
+  }, {
+    "name" : "response-header-case-only-change-is-compatible",
+    "passed" : true
+  }, {
+    "name" : "request-header-case-only-change-is-compatible",
+    "passed" : true
+  }, {
+    "name" : "query-parameter-names-remain-case-sensitive",
+    "passed" : true
+  }, {
+    "name" : "operation-header-overrides-path-header-ignoring-case",
+    "passed" : true
+  }, {
+    "name" : "required-header-is-visible-in-readable-documents",
+    "passed" : true
+  }, {
+    "name" : "required-additional-field-is-visible-in-documents",
+    "passed" : true
+  }, {
+    "name" : "empty-responses-cannot-pass-unchanged-comparison",
+    "passed" : true
+  }, {
+    "name" : "invalid-response-status-key-cannot-pass",
+    "passed" : true
+  }, {
+    "name" : "response-without-description-is-incomplete",
+    "passed" : true
+  }, {
+    "name" : "nonboolean-header-required-is-incomplete",
+    "passed" : true
+  }, {
+    "name" : "duplicate-case-insensitive-response-headers-are-incomplete",
+    "passed" : true
+  }, {
+    "name" : "duplicate-parameters-in-one-scope-are-incomplete",
+    "passed" : true
+  }, {
+    "name" : "unsupported-oneOf-cannot-pass",
+    "passed" : true
+  }, {
+    "name" : "unsupported-allOf-cannot-pass",
+    "passed" : true
+  }, {
+    "name" : "unsupported-not-cannot-pass",
+    "passed" : true
+  }, {
+    "name" : "nullable-response-expansion-fails-and-request-widening-passes",
+    "passed" : true
+  }, {
+    "name" : "sample-preserves-decimal-beyond-double-precision",
+    "passed" : true
+  }, {
+    "name" : "media-case-only-change-is-compatible",
+    "passed" : true
+  }, {
+    "name" : "sample-matches-media-case-insensitively",
+    "passed" : true
+  }, {
+    "name" : "sample-uses-most-specific-media-schema",
+    "passed" : true
+  }, {
+    "name" : "sample-can-use-json-wildcard-schema",
+    "passed" : true
+  }, {
+    "name" : "non-json-sample-never-claims-json-validation-pass",
+    "passed" : true
+  } ]
+}

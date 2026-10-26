@@ -1,0 +1,169 @@
+{
+  "javaVersion" : "1.8.0_504",
+  "tests" : 54,
+  "passed" : 54,
+  "failed" : 0,
+  "results" : [ {
+    "name" : "request-exact-media-to-wildcard-is-widening",
+    "passed" : true
+  }, {
+    "name" : "request-wildcard-to-exact-media-restricts",
+    "passed" : true
+  }, {
+    "name" : "request-new-specific-media-must-compare-overridden-schema",
+    "passed" : true
+  }, {
+    "name" : "request-new-specific-media-compatible-schema-is-safe",
+    "passed" : true
+  }, {
+    "name" : "request-type-wildcard-to-global-wildcard-is-widening",
+    "passed" : true
+  }, {
+    "name" : "request-global-wildcard-to-type-wildcard-restricts",
+    "passed" : true
+  }, {
+    "name" : "response-new-specific-media-must-compare-overridden-schema",
+    "passed" : true
+  }, {
+    "name" : "response-new-uncovered-media-needs-review",
+    "passed" : true
+  }, {
+    "name" : "media-finding-pointers-escape-slashes",
+    "passed" : true
+  }, {
+    "name" : "empty-json-response-is-a-failed-sample",
+    "passed" : true
+  }, {
+    "name" : "whitespace-json-response-is-a-failed-sample",
+    "passed" : true
+  }, {
+    "name" : "valid-json-sample-still-passes",
+    "passed" : true
+  }, {
+    "name" : "sample-rejects-missing-method-as-invalid-input",
+    "passed" : true
+  }, {
+    "name" : "sample-rejects-missing-path-as-invalid-input",
+    "passed" : true
+  }, {
+    "name" : "mock-205-does-not-generate-response-content",
+    "passed" : true
+  }, {
+    "name" : "mock-matches-json-media-case-insensitively",
+    "passed" : true
+  }, {
+    "name" : "mock-and-description-match-request-json-media-case",
+    "passed" : true
+  }, {
+    "name" : "no-content-status-101-rejects-body",
+    "passed" : true
+  }, {
+    "name" : "no-content-status-199-rejects-body",
+    "passed" : true
+  }, {
+    "name" : "no-content-status-204-rejects-body",
+    "passed" : true
+  }, {
+    "name" : "no-content-status-205-rejects-body",
+    "passed" : true
+  }, {
+    "name" : "no-content-status-304-rejects-body",
+    "passed" : true
+  }, {
+    "name" : "head-response-accepts-empty-body-and-rejects-payload",
+    "passed" : true
+  }, {
+    "name" : "scenario-rejects-nonstring-assertion-pointer-OBJECT",
+    "passed" : true
+  }, {
+    "name" : "scenario-rejects-nonstring-extract-pointer-OBJECT",
+    "passed" : true
+  }, {
+    "name" : "scenario-rejects-nonstring-assertion-pointer-ARRAY",
+    "passed" : true
+  }, {
+    "name" : "scenario-rejects-nonstring-extract-pointer-ARRAY",
+    "passed" : true
+  }, {
+    "name" : "scenario-rejects-nonstring-assertion-pointer-NULL",
+    "passed" : true
+  }, {
+    "name" : "scenario-rejects-nonstring-extract-pointer-NULL",
+    "passed" : true
+  }, {
+    "name" : "scenario-rejects-nonstring-assertion-pointer-NUMBER",
+    "passed" : true
+  }, {
+    "name" : "scenario-rejects-nonstring-extract-pointer-NUMBER",
+    "passed" : true
+  }, {
+    "name" : "scenario-rejects-nonobject-pathVariables-ARRAY",
+    "passed" : true
+  }, {
+    "name" : "scenario-rejects-nonobject-pathVariables-NULL",
+    "passed" : true
+  }, {
+    "name" : "scenario-rejects-nonobject-pathVariables-STRING",
+    "passed" : true
+  }, {
+    "name" : "scenario-allows-explicit-root-pointer",
+    "passed" : true
+  }, {
+    "name" : "document-includes-effective-server-and-variables",
+    "passed" : true
+  }, {
+    "name" : "document-displays-operation-server-overrides",
+    "passed" : true
+  }, {
+    "name" : "document-includes-authentication-scheme-details",
+    "passed" : true
+  }, {
+    "name" : "document-server-descriptions-are-escaped",
+    "passed" : true
+  }, {
+    "name" : "interface-description-merges-header-overrides-ignoring-case",
+    "passed" : true
+  }, {
+    "name" : "impact-detects-effective-root-server-changes",
+    "passed" : true
+  }, {
+    "name" : "impact-ignores-root-server-change-hidden-by-operation-override",
+    "passed" : true
+  }, {
+    "name" : "impact-detects-path-server-changes",
+    "passed" : true
+  }, {
+    "name" : "impact-detects-operation-referenced-through-path-item",
+    "passed" : true
+  }, {
+    "name" : "impact-detects-global-business-semantics-change",
+    "passed" : true
+  }, {
+    "name" : "junit-does-not-pass-an-unfinished-step-marked-pass",
+    "passed" : true
+  }, {
+    "name" : "junit-does-not-pass-empty-successful-run",
+    "passed" : true
+  }, {
+    "name" : "junit-overall-agrees-with-failed-main-step",
+    "passed" : true
+  }, {
+    "name" : "junit-successful-finished-step-still-passes",
+    "passed" : true
+  }, {
+    "name" : "junit-does-not-pass-missing-declared-steps",
+    "passed" : true
+  }, {
+    "name" : "junit-does-not-pass-done-with-missing-planned-cleanup",
+    "passed" : true
+  }, {
+    "name" : "junit-complete-declared-cleanup-still-passes",
+    "passed" : true
+  }, {
+    "name" : "junit-manual-cleanup-confirmation-does-not-claim-automatic-steps",
+    "passed" : true
+  }, {
+    "name" : "junit-no-write-run-does-not-require-optional-cleanup-execution",
+    "passed" : true
+  } ]
+}

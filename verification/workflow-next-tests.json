@@ -1,0 +1,115 @@
+{
+  "tests": 27,
+  "passed": 27,
+  "failed": 0,
+  "results": [
+    {
+      "name": "latest-file-selection-wins-when-requests-complete-out-of-order",
+      "passed": true
+    },
+    {
+      "name": "branch-switch-invalidates-pending-commit-details",
+      "passed": true
+    },
+    {
+      "name": "restore-preserves-edits-made-while-write-is-pending",
+      "passed": true
+    },
+    {
+      "name": "switching-project-clears-the-old-head-before-history-arrives",
+      "passed": true
+    },
+    {
+      "name": "pagination-reloads-first-page-when-observed-head-has-changed",
+      "passed": true
+    },
+    {
+      "name": "branch-creation-does-not-clear-later-typed-name",
+      "passed": true
+    },
+    {
+      "name": "latest-commit-selection-wins-when-requests-complete-out-of-order",
+      "passed": true
+    },
+    {
+      "name": "run-refuses-environment-change-during-definition-validation",
+      "passed": true
+    },
+    {
+      "name": "run-clears-credentials-even-when-validation-fails",
+      "passed": true
+    },
+    {
+      "name": "run-submits-the-confirmed-snapshot-when-it-stays-unchanged",
+      "passed": true
+    },
+    {
+      "name": "step-reorder-preserves-new-editor-content-while-validation-is-pending",
+      "passed": true
+    },
+    {
+      "name": "impact-report-is-discarded-when-version-selection-changes",
+      "passed": true
+    },
+    {
+      "name": "source-file-upload-preserves-paste-edits-made-during-file-read",
+      "passed": true
+    },
+    {
+      "name": "source-inspection-requires-both-zip-inputs",
+      "passed": true
+    },
+    {
+      "name": "regeneration-discards-result-if-input-mode-changes",
+      "passed": true
+    },
+    {
+      "name": "regression-list-refresh-keeps-the-newest-result",
+      "passed": true
+    },
+    {
+      "name": "new-contract-draft-does-not-overwrite-later-scenario-edits",
+      "passed": true
+    },
+    {
+      "name": "scenario-import-asks-before-discarding-unsaved-work",
+      "passed": true
+    },
+    {
+      "name": "scenario-import-preserves-later-edits-during-file-read",
+      "passed": true
+    },
+    {
+      "name": "scenario-open-preserves-later-edits-during-file-read",
+      "passed": true
+    },
+    {
+      "name": "paste-file-map-keeps-prototype-named-keys-as-own-files",
+      "passed": true
+    },
+    {
+      "name": "reset-confirmation-result-does-not-replace-another-open-run",
+      "passed": true
+    },
+    {
+      "name": "old-mock-probe-response-does-not-reappear-after-profile-selection-changes",
+      "passed": true
+    },
+    {
+      "name": "actual-http-conflict-keeps-later-draft-and-uses-page-error-channel",
+      "passed": true
+    },
+    {
+      "name": "actual-request-network-failure-keeps-text-snapshot-draft",
+      "passed": true
+    },
+    {
+      "name": "busy-prevents-a-second-write-until-the-first-operation-finishes",
+      "passed": true
+    },
+    {
+      "name": "source-upload-keeps-prototype-named-file-without-mutating-object-prototype",
+      "passed": true
+    }
+  ]
+}

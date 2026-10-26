@@ -1,0 +1,93 @@
+{
+  "tests" : 29,
+  "passed" : 29,
+  "failed" : 0,
+  "results" : [ {
+    "name" : "duplicate-document-json-is-rejected",
+    "passed" : true
+  }, {
+    "name" : "source-integer-default-keeps-numeric-type",
+    "passed" : true
+  }, {
+    "name" : "source-boolean-default-keeps-boolean-type",
+    "passed" : true
+  }, {
+    "name" : "invalid-numeric-default-is-not-advertised-as-valid",
+    "passed" : true
+  }, {
+    "name" : "source-conflict-status-is-not-rewritten-to-200",
+    "passed" : true
+  }, {
+    "name" : "source-class-status-is-inherited",
+    "passed" : true
+  }, {
+    "name" : "source-method-status-overrides-class",
+    "passed" : true
+  }, {
+    "name" : "source-inherited-controller-members-require-review",
+    "passed" : true
+  }, {
+    "name" : "documentation-html-is-an-interface-reference",
+    "passed" : true
+  }, {
+    "name" : "generated-project-has-readable-documents",
+    "passed" : true
+  }, {
+    "name" : "generated-controller-declares-json-produce",
+    "passed" : true
+  }, {
+    "name" : "generated-contract-declares-bodyless-406",
+    "passed" : true
+  }, {
+    "name" : "response-header-removal-needs-review",
+    "passed" : true
+  }, {
+    "name" : "missing-declared-resource-handle-fails-run",
+    "passed" : true
+  }, {
+    "name" : "wrong-declared-resource-handle-type-fails-run",
+    "passed" : true
+  }, {
+    "name" : "valid-resource-handle-stays-tracked",
+    "passed" : true
+  }, {
+    "name" : "dynamic-existence-expected-does-not-coerce-string",
+    "passed" : true
+  }, {
+    "name" : "unicode-size-counts-code-points",
+    "passed" : true
+  }, {
+    "name" : "non-string-header-values-rejected-before-run",
+    "passed" : true
+  }, {
+    "name" : "extract-required-must-be-a-boolean",
+    "passed" : true
+  }, {
+    "name" : "resource-pointer-escape-checked-before-run",
+    "passed" : true
+  }, {
+    "name" : "interrupted-cleanup-is-marked-as-interrupted",
+    "passed" : true
+  }, {
+    "name" : "declared-bodyless-response-accepts-empty-sample",
+    "passed" : true
+  }, {
+    "name" : "declared-bodyless-response-rejects-a-body",
+    "passed" : true
+  }, {
+    "name" : "204-whitespace-is-not-an-empty-body",
+    "passed" : true
+  }, {
+    "name" : "invalid-response-content-does-not-pass-as-empty",
+    "passed" : true
+  }, {
+    "name" : "invalid-response-object-does-not-pass-as-empty",
+    "passed" : true
+  }, {
+    "name" : "preflight-error-names-the-actual-target-java",
+    "passed" : true
+  }, {
+    "name" : "junit-step-identities-do-not-collapse-equal-names",
+    "passed" : true
+  } ]
+}

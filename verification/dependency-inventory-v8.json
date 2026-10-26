@@ -1,0 +1,20 @@
+{
+  "failed": 0,
+  "failures": {},
+  "passed": 19,
+  "realArtifact": {
+    "allLibraryHashesVerified": true,
+    "artifact": {
+      "bomRef": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb",
+      "filename": "offline-dev-assistant-2.1.1-rebuild.8-java8-kylin-linux.jar",
+      "sha256": "f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb",
+      "size": 41854569
+    },
+    "bootInfLibEntries": 44,
+    "components": 44,
+    "licenseReview": "REVIEW_REQUIRED",
+    "unidentified": 18,
+    "vulnerabilityScan": "NOT_RUN"
+  },
+  "tests": 19
+}

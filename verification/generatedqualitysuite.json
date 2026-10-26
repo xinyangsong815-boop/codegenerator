@@ -1,0 +1,73 @@
+{
+  "runtime" : "1.8.0_504",
+  "tests" : 22,
+  "failed" : 0,
+  "generated" : "C:\\Users\\LEGION\\Documents\\ChatGPT\\212\\generator-kylin-java8\\verification\\generated-quality",
+  "results" : [ {
+    "name" : "generate-contract-spec",
+    "passed" : true
+  }, {
+    "name" : "generate-contract-v2-spec",
+    "passed" : true
+  }, {
+    "name" : "generate-interface-config-spec",
+    "passed" : true
+  }, {
+    "name" : "generate-engineering-spec",
+    "passed" : true
+  }, {
+    "name" : "generate-production-spec",
+    "passed" : true
+  }, {
+    "name" : "generate-production-safe-spec",
+    "passed" : true
+  }, {
+    "name" : "generate-full-update",
+    "passed" : true
+  }, {
+    "name" : "generate-selected-fields",
+    "passed" : true
+  }, {
+    "name" : "generate-partial-only",
+    "passed" : true
+  }, {
+    "name" : "generate-delete-only",
+    "passed" : true
+  }, {
+    "name" : "create-mapping-excludes-server-and-database-fields",
+    "passed" : true
+  }, {
+    "name" : "full-update-excludes-identity-and-optimistic-version",
+    "passed" : true
+  }, {
+    "name" : "create-and-full-update-use-different-endpoint-field-selections",
+    "passed" : true
+  }, {
+    "name" : "view-mapping-excludes-hidden-fields",
+    "passed" : true
+  }, {
+    "name" : "partial-update-keeps-present-dto-instead-of-entity",
+    "passed" : true
+  }, {
+    "name" : "no-empty-mapping-class-for-partial-or-delete-only",
+    "passed" : true
+  }, {
+    "name" : "generated-mapping-tests-assert-hidden-and-trusted-boundaries",
+    "passed" : true
+  }, {
+    "name" : "generated-manifest-hashes-new-mapping-and-test-files",
+    "passed" : true
+  }, {
+    "name" : "plain-getters-setters-do-not-grow-redundant-comment-blocks",
+    "passed" : true
+  }, {
+    "name" : "authored-accessor-and-present-side-effects-keep-documentation",
+    "passed" : true
+  }, {
+    "name" : "computed-getter-and-undocumented-side-effect-setter-still-described",
+    "passed" : true
+  }, {
+    "name" : "outbox-cancel-is-checked-before-scan-and-each-claim",
+    "passed" : true
+  } ]
+}

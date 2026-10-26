@@ -1,0 +1,28 @@
+{
+  "tests": 5,
+  "passed": 5,
+  "failed": 0,
+  "scope": "Synthetic runner orchestration only; not generated business test evidence",
+  "results": [
+    {
+      "name": "empty-matrix-is-not-a-successful-test-run",
+      "passed": true
+    },
+    {
+      "name": "stale-surefire-reports-cannot-prove-current-execution",
+      "passed": true
+    },
+    {
+      "name": "all-skipped-tests-are-not-executed-passes",
+      "passed": true
+    },
+    {
+      "name": "assertion-failures-block-the-run",
+      "passed": true
+    },
+    {
+      "name": "fresh-executed-results-are-recorded-as-an-array-even-for-one-project",
+      "passed": true
+    }
+  ]
+}

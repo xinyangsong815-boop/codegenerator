@@ -1,0 +1,67 @@
+{
+  "tests": 15,
+  "passed": 15,
+  "failed": 0,
+  "results": [
+    {
+      "name": "repository-is-in-live-navigation",
+      "passed": true
+    },
+    {
+      "name": "generation-source-becomes-dirty-snapshot-without-rounding-code",
+      "passed": true
+    },
+    {
+      "name": "create-repository-preserves-an-uncommitted-generation-draft",
+      "passed": true
+    },
+    {
+      "name": "text-commit-uses-observed-head-and-does-not-acknowledge-later-edits",
+      "passed": true
+    },
+    {
+      "name": "commit-refuses-empty-file-set-and-non-string-bodies",
+      "passed": true
+    },
+    {
+      "name": "snapshot-editor-rejects-duplicate-file-names",
+      "passed": true
+    },
+    {
+      "name": "failed-conflicting-commit-keeps-draft-and-head",
+      "passed": true
+    },
+    {
+      "name": "late-history-does-not-overwrite-another-repository",
+      "passed": true
+    },
+    {
+      "name": "history-pagination-appends-and-keeps-explicit-more-flag",
+      "passed": true
+    },
+    {
+      "name": "branch-switch-keeps-cross-branch-comparison-base",
+      "passed": true
+    },
+    {
+      "name": "restore-is-a-new-commit-request-with-optimistic-head",
+      "passed": true
+    },
+    {
+      "name": "raw-file-read-keeps-code-text-and-html-as-text",
+      "passed": true
+    },
+    {
+      "name": "actual-request-preserves-non-json-source-and-strips-browser-options",
+      "passed": true
+    },
+    {
+      "name": "zip-import-preserves-paths-unless-user-explicitly-enables-strip",
+      "passed": true
+    },
+    {
+      "name": "changed-comparison-selection-discards-late-diff",
+      "passed": true
+    }
+  ]
+}

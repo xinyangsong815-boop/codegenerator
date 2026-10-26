@@ -1,0 +1,36 @@
+{
+  "version": "2.1.1-rebuild.8-java8",
+  "tests": 7,
+  "passed": 7,
+  "failed": 0,
+  "results": [
+    {
+      "name": "generated-production-artifacts-exist",
+      "passed": true
+    },
+    {
+      "name": "fresh-evidence-binding-matches-but-remains-incomplete",
+      "passed": true
+    },
+    {
+      "name": "stale-evidence-detected-over-http",
+      "passed": true
+    },
+    {
+      "name": "migration-plan-is-read-only-review",
+      "passed": true
+    },
+    {
+      "name": "history-diagnostics-available",
+      "passed": true
+    },
+    {
+      "name": "regression-page-has-explicit-count",
+      "passed": true
+    },
+    {
+      "name": "duplicate-keys-rejected-before-contract-import",
+      "passed": true
+    }
+  ]
+}

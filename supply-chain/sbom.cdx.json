@@ -1,0 +1,2042 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "components": [
+    {
+      "bom-ref": "library:2105d51a0c3aa8d7028696700cc12f8b1f58b883091cfe906bd5d8b3e9415c8f",
+      "group": "org.apache.httpcomponents",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c8bc7e1c51a6d4ce72f40d2ebbabf1c4b68bfe76e732104b04381b493478e9d6"
+        }
+      ],
+      "name": "httpclient",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/httpclient-4.5.14.jar#0"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "DECLARED_METADATA_FILENAME_MATCH"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/NOTICE\", \"sha256\": \"f5783fbb52e5fcfb26b6916ce3bb9c717d22759b030cee6deaa03145f1f8d819\", \"size\": 174}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/LICENSE\", \"sha256\": \"cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30\", \"size\": 11358}], \"mavenMetadata\": [{\"coordinates\": {\"artifactId\": \"httpclient\", \"groupId\": \"org.apache.httpcomponents\", \"version\": \"4.5.14\"}, \"path\": \"META-INF/maven/org.apache.httpcomponents/httpclient/pom.xml\", \"sha256\": \"f18355af4cf80a8a4ef04ebd742a47e90a7eaf080c725b2095dbc4fc5dbdefb7\"}, {\"coordinates\": {\"artifactId\": \"httpclient\", \"groupId\": \"org.apache.httpcomponents\", \"version\": \"4.5.14\"}, \"path\": \"META-INF/maven/org.apache.httpcomponents/httpclient/pom.properties\", \"sha256\": \"8627c13ddca47a4c3dbc6f7f04951bf6753a0d7ee93cc943dcfe1a048fe252a3\"}], \"metadataErrors\": []}"
+        }
+      ],
+      "purl": "pkg:maven/org.apache.httpcomponents/httpclient@4.5.14",
+      "type": "library",
+      "version": "4.5.14"
+    },
+    {
+      "bom-ref": "library:79ec73ccf0b6de9ecebeeacd5dbeb9fdc9513895e635c95731afaa2b1e8f52a8",
+      "group": "org.apache.httpcomponents",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "6c9b3dd142a09dc468e23ad39aad6f75a0f2b85125104469f026e52a474e464f"
+        }
+      ],
+      "name": "httpcore",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/httpcore-4.4.16.jar#1"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "DECLARED_METADATA_FILENAME_MATCH"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/NOTICE\", \"sha256\": \"a8ff0d486f1bdd29331e0e244f96245354779ef818ec25ecd60545ad335b68da\", \"size\": 172}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/LICENSE\", \"sha256\": \"cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30\", \"size\": 11358}], \"mavenMetadata\": [{\"coordinates\": {\"artifactId\": \"httpcore\", \"groupId\": \"org.apache.httpcomponents\", \"version\": \"4.4.16\"}, \"path\": \"META-INF/maven/org.apache.httpcomponents/httpcore/pom.xml\", \"sha256\": \"3cbad849b35dacfe6cec31adada2c623c026c3261141b0d26eec7e399c6cd7fa\"}, {\"coordinates\": {\"artifactId\": \"httpcore\", \"groupId\": \"org.apache.httpcomponents\", \"version\": \"4.4.16\"}, \"path\": \"META-INF/maven/org.apache.httpcomponents/httpcore/pom.properties\", \"sha256\": \"17a6a855c49e415828a8fa647dcc303b5927666e38198f876cbc4cc61878de01\"}], \"metadataErrors\": []}"
+        }
+      ],
+      "purl": "pkg:maven/org.apache.httpcomponents/httpcore@4.4.16",
+      "type": "library",
+      "version": "4.4.16"
+    },
+    {
+      "bom-ref": "library:d495fcff494d1500ebd59b8dc20d1169eda5508702c79fe9f33794493a74186f",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "name": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+            }
+          }
+        ]
+      },
+      "group": "commons-codec",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b3e9f6d63a790109bf0d056611fbed1cf69055826defeb9894a71369d246ed63"
+        }
+      ],
+      "name": "commons-codec",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/commons-codec-1.15.jar#2"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "DECLARED_METADATA_FILENAME_MATCH"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [{\"kind\": \"Bundle-License\", \"name\": \"https://www.apache.org/licenses/LICENSE-2.0.txt\", \"source\": \"META-INF/MANIFEST.MF\"}], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/LICENSE.txt\", \"sha256\": \"cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30\", \"size\": 11358}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/NOTICE.txt\", \"sha256\": \"0e529f7dd092a0c4675485e14c3f79b0c2855fc84830a5b2d79564ba89f71ee6\", \"size\": 733}], \"mavenMetadata\": [{\"coordinates\": {\"artifactId\": \"commons-codec\", \"groupId\": \"commons-codec\", \"version\": \"1.15\"}, \"path\": \"META-INF/maven/commons-codec/commons-codec/pom.xml\", \"sha256\": \"c86ee198a35a3715487860f419cbf642e7e4d9e8714777947dbe6a4e3a20ab58\"}, {\"coordinates\": {\"artifactId\": \"commons-codec\", \"groupId\": \"commons-codec\", \"version\": \"1.15\"}, \"path\": \"META-INF/maven/commons-codec/commons-codec/pom.properties\", \"sha256\": \"696d43d45852e777b762ae18c5468d06906a2f7335f79b20a82427365b5545d8\"}], \"metadataErrors\": []}"
+        }
+      ],
+      "purl": "pkg:maven/commons-codec/commons-codec@1.15",
+      "type": "library",
+      "version": "1.15"
+    },
+    {
+      "bom-ref": "library:4b271934f00bb848146d81ffe8611a5d52094804b56c342587becb99bd608c45",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "530f4e0fdfeb3a0e2b3a369d15cdea38fbdc1696f8b030c35a6ad65c27524950"
+        }
+      ],
+      "name": "spring-boot-2.7.18.jar",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/spring-boot-2.7.18.jar#3"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "UNIDENTIFIED"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/LICENSE.txt\", \"sha256\": \"7200000367e0e8b47822d563a5ddd2dd3a97cc05b32bd7dbcc7b4eeb92b76628\", \"size\": 11359}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/NOTICE.txt\", \"sha256\": \"8a20910ea2dc414588cb45e904aa77315cce879ac9483dd00c42826756707330\", \"size\": 211}], \"mavenMetadata\": [], \"metadataErrors\": []}"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "library:4f35f1fc3079844a04ed35e39212a73b08d270cd77a4268464a287ef275c7427",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "1c4e0aadcb662b6149b536a2cf288003ffefe81a6cc69846e9f14976529a1b08"
+        }
+      ],
+      "name": "spring-boot-autoconfigure-2.7.18.jar",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/spring-boot-autoconfigure-2.7.18.jar#4"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "UNIDENTIFIED"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/LICENSE.txt\", \"sha256\": \"7200000367e0e8b47822d563a5ddd2dd3a97cc05b32bd7dbcc7b4eeb92b76628\", \"size\": 11359}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/NOTICE.txt\", \"sha256\": \"8a20910ea2dc414588cb45e904aa77315cce879ac9483dd00c42826756707330\", \"size\": 211}], \"mavenMetadata\": [], \"metadataErrors\": []}"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "library:720bbef9a4d51aaeecf6d44170c4c52033803e6e1fa4554fcc6d86790939c989",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "name": "http://www.eclipse.org/legal/epl-v10.html, http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"
+            }
+          }
+        ]
+      },
+      "group": "ch.qos.logback",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f65352bf627177e414c956a977a5851e7125e9f3a2e1a7847b2fa78182dc49fe"
+        }
+      ],
+      "name": "logback-classic",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/logback-classic-1.2.12.jar#5"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "DECLARED_METADATA_FILENAME_MATCH"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [{\"kind\": \"Bundle-License\", \"name\": \"http://www.eclipse.org/legal/epl-v10.html, http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html\", \"source\": \"META-INF/MANIFEST.MF\"}], \"licenseEvidence\": [], \"mavenMetadata\": [{\"coordinates\": {\"artifactId\": \"logback-classic\", \"groupId\": \"ch.qos.logback\", \"version\": \"1.2.12\"}, \"path\": \"META-INF/maven/ch.qos.logback/logback-classic/pom.xml\", \"sha256\": \"0e92f9fd466f389f67041bc93c66afba5fb09dd4dd7cacb6cdb738371e2c6f3c\"}, {\"coordinates\": {\"artifactId\": \"logback-classic\", \"groupId\": \"ch.qos.logback\", \"version\": \"1.2.12\"}, \"path\": \"META-INF/maven/ch.qos.logback/logback-classic/pom.properties\", \"sha256\": \"4b7c6a8c1736254f5a1bc6298e152dc88db3ac42b95c042e8011e4f619a11f0b\"}], \"metadataErrors\": []}"
+        }
+      ],
+      "purl": "pkg:maven/ch.qos.logback/logback-classic@1.2.12",
+      "type": "library",
+      "version": "1.2.12"
+    },
+    {
+      "bom-ref": "library:1e1f10daec58dde78214100ecceca9e04b0b60a4a1540c63e4996ced9ec8c059",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "name": "http://www.eclipse.org/legal/epl-v10.html, http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"
+            }
+          }
+        ]
+      },
+      "group": "ch.qos.logback",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0cba0755fbdc1793f60dc9d1ef22337737899f4f28b485c42bcadacb73664b34"
+        }
+      ],
+      "name": "logback-core",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/logback-core-1.2.12.jar#6"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "DECLARED_METADATA_FILENAME_MATCH"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [{\"kind\": \"Bundle-License\", \"name\": \"http://www.eclipse.org/legal/epl-v10.html, http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html\", \"source\": \"META-INF/MANIFEST.MF\"}], \"licenseEvidence\": [], \"mavenMetadata\": [{\"coordinates\": {\"artifactId\": \"logback-core\", \"groupId\": \"ch.qos.logback\", \"version\": \"1.2.12\"}, \"path\": \"META-INF/maven/ch.qos.logback/logback-core/pom.xml\", \"sha256\": \"5f6c0f8f6ca607ec263ea0a30a02a6223fef7ef0fa873e35a754fd14f38349c8\"}, {\"coordinates\": {\"artifactId\": \"logback-core\", \"groupId\": \"ch.qos.logback\", \"version\": \"1.2.12\"}, \"path\": \"META-INF/maven/ch.qos.logback/logback-core/pom.properties\", \"sha256\": \"96ac4a00946cb7d075b476b121b7fa2791e800207d0d5f95118cdd43379dce47\"}], \"metadataErrors\": []}"
+        }
+      ],
+      "purl": "pkg:maven/ch.qos.logback/logback-core@1.2.12",
+      "type": "library",
+      "version": "1.2.12"
+    },
+    {
+      "bom-ref": "library:7f6c7a0436963c519ae7834737b0b5bcb6d1fd9d55663c0df8a558cea27ab18a",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "name": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+            }
+          }
+        ]
+      },
+      "group": "org.apache.logging.log4j",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "9bcfa5273527b950d79739d11e8f8080cfc881908fa2a946b4e891c0293094de"
+        }
+      ],
+      "name": "log4j-to-slf4j",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/log4j-to-slf4j-2.17.2.jar#7"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "DECLARED_METADATA_FILENAME_MATCH"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [{\"kind\": \"Bundle-License\", \"name\": \"https://www.apache.org/licenses/LICENSE-2.0.txt\", \"source\": \"META-INF/MANIFEST.MF\"}], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/LICENSE\", \"sha256\": \"cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30\", \"size\": 11358}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/NOTICE\", \"sha256\": \"8d20c93ec67e81150437b37d19feb986f61fb26581fe4990cea855577c1da061\", \"size\": 186}], \"mavenMetadata\": [{\"coordinates\": {\"artifactId\": \"log4j-to-slf4j\", \"groupId\": \"org.apache.logging.log4j\", \"version\": \"2.17.2\"}, \"path\": \"META-INF/maven/org.apache.logging.log4j/log4j-to-slf4j/pom.xml\", \"sha256\": \"beaed694e82498c2dea2bd07a14138968c4a74d2e4c0769ee8d3cd32d57ecda9\"}, {\"coordinates\": {\"artifactId\": \"log4j-to-slf4j\", \"groupId\": \"org.apache.logging.log4j\", \"version\": \"2.17.2\"}, \"path\": \"META-INF/maven/org.apache.logging.log4j/log4j-to-slf4j/pom.properties\", \"sha256\": \"893d2d64b7e8f7c57f8a33188f20c9504b6d13c5953cfb724f929ac59503b283\"}], \"metadataErrors\": []}"
+        }
+      ],
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.17.2",
+      "type": "library",
+      "version": "2.17.2"
+    },
+    {
+      "bom-ref": "library:bc28a9fe7b5396192518e0f14ef80f228b8b2931f39f5b00e1a2bef62b42eeb6",
+      "group": "org.slf4j",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "9e641fb142c5f0b0623d6222c09ea87523a41bf6bed48ac79940724010b989de"
+        }
+      ],
+      "name": "jul-to-slf4j",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/jul-to-slf4j-1.7.36.jar#8"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "DECLARED_METADATA_FILENAME_MATCH"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [], \"licenseEvidence\": [], \"mavenMetadata\": [{\"coordinates\": {\"artifactId\": \"jul-to-slf4j\", \"groupId\": \"org.slf4j\", \"version\": \"1.7.36\"}, \"path\": \"META-INF/maven/org.slf4j/jul-to-slf4j/pom.xml\", \"sha256\": \"99ff5340c4642a30829d3d98253f123e7a3ef573483164477c88d89d7e6586b7\"}, {\"coordinates\": {\"artifactId\": \"jul-to-slf4j\", \"groupId\": \"org.slf4j\", \"version\": \"1.7.36\"}, \"path\": \"META-INF/maven/org.slf4j/jul-to-slf4j/pom.properties\", \"sha256\": \"6574a28d711bc13d28d00644813daf2396ff21333671d9f164c2c57cdefc5edc\"}], \"metadataErrors\": []}"
+        }
+      ],
+      "purl": "pkg:maven/org.slf4j/jul-to-slf4j@1.7.36",
+      "type": "library",
+      "version": "1.7.36"
+    },
+    {
+      "bom-ref": "library:a66ade875c2d99946ac78b33b216c6d3197c966b2fa218ba0c46f27b28df79f6",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "name": "EPL 2.0"
+            }
+          },
+          {
+            "license": {
+              "name": "GPL2 w/ CPE"
+            }
+          },
+          {
+            "license": {
+              "name": "http://www.eclipse.org/legal/epl-2.0, https://www.gnu.org/software/classpath/license.html"
+            }
+          }
+        ]
+      },
+      "group": "jakarta.annotation",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "85fb03fc054cdf4efca8efd9b6712bbb418e1ab98241c4539c8585bbc23e1b8a"
+        }
+      ],
+      "name": "jakarta.annotation-api",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/jakarta.annotation-api-1.3.5.jar#9"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "DECLARED_METADATA_FILENAME_MATCH"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [{\"kind\": \"Bundle-License\", \"name\": \"http://www.eclipse.org/legal/epl-2.0, https://www.gnu.org/software/classpath/license.html\", \"source\": \"META-INF/MANIFEST.MF\"}, {\"distribution\": \"repo\", \"name\": \"EPL 2.0\", \"source\": \"META-INF/maven/jakarta.annotation/jakarta.annotation-api/pom.xml\", \"url\": \"http://www.eclipse.org/legal/epl-2.0\"}, {\"distribution\": \"repo\", \"name\": \"GPL2 w/ CPE\", \"source\": \"META-INF/maven/jakarta.annotation/jakarta.annotation-api/pom.xml\", \"url\": \"https://www.gnu.org/software/classpath/license.html\"}], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/LICENSE.md\", \"sha256\": \"6e1f002892b81cbe0647019b150c8a056efc1add565671a4f8af629b6cd2cc7b\", \"size\": 35084}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/NOTICE.md\", \"sha256\": \"3852834ebb4c2e04ecc18c9d099a05eab72cbd6edf35fb191390be6306019b4c\", \"size\": 1452}], \"mavenMetadata\": [{\"coordinates\": {\"artifactId\": \"jakarta.annotation-api\", \"groupId\": \"jakarta.annotation\", \"version\": \"1.3.5\"}, \"path\": \"META-INF/maven/jakarta.annotation/jakarta.annotation-api/pom.properties\", \"sha256\": \"a86e0e2c073e85deb06f7e9b2ba01220d7a82e2b6b64fce109b2d21d4eaa84e5\"}, {\"coordinates\": {\"artifactId\": \"jakarta.annotation-api\", \"groupId\": \"jakarta.annotation\", \"version\": \"1.3.5\"}, \"path\": \"META-INF/maven/jakarta.annotation/jakarta.annotation-api/pom.xml\", \"sha256\": \"ba6874767f5415c5e0f644fab80e1bad5feab6d18150f22638067681866feaaf\"}], \"metadataErrors\": []}"
+        }
+      ],
+      "purl": "pkg:maven/jakarta.annotation/jakarta.annotation-api@1.3.5",
+      "type": "library",
+      "version": "1.3.5"
+    },
+    {
+      "bom-ref": "library:59d5e6142d89b902cade15f0eba79e70626581817bc8f81507b5957eac808190",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "name": "Apache License, Version 2.0"
+            }
+          },
+          {
+            "license": {
+              "name": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+            }
+          }
+        ]
+      },
+      "group": "org.yaml",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f43a4e40a946b8cdfd0321bc1c9a839bc3f119c57e4ca84fb87c367f51c8b2b3"
+        }
+      ],
+      "name": "snakeyaml",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/snakeyaml-1.30.jar#10"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "DECLARED_METADATA_FILENAME_MATCH"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [{\"kind\": \"Bundle-License\", \"name\": \"http://www.apache.org/licenses/LICENSE-2.0.txt\", \"source\": \"META-INF/MANIFEST.MF\"}, {\"distribution\": \"repo\", \"name\": \"Apache License, Version 2.0\", \"source\": \"META-INF/maven/org.yaml/snakeyaml/pom.xml\", \"url\": \"http://www.apache.org/licenses/LICENSE-2.0.txt\"}], \"licenseEvidence\": [], \"mavenMetadata\": [{\"coordinates\": {\"artifactId\": \"snakeyaml\", \"groupId\": \"org.yaml\", \"version\": \"1.30\"}, \"path\": \"META-INF/maven/org.yaml/snakeyaml/pom.properties\", \"sha256\": \"eb307339f94d31da168fda42add79d6eea20acbf1cf002f1bb2c9e1182603d06\"}, {\"coordinates\": {\"artifactId\": \"snakeyaml\", \"groupId\": \"org.yaml\", \"version\": \"1.30\"}, \"path\": \"META-INF/maven/org.yaml/snakeyaml/pom.xml\", \"sha256\": \"d3e5fdff90ec58d37fd2b696230f3456f0d8f8e1d5e9ee911b19e6904ae0ebfe\"}], \"metadataErrors\": []}"
+        }
+      ],
+      "purl": "pkg:maven/org.yaml/snakeyaml@1.30",
+      "type": "library",
+      "version": "1.30"
+    },
+    {
+      "bom-ref": "library:eea964dfc2fb1615d8e7af98d7c88f044b3bc3bad12a1e46da629c57c17a27f0",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "name": "The Apache Software License, Version 2.0"
+            }
+          },
+          {
+            "license": {
+              "name": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+            }
+          }
+        ]
+      },
+      "group": "com.fasterxml.jackson.core",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "5fedb24b2356491815d18267f65da9a21dd67413345ad7795f221afa25c78984"
+        }
+      ],
+      "name": "jackson-databind",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/jackson-databind-2.13.5.jar#11"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "DECLARED_METADATA_FILENAME_MATCH"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [{\"kind\": \"Bundle-License\", \"name\": \"http://www.apache.org/licenses/LICENSE-2.0.txt\", \"source\": \"META-INF/MANIFEST.MF\"}, {\"distribution\": \"repo\", \"name\": \"The Apache Software License, Version 2.0\", \"source\": \"META-INF/maven/com.fasterxml.jackson.core/jackson-databind/pom.xml\", \"url\": \"http://www.apache.org/licenses/LICENSE-2.0.txt\"}], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/LICENSE\", \"sha256\": \"cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30\", \"size\": 11358}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/NOTICE\", \"sha256\": \"e1e98bd0b4c0b313defed877c4e438fd57dfa26eecfd9ea7b7634a5ffa85ff19\", \"size\": 667}], \"mavenMetadata\": [{\"coordinates\": {\"artifactId\": \"jackson-databind\", \"groupId\": \"com.fasterxml.jackson.core\", \"version\": \"2.13.5\"}, \"path\": \"META-INF/maven/com.fasterxml.jackson.core/jackson-databind/pom.properties\", \"sha256\": \"f6c87d7f1f3ea060d27c3bc2b11c2de1588436973704e1403f3e41d78d047bd1\"}, {\"coordinates\": {\"artifactId\": \"jackson-databind\", \"groupId\": \"com.fasterxml.jackson.core\", \"version\": \"2.13.5\"}, \"path\": \"META-INF/maven/com.fasterxml.jackson.core/jackson-databind/pom.xml\", \"sha256\": \"ae1a04d57790eaeb062a1fa22063ab68cec90a030b73de2d89ab0521f24656be\"}], \"metadataErrors\": []}"
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.13.5",
+      "type": "library",
+      "version": "2.13.5"
+    },
+    {
+      "bom-ref": "library:f814cc662ba924c69bd97dd8e6fc2ccc9ee782c5351d75bd536adfed7c32877b",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "name": "The Apache Software License, Version 2.0"
+            }
+          },
+          {
+            "license": {
+              "name": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+            }
+          }
+        ]
+      },
+      "group": "com.fasterxml.jackson.core",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "80aea8ed7232db5040ced4b3f982f29da95bb3d802343dbf6fd82ccd98c21c4f"
+        }
+      ],
+      "name": "jackson-annotations",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/jackson-annotations-2.13.5.jar#12"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "DECLARED_METADATA_FILENAME_MATCH"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [{\"kind\": \"Bundle-License\", \"name\": \"http://www.apache.org/licenses/LICENSE-2.0.txt\", \"source\": \"META-INF/MANIFEST.MF\"}, {\"distribution\": \"repo\", \"name\": \"The Apache Software License, Version 2.0\", \"source\": \"META-INF/maven/com.fasterxml.jackson.core/jackson-annotations/pom.xml\", \"url\": \"http://www.apache.org/licenses/LICENSE-2.0.txt\"}], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/LICENSE\", \"sha256\": \"cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30\", \"size\": 11358}], \"mavenMetadata\": [{\"coordinates\": {\"artifactId\": \"jackson-annotations\", \"groupId\": \"com.fasterxml.jackson.core\", \"version\": \"2.13.5\"}, \"path\": \"META-INF/maven/com.fasterxml.jackson.core/jackson-annotations/pom.properties\", \"sha256\": \"637611a83a978462cdce50c5d00317d69bba0a5ccdbb220487fc01f4ce78e864\"}, {\"coordinates\": {\"artifactId\": \"jackson-annotations\", \"groupId\": \"com.fasterxml.jackson.core\", \"version\": \"2.13.5\"}, \"path\": \"META-INF/maven/com.fasterxml.jackson.core/jackson-annotations/pom.xml\", \"sha256\": \"46d56b77e4547fa47d22ae44bc95e0c30efa2855b9eaab19f5349fbfe4c064ca\"}], \"metadataErrors\": []}"
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.13.5",
+      "type": "library",
+      "version": "2.13.5"
+    },
+    {
+      "bom-ref": "library:8a9c4921bd3b8fd77c06bc3b3f9e557f524b9372f05ff8d928e9f88e87e16abc",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "name": "The Apache Software License, Version 2.0"
+            }
+          },
+          {
+            "license": {
+              "name": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+            }
+          }
+        ]
+      },
+      "group": "com.fasterxml.jackson.core",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "48f36a025311d0464ad8dda4512a20c79e279a9550f63f3179d731d94482474b"
+        }
+      ],
+      "name": "jackson-core",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/jackson-core-2.13.5.jar#13"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "DECLARED_METADATA_FILENAME_MATCH"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [{\"kind\": \"Bundle-License\", \"name\": \"http://www.apache.org/licenses/LICENSE-2.0.txt\", \"source\": \"META-INF/MANIFEST.MF\"}, {\"distribution\": \"repo\", \"name\": \"The Apache Software License, Version 2.0\", \"source\": \"META-INF/maven/com.fasterxml.jackson.core/jackson-core/pom.xml\", \"url\": \"http://www.apache.org/licenses/LICENSE-2.0.txt\"}], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/LICENSE\", \"sha256\": \"cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30\", \"size\": 11358}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/NOTICE\", \"sha256\": \"e1e98bd0b4c0b313defed877c4e438fd57dfa26eecfd9ea7b7634a5ffa85ff19\", \"size\": 667}], \"mavenMetadata\": [{\"coordinates\": {\"artifactId\": \"jackson-core\", \"groupId\": \"com.fasterxml.jackson.core\", \"version\": \"2.13.5\"}, \"path\": \"META-INF/maven/com.fasterxml.jackson.core/jackson-core/pom.properties\", \"sha256\": \"c535b2fbb20459ed201b95684d82e20b0fee0e07e47ac916f372ad9c5ea89f75\"}, {\"coordinates\": {\"artifactId\": \"jackson-core\", \"groupId\": \"com.fasterxml.jackson.core\", \"version\": \"2.13.5\"}, \"path\": \"META-INF/maven/com.fasterxml.jackson.core/jackson-core/pom.xml\", \"sha256\": \"ad91ab6025eb48ae3262280c42efebb57b70d25c00ab0a69c5a3c7ca3a8078ee\"}], \"metadataErrors\": []}"
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.13.5",
+      "type": "library",
+      "version": "2.13.5"
+    },
+    {
+      "bom-ref": "library:f80a21657c57f10590717593b6ee14fd6bc1d3ac783f0fe8cd07d3f94e33ff0b",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "name": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+            }
+          }
+        ]
+      },
+      "group": "com.fasterxml.jackson.datatype",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "e58761751fea8a00dc626aae1c5f1be38c5cfd487aeb333d933a4ab5f5a73c55"
+        }
+      ],
+      "name": "jackson-datatype-jdk8",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/jackson-datatype-jdk8-2.13.5.jar#14"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "DECLARED_METADATA_FILENAME_MATCH"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [{\"kind\": \"Bundle-License\", \"name\": \"http://www.apache.org/licenses/LICENSE-2.0.txt\", \"source\": \"META-INF/MANIFEST.MF\"}], \"licenseEvidence\": [], \"mavenMetadata\": [{\"coordinates\": {\"artifactId\": \"jackson-datatype-jdk8\", \"groupId\": \"com.fasterxml.jackson.datatype\", \"version\": \"2.13.5\"}, \"path\": \"META-INF/maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/pom.properties\", \"sha256\": \"194f07db4ef045f73e5a5d00898630460f4be1101b62a985ac6cb53ae7a93858\"}, {\"coordinates\": {\"artifactId\": \"jackson-datatype-jdk8\", \"groupId\": \"com.fasterxml.jackson.datatype\", \"version\": \"2.13.5\"}, \"path\": \"META-INF/maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/pom.xml\", \"sha256\": \"1560cc26b8c102346beacfe499efa2e188cced767ee135ef17b27aa0de40c03b\"}], \"metadataErrors\": []}"
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.13.5",
+      "type": "library",
+      "version": "2.13.5"
+    },
+    {
+      "bom-ref": "library:d6dfd7c2b3a9faf4a8f38a38300c01b0d5fa08d9a78cc795b0cbd9c25748d844",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "name": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+            }
+          }
+        ]
+      },
+      "group": "com.fasterxml.jackson.datatype",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ef15ceddddc58dfbd686b6b7fd0853ed328ff08c628bd4a395734bec20ca857b"
+        }
+      ],
+      "name": "jackson-datatype-jsr310",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/jackson-datatype-jsr310-2.13.5.jar#15"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "DECLARED_METADATA_FILENAME_MATCH"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [{\"kind\": \"Bundle-License\", \"name\": \"http://www.apache.org/licenses/LICENSE-2.0.txt\", \"source\": \"META-INF/MANIFEST.MF\"}], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/LICENSE\", \"sha256\": \"ad819feaca26ebefb84db3be5de18acdb20b3b41d5652aadee0c7c150fa32d89\", \"size\": 332}], \"mavenMetadata\": [{\"coordinates\": {\"artifactId\": \"jackson-datatype-jsr310\", \"groupId\": \"com.fasterxml.jackson.datatype\", \"version\": \"2.13.5\"}, \"path\": \"META-INF/maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/pom.properties\", \"sha256\": \"f8a101ed6e1fa3bc2baa40c28a16761bf7a3c0336e89ef99e62f0f280f843ea5\"}, {\"coordinates\": {\"artifactId\": \"jackson-datatype-jsr310\", \"groupId\": \"com.fasterxml.jackson.datatype\", \"version\": \"2.13.5\"}, \"path\": \"META-INF/maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/pom.xml\", \"sha256\": \"9e20622248dd52767ff6f77867905d7e65523443e6e002e6b80bc39a8547139e\"}], \"metadataErrors\": []}"
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.13.5",
+      "type": "library",
+      "version": "2.13.5"
+    },
+    {
+      "bom-ref": "library:7dec081fd9d68e61e388c5846125b1e67f8dbbab410a0fe9b78f4983119c2c63",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "name": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+            }
+          }
+        ]
+      },
+      "group": "com.fasterxml.jackson.module",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "e5fcf17369885065ddec9a9cebead8597c55de252dedf10a3c14eeed8affaca4"
+        }
+      ],
+      "name": "jackson-module-parameter-names",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/jackson-module-parameter-names-2.13.5.jar#16"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "DECLARED_METADATA_FILENAME_MATCH"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [{\"kind\": \"Bundle-License\", \"name\": \"http://www.apache.org/licenses/LICENSE-2.0.txt\", \"source\": \"META-INF/MANIFEST.MF\"}], \"licenseEvidence\": [], \"mavenMetadata\": [{\"coordinates\": {\"artifactId\": \"jackson-module-parameter-names\", \"groupId\": \"com.fasterxml.jackson.module\", \"version\": \"2.13.5\"}, \"path\": \"META-INF/maven/com.fasterxml.jackson.module/jackson-module-parameter-names/pom.properties\", \"sha256\": \"10a29d9d8a74f42bf12b7232273eed70725ad4eb844a7395e1d6097905665dd0\"}, {\"coordinates\": {\"artifactId\": \"jackson-module-parameter-names\", \"groupId\": \"com.fasterxml.jackson.module\", \"version\": \"2.13.5\"}, \"path\": \"META-INF/maven/com.fasterxml.jackson.module/jackson-module-parameter-names/pom.xml\", \"sha256\": \"70496ba59ca0f2d93a677a7311f8bf42afb0725eacbdfa424ff9ec81ac251d06\"}], \"metadataErrors\": []}"
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.13.5",
+      "type": "library",
+      "version": "2.13.5"
+    },
+    {
+      "bom-ref": "library:626ba32752ae1e1436ea4f3e1f34df6cccd235a2db3b9a566084d6ba66cfe8a6",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "name": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+            }
+          }
+        ]
+      },
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4ed404d5dea8652846f3c52c094764c2ec018f28a3561f1d27df700f7aa5b376"
+        }
+      ],
+      "name": "tomcat-embed-core-9.0.83.jar",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/tomcat-embed-core-9.0.83.jar#17"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "UNIDENTIFIED"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [{\"kind\": \"Bundle-License\", \"name\": \"https://www.apache.org/licenses/LICENSE-2.0.txt\", \"source\": \"META-INF/MANIFEST.MF\"}], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/LICENSE\", \"sha256\": \"eba97ee38af4094c4b4ef99f2e4451e325a364c14c8f95d486bb30bfc17df9c7\", \"size\": 30703}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/NOTICE\", \"sha256\": \"a83f393cae0fdf6f385b51904623fe675392f7250737cd2fb2bbcf4245cbcbc1\", \"size\": 821}], \"mavenMetadata\": [], \"metadataErrors\": []}"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "library:4dee70377dc992210600050712467bed5716d90a22726a691402424b2b89c32a",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "name": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+            }
+          }
+        ]
+      },
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a82c4cf8cf9e88d6891cbb4cbcb9f85f788e147c464cbeba15a2c83276f3344c"
+        }
+      ],
+      "name": "tomcat-embed-el-9.0.83.jar",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/tomcat-embed-el-9.0.83.jar#18"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "UNIDENTIFIED"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [{\"kind\": \"Bundle-License\", \"name\": \"https://www.apache.org/licenses/LICENSE-2.0.txt\", \"source\": \"META-INF/MANIFEST.MF\"}], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/LICENSE\", \"sha256\": \"cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30\", \"size\": 11358}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/NOTICE\", \"sha256\": \"1761ec6837bea537b597eb490781f1912b0a7dafb190f833d57f2fefada9ab64\", \"size\": 167}], \"mavenMetadata\": [], \"metadataErrors\": []}"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "library:74794e2d4fd8fd5cafe4828bb3192e20d921ca4813e62da5e0b0fdf45e0f4c95",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "name": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+            }
+          }
+        ]
+      },
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b78130b05960761992787edf2cb4c0af18d1fe52b35119ad63712af137d7eb3e"
+        }
+      ],
+      "name": "tomcat-embed-websocket-9.0.83.jar",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/tomcat-embed-websocket-9.0.83.jar#19"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "UNIDENTIFIED"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [{\"kind\": \"Bundle-License\", \"name\": \"https://www.apache.org/licenses/LICENSE-2.0.txt\", \"source\": \"META-INF/MANIFEST.MF\"}], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/LICENSE\", \"sha256\": \"cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30\", \"size\": 11358}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/NOTICE\", \"sha256\": \"1761ec6837bea537b597eb490781f1912b0a7dafb190f833d57f2fefada9ab64\", \"size\": 167}], \"mavenMetadata\": [], \"metadataErrors\": []}"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "library:30146e2094a5e657be0766b98e1924e2feec6243cb0574bd01373c6a1b603e54",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "7b7b4db19acc8c0cdb0dea93a3aa4b1b706db4bcc7b77f677a0c56e86d379ac7"
+        }
+      ],
+      "name": "spring-web-5.3.31.jar",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/spring-web-5.3.31.jar#20"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "UNIDENTIFIED"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/license.txt\", \"sha256\": \"87b5245fe3ccebecf5d3b4c2fbbdbe717783ca6707f2095f17f7e58be98f2918\", \"size\": 15391}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/notice.txt\", \"sha256\": \"fe874fe2708027b23b2b2fd67018528c664a665f3aee1a4277d7e5d82631ccba\", \"size\": 477}], \"mavenMetadata\": [], \"metadataErrors\": []}"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "library:68da7a73f6d153a7be579c9d4cd44542ee1ba7561d056c54ab94eae1a50852d0",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a8d6d99003d0a28049cba4273afbcfc64e1107ee3c33f67935853e9711544aa7"
+        }
+      ],
+      "name": "spring-beans-5.3.31.jar",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/spring-beans-5.3.31.jar#21"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "UNIDENTIFIED"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/license.txt\", \"sha256\": \"87b5245fe3ccebecf5d3b4c2fbbdbe717783ca6707f2095f17f7e58be98f2918\", \"size\": 15391}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/notice.txt\", \"sha256\": \"fe874fe2708027b23b2b2fd67018528c664a665f3aee1a4277d7e5d82631ccba\", \"size\": 477}], \"mavenMetadata\": [], \"metadataErrors\": []}"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "library:bdf814ec93283145bde01df510008e2b651a489b18d722fb5100417a125e5173",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "29c1b96c424dcb637fec2d1e6493b088d977e748a56da7f34e6a7c3c39d18c74"
+        }
+      ],
+      "name": "spring-webmvc-5.3.31.jar",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/spring-webmvc-5.3.31.jar#22"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "UNIDENTIFIED"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/license.txt\", \"sha256\": \"87b5245fe3ccebecf5d3b4c2fbbdbe717783ca6707f2095f17f7e58be98f2918\", \"size\": 15391}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/notice.txt\", \"sha256\": \"fe874fe2708027b23b2b2fd67018528c664a665f3aee1a4277d7e5d82631ccba\", \"size\": 477}], \"mavenMetadata\": [], \"metadataErrors\": []}"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "library:aa05b0c54ab600c6407a72def6ae517e5f4e6ae574395b1a8930a42bd12d97b1",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3f0c666f317abaa845fc3a24fba219b1f469716bf309cccd755eecb8fee20430"
+        }
+      ],
+      "name": "spring-aop-5.3.31.jar",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/spring-aop-5.3.31.jar#23"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "UNIDENTIFIED"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/license.txt\", \"sha256\": \"87b5245fe3ccebecf5d3b4c2fbbdbe717783ca6707f2095f17f7e58be98f2918\", \"size\": 15391}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/notice.txt\", \"sha256\": \"fe874fe2708027b23b2b2fd67018528c664a665f3aee1a4277d7e5d82631ccba\", \"size\": 477}], \"mavenMetadata\": [], \"metadataErrors\": []}"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "library:a058a596985f8be666895564d5e9c64ed4d08b93def1454c0195ac415aebda2b",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "38def055d1e22b5514b1cb19cef4474e5c1b0d2127c483e7d014bde87c4a4cf3"
+        }
+      ],
+      "name": "spring-context-5.3.31.jar",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/spring-context-5.3.31.jar#24"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "UNIDENTIFIED"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/license.txt\", \"sha256\": \"87b5245fe3ccebecf5d3b4c2fbbdbe717783ca6707f2095f17f7e58be98f2918\", \"size\": 15391}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/notice.txt\", \"sha256\": \"fe874fe2708027b23b2b2fd67018528c664a665f3aee1a4277d7e5d82631ccba\", \"size\": 477}], \"mavenMetadata\": [], \"metadataErrors\": []}"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "library:2a837f72c4cea4c774a4ea963d2c6ffa23b581ff3f014bccea2f40253f214f36",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "e027f122b8a4e3030339068220bed02d1c9d397eb5897f1e33ba2f63b22591ac"
+        }
+      ],
+      "name": "spring-expression-5.3.31.jar",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/spring-expression-5.3.31.jar#25"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "UNIDENTIFIED"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/license.txt\", \"sha256\": \"87b5245fe3ccebecf5d3b4c2fbbdbe717783ca6707f2095f17f7e58be98f2918\", \"size\": 15391}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/notice.txt\", \"sha256\": \"fe874fe2708027b23b2b2fd67018528c664a665f3aee1a4277d7e5d82631ccba\", \"size\": 477}], \"mavenMetadata\": [], \"metadataErrors\": []}"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "library:02203492372fef5437514795cadcd2e97c48954b1bdb70cde0723f1c25a10b71",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "name": "Apache License, Version 2.0; see: http://www.apache.org/licenses/LICENSE-2.0.txt"
+            }
+          }
+        ]
+      },
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "9a9fb91cd64199232eb1ca9766148a5d30ef8944be5fac051018f96c70c8f6a3"
+        }
+      ],
+      "name": "freemarker-2.3.34.jar",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/freemarker-2.3.34.jar#26"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "UNIDENTIFIED"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [{\"kind\": \"Bundle-License\", \"name\": \"Apache License, Version 2.0; see: http://www.apache.org/licenses/LICENSE-2.0.txt\", \"source\": \"META-INF/MANIFEST.MF\"}], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/LICENSE\", \"sha256\": \"3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5\", \"size\": 11560}], \"mavenMetadata\": [], \"metadataErrors\": []}"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "library:1945cc19e34d6db8a69bd14b1417d8d0a6865a4d7a003e6337f59b8e8d5702fa",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "fd200c9e6f74d704160a97e9d52041995ed87439454530001edd920688f19f53"
+        }
+      ],
+      "name": "poi-ooxml-5.4.1.jar",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/poi-ooxml-5.4.1.jar#27"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "UNIDENTIFIED"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/LICENSE\", \"sha256\": \"6e7c918e5a49f677c1b85a9eb2d035cd85c217fc42af6b4a336964a434001a9c\", \"size\": 14416}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/NOTICE\", \"sha256\": \"8e41ec916a59981a28397e2b46d7fb851eea02f7d179d75f030eb248916a4a09\", \"size\": 1571}], \"mavenMetadata\": [], \"metadataErrors\": []}"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "library:b17c43fb436abe2897c8189a747d2d153d2d6a591c1abf441141080a473d6c9b",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "da5abf42da4604c5a7bca38956af6e9d6f196d9b6d4cb7eabee4f480b580d505"
+        }
+      ],
+      "name": "poi-5.4.1.jar",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/poi-5.4.1.jar#28"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "UNIDENTIFIED"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/LICENSE\", \"sha256\": \"6e7c918e5a49f677c1b85a9eb2d035cd85c217fc42af6b4a336964a434001a9c\", \"size\": 14416}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/NOTICE\", \"sha256\": \"8e41ec916a59981a28397e2b46d7fb851eea02f7d179d75f030eb248916a4a09\", \"size\": 1571}], \"mavenMetadata\": [], \"metadataErrors\": []}"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "library:38c80a7fadb640e6e5be7023f66cf2a6df2c43ebd38fc10ea609ff031e807cae",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "name": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+            }
+          }
+        ]
+      },
+      "group": "org.apache.commons",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "1e56d7b058d28b65abd256b8458e3885b674c1d588fa43cd7d1cbb9c7ef2b308"
+        }
+      ],
+      "name": "commons-math3",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/commons-math3-3.6.1.jar#29"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "DECLARED_METADATA_FILENAME_MATCH"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [{\"kind\": \"Bundle-License\", \"name\": \"http://www.apache.org/licenses/LICENSE-2.0.txt\", \"source\": \"META-INF/MANIFEST.MF\"}], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/LICENSE.txt\", \"sha256\": \"64f23963615950bad9ddd31569a7f09afbbe11b81d94873ffd9b1cac6081a11d\", \"size\": 24038}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/NOTICE.txt\", \"sha256\": \"5495442a32bfc2b93b4a8f2c34c5c218d16cca434aa5684fb953d9419120e3fa\", \"size\": 324}], \"mavenMetadata\": [{\"coordinates\": {\"artifactId\": \"commons-math3\", \"groupId\": \"org.apache.commons\", \"version\": \"3.6.1\"}, \"path\": \"META-INF/maven/org.apache.commons/commons-math3/pom.xml\", \"sha256\": \"fad72336ea7d7dd06da103144e3740db508fa4b17d9c54d7847737edc24a7e60\"}, {\"coordinates\": {\"artifactId\": \"commons-math3\", \"groupId\": \"org.apache.commons\", \"version\": \"3.6.1\"}, \"path\": \"META-INF/maven/org.apache.commons/commons-math3/pom.properties\", \"sha256\": \"e7f17eb29d693f4fd8f2608708cf99b160640afd6e307b13a817db6a3fa82cd3\"}], \"metadataErrors\": []}"
+        }
+      ],
+      "purl": "pkg:maven/org.apache.commons/commons-math3@3.6.1",
+      "type": "library",
+      "version": "3.6.1"
+    },
+    {
+      "bom-ref": "library:eb01330ab28f675df1081a61e8e2ee51e86b4a6a00e1cc109a16b3275901a491",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "name": "The Apache Software License, Version 2.0"
+            }
+          }
+        ]
+      },
+      "group": "com.zaxxer",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f76b85adb0c00721ae267b7cfde4da7f71d3121cc2160c9fc00c0c89f8c53c8a"
+        }
+      ],
+      "name": "SparseBitSet",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/SparseBitSet-1.3.jar#30"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "DECLARED_METADATA_FILENAME_MATCH"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [{\"distribution\": \"repo\", \"name\": \"The Apache Software License, Version 2.0\", \"source\": \"META-INF/maven/com.zaxxer/SparseBitSet/pom.xml\", \"url\": \"http://www.apache.org/licenses/LICENSE-2.0.txt\"}], \"licenseEvidence\": [], \"mavenMetadata\": [{\"coordinates\": {\"artifactId\": \"SparseBitSet\", \"groupId\": \"com.zaxxer\", \"version\": \"1.3\"}, \"path\": \"META-INF/maven/com.zaxxer/SparseBitSet/pom.xml\", \"sha256\": \"118d67e345329a18dff4ebd1557f95f0c0ab4b4cb9d678749d666f9230001768\"}, {\"coordinates\": {\"artifactId\": \"SparseBitSet\", \"groupId\": \"com.zaxxer\", \"version\": \"1.3\"}, \"path\": \"META-INF/maven/com.zaxxer/SparseBitSet/pom.properties\", \"sha256\": \"87418f8a7f4bc9f0f33479fc725630911664eb57ff408134fd94c89c52630bb2\"}], \"metadataErrors\": []}"
+        }
+      ],
+      "purl": "pkg:maven/com.zaxxer/SparseBitSet@1.3",
+      "type": "library",
+      "version": "1.3"
+    },
+    {
+      "bom-ref": "library:93ac3efb4642dff5ff2f0308b2793b7c4bf170b3ef17ab8fed681ffacb4d5d3e",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "dc590461efdfcd4f27e2a892737979ab5e30b4132a7adfc7c9e56447b71a45b0"
+        }
+      ],
+      "name": "poi-ooxml-lite-5.4.1.jar",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/poi-ooxml-lite-5.4.1.jar#31"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "UNIDENTIFIED"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/LICENSE\", \"sha256\": \"6e7c918e5a49f677c1b85a9eb2d035cd85c217fc42af6b4a336964a434001a9c\", \"size\": 14416}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/NOTICE\", \"sha256\": \"8e41ec916a59981a28397e2b46d7fb851eea02f7d179d75f030eb248916a4a09\", \"size\": 1571}], \"mavenMetadata\": [], \"metadataErrors\": []}"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "library:244344592522b73d98ce93128f17619c70d6d81bff89bab7a5be2eb65a236d26",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "name": "The Apache Software License, Version 2.0"
+            }
+          }
+        ]
+      },
+      "group": "org.apache.xmlbeans",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "6cc69da3b4d35b83c5e477cd4daba204e44109833e34af2b9a8a2c8788289917"
+        }
+      ],
+      "name": "xmlbeans",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/xmlbeans-5.3.0.jar#32"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "DECLARED_METADATA_FILENAME_MATCH"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [{\"distribution\": \"repo\", \"name\": \"The Apache Software License, Version 2.0\", \"source\": \"META-INF/maven/org.apache.xmlbeans/xmlbeans/pom.xml\", \"url\": \"https://www.apache.org/licenses/LICENSE-2.0.txt\"}], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/LICENSE.txt\", \"sha256\": \"85e8c4e923b3a90af6abcd3979b5edf53a49a3870371c7be20f9eec465af89d4\", \"size\": 15242}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/NOTICE.txt\", \"sha256\": \"8c9e43041b8313ef1cc50c814624c9a6ab6f5140c08edfffdb403447763ee959\", \"size\": 1592}], \"mavenMetadata\": [{\"coordinates\": {\"artifactId\": \"xmlbeans\", \"groupId\": \"org.apache.xmlbeans\", \"version\": \"5.3.0\"}, \"path\": \"META-INF/maven/org.apache.xmlbeans/xmlbeans/pom.xml\", \"sha256\": \"906d19d82b65365148c464f0df39cdc3391e279fe460f059008ba4ce87c90f57\"}], \"metadataErrors\": []}"
+        }
+      ],
+      "purl": "pkg:maven/org.apache.xmlbeans/xmlbeans@5.3.0",
+      "type": "library",
+      "version": "5.3.0"
+    },
+    {
+      "bom-ref": "library:775a1a6f128d92bb4029e9b2227e5e7caa13934d2202e6916ab655bc6a7db4a1",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "name": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+            }
+          }
+        ]
+      },
+      "group": "org.apache.commons",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "293d80f54b536b74095dcd7ea3cf0a29bbfc3402519281332495f4420d370d16"
+        }
+      ],
+      "name": "commons-compress",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/commons-compress-1.27.1.jar#33"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "DECLARED_METADATA_FILENAME_MATCH"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [{\"kind\": \"Bundle-License\", \"name\": \"https://www.apache.org/licenses/LICENSE-2.0.txt\", \"source\": \"META-INF/MANIFEST.MF\"}], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/LICENSE.txt\", \"sha256\": \"c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4\", \"size\": 11357}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/NOTICE.txt\", \"sha256\": \"28a309fd415da6e802ecf85061a451f7ac4353f3610f2982f7af29e9d1529289\", \"size\": 178}], \"mavenMetadata\": [{\"coordinates\": {\"artifactId\": \"commons-compress\", \"groupId\": \"org.apache.commons\", \"version\": \"1.27.1\"}, \"path\": \"META-INF/maven/org.apache.commons/commons-compress/pom.xml\", \"sha256\": \"df8cc1a8387d4ce842363b7209fdc6d35df9763839fd3fcab558a0f83f9d841c\"}, {\"coordinates\": {\"artifactId\": \"commons-compress\", \"groupId\": \"org.apache.commons\", \"version\": \"1.27.1\"}, \"path\": \"META-INF/maven/org.apache.commons/commons-compress/pom.properties\", \"sha256\": \"1d302783761f8da9eeda13e9d25c16fd385cf14d396fc1a6fc0f8b52d1addaea\"}], \"metadataErrors\": []}"
+        }
+      ],
+      "purl": "pkg:maven/org.apache.commons/commons-compress@1.27.1",
+      "type": "library",
+      "version": "1.27.1"
+    },
+    {
+      "bom-ref": "library:36dff2bc8a64c3b11e3b997db23efd6180e5a3d28f5c6fddf741971dc14c7de4",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "name": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+            }
+          }
+        ]
+      },
+      "group": "org.apache.commons",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d919d904486c037f8d193412da0c92e22a9fa24230b9d67a57855c5c31c7e94e"
+        }
+      ],
+      "name": "commons-lang3",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/commons-lang3-3.12.0.jar#34"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "DECLARED_METADATA_FILENAME_MATCH"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [{\"kind\": \"Bundle-License\", \"name\": \"https://www.apache.org/licenses/LICENSE-2.0.txt\", \"source\": \"META-INF/MANIFEST.MF\"}], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/LICENSE.txt\", \"sha256\": \"cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30\", \"size\": 11358}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/NOTICE.txt\", \"sha256\": \"ee00a9534f25e735b92676cff420aa33d3ea196c8642ec93daa264225f3457df\", \"size\": 174}], \"mavenMetadata\": [{\"coordinates\": {\"artifactId\": \"commons-lang3\", \"groupId\": \"org.apache.commons\", \"version\": \"3.12.0\"}, \"path\": \"META-INF/maven/org.apache.commons/commons-lang3/pom.xml\", \"sha256\": \"82d31f1dcc4583effd744e979165b16da64bf86bca623fc5d1b03ed94f45c85a\"}, {\"coordinates\": {\"artifactId\": \"commons-lang3\", \"groupId\": \"org.apache.commons\", \"version\": \"3.12.0\"}, \"path\": \"META-INF/maven/org.apache.commons/commons-lang3/pom.properties\", \"sha256\": \"527fd050b3656a879a760decd2eaa304f6b511cc2a5cd5c24359416cbc06df25\"}], \"metadataErrors\": []}"
+        }
+      ],
+      "purl": "pkg:maven/org.apache.commons/commons-lang3@3.12.0",
+      "type": "library",
+      "version": "3.12.0"
+    },
+    {
+      "bom-ref": "library:e3ddfa73cdf883579b1f13a53a93ba4cdce3e6f83e3fe0a2c42e3955b34d979d",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "name": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+            }
+          }
+        ]
+      },
+      "group": "commons-io",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f3ca0f8d63c40e23a56d54101c60d5edee136b42d84bfb85bc7963093109cf8b"
+        }
+      ],
+      "name": "commons-io",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/commons-io-2.18.0.jar#35"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "DECLARED_METADATA_FILENAME_MATCH"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [{\"kind\": \"Bundle-License\", \"name\": \"https://www.apache.org/licenses/LICENSE-2.0.txt\", \"source\": \"META-INF/MANIFEST.MF\"}], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/LICENSE.txt\", \"sha256\": \"8c6db340475136df3c1201d458fa5755698eace76e510471ecc9d857d6083dac\", \"size\": 11359}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/NOTICE.txt\", \"sha256\": \"67c72e54966f6545bd78b068b6f8ab1cabb5dd040d8a299e5ce00401ebdd030c\", \"size\": 172}], \"mavenMetadata\": [{\"coordinates\": {\"artifactId\": \"commons-io\", \"groupId\": \"commons-io\", \"version\": \"2.18.0\"}, \"path\": \"META-INF/maven/commons-io/commons-io/pom.xml\", \"sha256\": \"63d96941eb44df9c90d2adb2ad8c3f699c2e065e707045c5daf713fca52bcfca\"}, {\"coordinates\": {\"artifactId\": \"commons-io\", \"groupId\": \"commons-io\", \"version\": \"2.18.0\"}, \"path\": \"META-INF/maven/commons-io/commons-io/pom.properties\", \"sha256\": \"970e0b4e6f55a30fe01796b8fce5a6c669a38ed0754dc4f7809ac2e60013db96\"}], \"metadataErrors\": []}"
+        }
+      ],
+      "purl": "pkg:maven/commons-io/commons-io@2.18.0",
+      "type": "library",
+      "version": "2.18.0"
+    },
+    {
+      "bom-ref": "library:22a9498b5241bc9bd8750db720025ad9579410ad2471b1f99d7aa2dba747de99",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "name": "BSD License"
+            }
+          }
+        ]
+      },
+      "group": "com.github.virtuald",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ad95b08b8bbf9d7d17e5e00814898fa23324f32bc5b62f1a37801e6a56ce0079"
+        }
+      ],
+      "name": "curvesapi",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/curvesapi-1.08.jar#36"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "DECLARED_METADATA_FILENAME_MATCH"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [{\"distribution\": \"repo\", \"name\": \"BSD License\", \"source\": \"META-INF/maven/com.github.virtuald/curvesapi/pom.xml\", \"url\": \"http://opensource.org/licenses/BSD-3-Clause\"}], \"licenseEvidence\": [], \"mavenMetadata\": [{\"coordinates\": {\"artifactId\": \"curvesapi\", \"groupId\": \"com.github.virtuald\", \"version\": \"1.08\"}, \"path\": \"META-INF/maven/com.github.virtuald/curvesapi/pom.xml\", \"sha256\": \"372e19ac518d58ce5ab553ca80388c7fe9920c5554d1362d18645a6ddbc5d126\"}, {\"coordinates\": {\"artifactId\": \"curvesapi\", \"groupId\": \"com.github.virtuald\", \"version\": \"1.08\"}, \"path\": \"META-INF/maven/com.github.virtuald/curvesapi/pom.properties\", \"sha256\": \"37bff851c1c8e7d6748939e62d591ba1023e76c2fd598c8d1698da65d7fc435f\"}], \"metadataErrors\": []}"
+        }
+      ],
+      "purl": "pkg:maven/com.github.virtuald/curvesapi@1.08",
+      "type": "library",
+      "version": "1.08"
+    },
+    {
+      "bom-ref": "library:0286ec13af216ea6198409103d96fb3118157a7b65dcd23f46366d4d748b326b",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "name": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+            }
+          }
+        ]
+      },
+      "group": "org.apache.logging.log4j",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "09351b5a03828f369cdcff76f4ed39e6a6fc20f24f046935d0b28ef5152f8ce4"
+        }
+      ],
+      "name": "log4j-api",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/log4j-api-2.17.2.jar#37"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "DECLARED_METADATA_FILENAME_MATCH"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [{\"kind\": \"Bundle-License\", \"name\": \"https://www.apache.org/licenses/LICENSE-2.0.txt\", \"source\": \"META-INF/MANIFEST.MF\"}], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/LICENSE\", \"sha256\": \"cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30\", \"size\": 11358}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/NOTICE\", \"sha256\": \"9d97128971c13a12d41c3b79af5f6e8162b2e0df74f48133829a6636f64705dc\", \"size\": 173}], \"mavenMetadata\": [{\"coordinates\": {\"artifactId\": \"log4j-api\", \"groupId\": \"org.apache.logging.log4j\", \"version\": \"2.17.2\"}, \"path\": \"META-INF/maven/org.apache.logging.log4j/log4j-api/pom.properties\", \"sha256\": \"79d46cd10d6137d491996d972cb69c6d2eb6b5bcf2286838636a74ebe639792b\"}, {\"coordinates\": {\"artifactId\": \"log4j-api\", \"groupId\": \"org.apache.logging.log4j\", \"version\": \"2.17.2\"}, \"path\": \"META-INF/maven/org.apache.logging.log4j/log4j-api/pom.xml\", \"sha256\": \"2b8f3f6d471df17969921a7f0ffda83e0628ab3defc7e5bca2aefed1667629ef\"}], \"metadataErrors\": []}"
+        }
+      ],
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-api@2.17.2",
+      "type": "library",
+      "version": "2.17.2"
+    },
+    {
+      "bom-ref": "library:a18d93c63f9e0dbb0c6f724a9ac1745c575bac1c0296258b1a4fa826bc47a447",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "name": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+            }
+          }
+        ]
+      },
+      "group": "org.apache.commons",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "1df8b9430b5c8ed143d7815e403e33ef5371b2400aadbe9bda0883762e0846d1"
+        }
+      ],
+      "name": "commons-collections4",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/commons-collections4-4.4.jar#38"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "DECLARED_METADATA_FILENAME_MATCH"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [{\"kind\": \"Bundle-License\", \"name\": \"https://www.apache.org/licenses/LICENSE-2.0.txt\", \"source\": \"META-INF/MANIFEST.MF\"}], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/LICENSE.txt\", \"sha256\": \"3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5\", \"size\": 11560}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/NOTICE.txt\", \"sha256\": \"10203d78a651da05754be398e7df4c5a0b421522a34211a6fa6a1c42f557a2f2\", \"size\": 180}], \"mavenMetadata\": [{\"coordinates\": {\"artifactId\": \"commons-collections4\", \"groupId\": \"org.apache.commons\", \"version\": \"4.4\"}, \"path\": \"META-INF/maven/org.apache.commons/commons-collections4/pom.xml\", \"sha256\": \"271bd673839af46e73aff957e2918d4bf96f5ac4f6c6cf4d5be93fd1f1271c4d\"}, {\"coordinates\": {\"artifactId\": \"commons-collections4\", \"groupId\": \"org.apache.commons\", \"version\": \"4.4\"}, \"path\": \"META-INF/maven/org.apache.commons/commons-collections4/pom.properties\", \"sha256\": \"c7c8da604866eb270fe723ce88da179e0b583e473df9599a271ff395b8960cd6\"}], \"metadataErrors\": []}"
+        }
+      ],
+      "purl": "pkg:maven/org.apache.commons/commons-collections4@4.4",
+      "type": "library",
+      "version": "4.4"
+    },
+    {
+      "bom-ref": "library:c040e701ebb96a212e97289e0c22372798cb2001ce4d3d60a741a9c47e5b76e6",
+      "evidence": {
+        "licenses": [
+          {
+            "license": {
+              "name": "\"GNU Lesser General Public License\";link=\"http://www.gnu.org/licenses/lgpl-3.0.html\",\"Apache License, Version 2.0\";link=\"http://www.apache.org/licenses/LICENSE-2.0.txt\";description=\"A business-friendly OSS license\""
+            }
+          },
+          {
+            "license": {
+              "name": "Apache License, Version 2.0"
+            }
+          },
+          {
+            "license": {
+              "name": "GNU Lesser General Public License"
+            }
+          }
+        ]
+      },
+      "group": "com.github.javaparser",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "7ae10d11c5388060a7bf93b721600b951f5585f3782778b6d0555160680d35f8"
+        }
+      ],
+      "name": "javaparser-core",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/javaparser-core-3.27.1.jar#39"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "DECLARED_METADATA_FILENAME_MATCH"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [{\"kind\": \"Bundle-License\", \"name\": \"\\\"GNU Lesser General Public License\\\";link=\\\"http://www.gnu.org/licenses/lgpl-3.0.html\\\",\\\"Apache License, Version 2.0\\\";link=\\\"http://www.apache.org/licenses/LICENSE-2.0.txt\\\";description=\\\"A business-friendly OSS license\\\"\", \"source\": \"META-INF/MANIFEST.MF\"}, {\"distribution\": \"repo\", \"name\": \"GNU Lesser General Public License\", \"source\": \"META-INF/maven/com.github.javaparser/javaparser-core/pom.xml\", \"url\": \"http://www.gnu.org/licenses/lgpl-3.0.html\"}, {\"comments\": \"A business-friendly OSS license\", \"distribution\": \"repo\", \"name\": \"Apache License, Version 2.0\", \"source\": \"META-INF/maven/com.github.javaparser/javaparser-core/pom.xml\", \"url\": \"http://www.apache.org/licenses/LICENSE-2.0.txt\"}], \"licenseEvidence\": [], \"mavenMetadata\": [{\"coordinates\": {\"artifactId\": \"javaparser-core\", \"groupId\": \"com.github.javaparser\", \"version\": \"3.27.1\"}, \"path\": \"META-INF/maven/com.github.javaparser/javaparser-core/pom.xml\", \"sha256\": \"403468bc2181613b450cb4f6d0ea38ada1cf11838e961b5709933831701353ea\"}, {\"coordinates\": {\"artifactId\": \"javaparser-core\", \"groupId\": \"com.github.javaparser\", \"version\": \"3.27.1\"}, \"path\": \"META-INF/maven/com.github.javaparser/javaparser-core/pom.properties\", \"sha256\": \"a161da820582976ef20239289199698aa01591a3d28a5b4c1364b1b3fc6216c4\"}], \"metadataErrors\": []}"
+        }
+      ],
+      "purl": "pkg:maven/com.github.javaparser/javaparser-core@3.27.1",
+      "type": "library",
+      "version": "3.27.1"
+    },
+    {
+      "bom-ref": "library:5141697f6d72e865c7c092581359fc283e3f4ca333ab4bd42975be5b03645435",
+      "group": "org.slf4j",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d3ef575e3e4979678dc01bf1dcce51021493b4d11fb7f1be8ad982877c16a1c0"
+        }
+      ],
+      "name": "slf4j-api",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/slf4j-api-1.7.36.jar#40"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "DECLARED_METADATA_FILENAME_MATCH"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [], \"licenseEvidence\": [], \"mavenMetadata\": [{\"coordinates\": {\"artifactId\": \"slf4j-api\", \"groupId\": \"org.slf4j\", \"version\": \"1.7.36\"}, \"path\": \"META-INF/maven/org.slf4j/slf4j-api/pom.xml\", \"sha256\": \"fb046a9c229437928bb11c2d27c8b5d773eb8a25e60cbd253d985210dedc2684\"}, {\"coordinates\": {\"artifactId\": \"slf4j-api\", \"groupId\": \"org.slf4j\", \"version\": \"1.7.36\"}, \"path\": \"META-INF/maven/org.slf4j/slf4j-api/pom.properties\", \"sha256\": \"c45191aa981871ef8fce283c6ef7de3a5ce803aecdf1949ca86d8e3eb6736ed6\"}], \"metadataErrors\": []}"
+        }
+      ],
+      "purl": "pkg:maven/org.slf4j/slf4j-api@1.7.36",
+      "type": "library",
+      "version": "1.7.36"
+    },
+    {
+      "bom-ref": "library:8c448937eb0878961f3d7f484f0aba6b8e1ad7aae768ce589faab7e3f90e1111",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "7013ed3da15a8d4be797f5c310f9aa1b196b97f2313bc41e60ef3f5627224fe9"
+        }
+      ],
+      "name": "spring-core-5.3.31.jar",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/spring-core-5.3.31.jar#41"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "UNIDENTIFIED"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/license.txt\", \"sha256\": \"87b5245fe3ccebecf5d3b4c2fbbdbe717783ca6707f2095f17f7e58be98f2918\", \"size\": 15391}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/notice.txt\", \"sha256\": \"fe874fe2708027b23b2b2fd67018528c664a665f3aee1a4277d7e5d82631ccba\", \"size\": 477}], \"mavenMetadata\": [], \"metadataErrors\": []}"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "library:5ec628057b21295be5651455f07f0b27f9c3daaab81b7ec03209fe1f2184cda1",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "eee0df6a25a9c56d228ea86272546aa5a0656caf2f14e7b375417b066abbc0db"
+        }
+      ],
+      "name": "spring-jcl-5.3.31.jar",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/spring-jcl-5.3.31.jar#42"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "UNIDENTIFIED"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/license.txt\", \"sha256\": \"87b5245fe3ccebecf5d3b4c2fbbdbe717783ca6707f2095f17f7e58be98f2918\", \"size\": 15391}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/notice.txt\", \"sha256\": \"fe874fe2708027b23b2b2fd67018528c664a665f3aee1a4277d7e5d82631ccba\", \"size\": 477}], \"mavenMetadata\": [], \"metadataErrors\": []}"
+        }
+      ],
+      "type": "library"
+    },
+    {
+      "bom-ref": "library:9fa73210107493c7854cd342be41ce50efc8e4cb98337740d4bece6568011d30",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "defcbd4fb885b1fe9b1711462fc52721c02129fe55631c96d15e9363cf20707b"
+        }
+      ],
+      "name": "spring-boot-jarmode-layertools-2.7.18.jar",
+      "properties": [
+        {
+          "name": "offline-dev-assistant:archivePath",
+          "value": "BOOT-INF/lib/spring-boot-jarmode-layertools-2.7.18.jar#43"
+        },
+        {
+          "name": "offline-dev-assistant:parentArchive",
+          "value": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        },
+        {
+          "name": "offline-dev-assistant:coordinateStatus",
+          "value": "UNIDENTIFIED"
+        },
+        {
+          "name": "offline-dev-assistant:licenseReview",
+          "value": "REVIEW_REQUIRED"
+        },
+        {
+          "name": "offline-dev-assistant:vulnerabilityScan",
+          "value": "NOT_RUN"
+        },
+        {
+          "name": "offline-dev-assistant:metadataEvidence",
+          "value": "{\"licenseDeclarations\": [], \"licenseEvidence\": [{\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/LICENSE.txt\", \"sha256\": \"7200000367e0e8b47822d563a5ddd2dd3a97cc05b32bd7dbcc7b4eeb92b76628\", \"size\": 11359}, {\"interpretation\": \"REVIEW_REQUIRED\", \"path\": \"META-INF/NOTICE.txt\", \"sha256\": \"8a20910ea2dc414588cb45e904aa77315cce879ac9483dd00c42826756707330\", \"size\": 211}], \"mavenMetadata\": [], \"metadataErrors\": []}"
+        }
+      ],
+      "type": "library"
+    }
+  ],
+  "compositions": [
+    {
+      "aggregate": "incomplete",
+      "assemblies": [
+        "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+      ]
+    }
+  ],
+  "metadata": {
+    "component": {
+      "bom-ref": "application:sha256:f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f720fd329a2325426ef26ada07888b58e68d2bc2b7880455201081d84560f1eb"
+        }
+      ],
+      "name": "offline-dev-assistant-2.1.1-rebuild.8-java8-kylin-linux.jar",
+      "type": "application"
+    },
+    "properties": [
+      {
+        "name": "offline-dev-assistant:vulnerabilityScan",
+        "value": "NOT_RUN"
+      },
+      {
+        "name": "offline-dev-assistant:licenseReview",
+        "value": "REVIEW_REQUIRED"
+      },
+      {
+        "name": "offline-dev-assistant:inventoryStatus",
+        "value": "COMPLETE"
+      },
+      {
+        "name": "offline-dev-assistant:scope",
+        "value": "Physical BOOT-INF/lib entries and recursively embedded JARs only; excludes JDK, OS, build/test-only dependencies, downloaded runtime files and shaded code without metadata. No repository authenticity or vulnerability database checks."
+      },
+      {
+        "name": "offline-dev-assistant:dependencyGraph",
+        "value": "NOT_RESOLVED: archive containment is recorded in component properties; Maven dependency edges are not inferred"
+      }
+    ],
+    "timestamp": "2026-10-26T02:09:50.138819Z",
+    "tools": {
+      "components": [
+        {
+          "name": "offline-dev-assistant-dependency-inventory",
+          "type": "application",
+          "version": "1.0"
+        }
+      ]
+    }
+  },
+  "serialNumber": "urn:uuid:825372ef-a568-4e33-8aa6-bfd630227c2e",
+  "specVersion": "1.6",
+  "version": 1
+}

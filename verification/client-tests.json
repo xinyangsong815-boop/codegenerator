@@ -1,0 +1,83 @@
+{
+  "tests": 19,
+  "passed": 19,
+  "failed": 0,
+  "results": [
+    {
+      "name": "native-unsafe-id-rejected-before-http",
+      "passed": true
+    },
+    {
+      "name": "native-zero-id-rejected-before-http",
+      "passed": true
+    },
+    {
+      "name": "native-unsafe-long-field-rejected",
+      "passed": true
+    },
+    {
+      "name": "native-integer-range-enforced",
+      "passed": true
+    },
+    {
+      "name": "native-nonfinite-decimal-rejected",
+      "passed": true
+    },
+    {
+      "name": "native-invalid-list-element-rejected",
+      "passed": true
+    },
+    {
+      "name": "native-query-range-enforced",
+      "passed": true
+    },
+    {
+      "name": "string-long-overflow-rejected",
+      "passed": true
+    },
+    {
+      "name": "string-numeric-id-rejected",
+      "passed": true
+    },
+    {
+      "name": "rest-update-mismatched-id-rejected",
+      "passed": true
+    },
+    {
+      "name": "post-update-mismatched-id-rejected",
+      "passed": true
+    },
+    {
+      "name": "update-version-is-required",
+      "passed": true
+    },
+    {
+      "name": "delete-version-overflow-rejected",
+      "passed": true
+    },
+    {
+      "name": "valid-native-update-preserves-data",
+      "passed": true
+    },
+    {
+      "name": "valid-string-post-update-preserves-id-and-version",
+      "passed": true
+    },
+    {
+      "name": "query-array-serialization-repeats-keys",
+      "passed": true
+    },
+    {
+      "name": "scenario-save-does-not-mark-later-edits-saved",
+      "passed": true
+    },
+    {
+      "name": "scenario-save-does-not-switch-back-from-another-selection",
+      "passed": true
+    },
+    {
+      "name": "environment-save-preserves-later-edits",
+      "passed": true
+    }
+  ]
+}

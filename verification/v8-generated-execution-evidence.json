@@ -1,0 +1,347 @@
+{
+  "platform": "8",
+  "groups": {
+    "standard": {
+      "totals": {
+        "projects": 9,
+        "tests": 553,
+        "passed": 535,
+        "skipped": 18,
+        "failures": 0,
+        "errors": 0
+      },
+      "fixtures": [
+        {
+          "fixture": "contract-spec",
+          "exitCode": 0,
+          "tests": 52,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 2,
+          "executed": 50,
+          "passed": 50,
+          "actualJavaVersions": [
+            "1.8"
+          ],
+          "javaHomes": [
+            "C:\\Users\\LEGION\\Documents\\ChatGPT\\212\\generator-kylin-java8\\tools\\jdk8\\jdk8u504-b01\\jre"
+          ],
+          "mysqlSkipped": 2,
+          "generatorVersion": "2.1.1-rebuild.8-java8",
+          "templateVersion": "bank-crud-java8-sb2718-rebuild-v19"
+        },
+        {
+          "fixture": "contract-v2-spec",
+          "exitCode": 0,
+          "tests": 59,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 2,
+          "executed": 57,
+          "passed": 57,
+          "actualJavaVersions": [
+            "1.8"
+          ],
+          "javaHomes": [
+            "C:\\Users\\LEGION\\Documents\\ChatGPT\\212\\generator-kylin-java8\\tools\\jdk8\\jdk8u504-b01\\jre"
+          ],
+          "mysqlSkipped": 2,
+          "generatorVersion": "2.1.1-rebuild.8-java8",
+          "templateVersion": "bank-crud-java8-sb2718-rebuild-v19"
+        },
+        {
+          "fixture": "detail-only",
+          "exitCode": 0,
+          "tests": 21,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 2,
+          "executed": 19,
+          "passed": 19,
+          "actualJavaVersions": [
+            "1.8"
+          ],
+          "javaHomes": [
+            "C:\\Users\\LEGION\\Documents\\ChatGPT\\212\\generator-kylin-java8\\tools\\jdk8\\jdk8u504-b01\\jre"
+          ],
+          "mysqlSkipped": 2,
+          "generatorVersion": "2.1.1-rebuild.8-java8",
+          "templateVersion": "bank-crud-java8-sb2718-rebuild-v19"
+        },
+        {
+          "fixture": "full-update",
+          "exitCode": 0,
+          "tests": 52,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 2,
+          "executed": 50,
+          "passed": 50,
+          "actualJavaVersions": [
+            "1.8"
+          ],
+          "javaHomes": [
+            "C:\\Users\\LEGION\\Documents\\ChatGPT\\212\\generator-kylin-java8\\tools\\jdk8\\jdk8u504-b01\\jre"
+          ],
+          "mysqlSkipped": 2,
+          "generatorVersion": "2.1.1-rebuild.8-java8",
+          "templateVersion": "bank-crud-java8-sb2718-rebuild-v19"
+        },
+        {
+          "fixture": "interface-config-spec",
+          "exitCode": 0,
+          "tests": 64,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 2,
+          "executed": 62,
+          "passed": 62,
+          "actualJavaVersions": [
+            "1.8"
+          ],
+          "javaHomes": [
+            "C:\\Users\\LEGION\\Documents\\ChatGPT\\212\\generator-kylin-java8\\tools\\jdk8\\jdk8u504-b01\\jre"
+          ],
+          "mysqlSkipped": 2,
+          "generatorVersion": "2.1.1-rebuild.8-java8",
+          "templateVersion": "bank-crud-java8-sb2718-rebuild-v19"
+        },
+        {
+          "fixture": "native-numbers",
+          "exitCode": 0,
+          "tests": 61,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 2,
+          "executed": 59,
+          "passed": 59,
+          "actualJavaVersions": [
+            "1.8"
+          ],
+          "javaHomes": [
+            "C:\\Users\\LEGION\\Documents\\ChatGPT\\212\\generator-kylin-java8\\tools\\jdk8\\jdk8u504-b01\\jre"
+          ],
+          "mysqlSkipped": 2,
+          "generatorVersion": "2.1.1-rebuild.8-java8",
+          "templateVersion": "bank-crud-java8-sb2718-rebuild-v19"
+        },
+        {
+          "fixture": "production-safe-spec",
+          "exitCode": 0,
+          "tests": 92,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 2,
+          "executed": 90,
+          "passed": 90,
+          "actualJavaVersions": [
+            "1.8"
+          ],
+          "javaHomes": [
+            "C:\\Users\\LEGION\\Documents\\ChatGPT\\212\\generator-kylin-java8\\tools\\jdk8\\jdk8u504-b01\\jre"
+          ],
+          "mysqlSkipped": 2,
+          "generatorVersion": "2.1.1-rebuild.8-java8",
+          "templateVersion": "bank-crud-java8-sb2718-rebuild-v19"
+        },
+        {
+          "fixture": "production-spec",
+          "exitCode": 0,
+          "tests": 70,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 2,
+          "executed": 68,
+          "passed": 68,
+          "actualJavaVersions": [
+            "1.8"
+          ],
+          "javaHomes": [
+            "C:\\Users\\LEGION\\Documents\\ChatGPT\\212\\generator-kylin-java8\\tools\\jdk8\\jdk8u504-b01\\jre"
+          ],
+          "mysqlSkipped": 2,
+          "generatorVersion": "2.1.1-rebuild.8-java8",
+          "templateVersion": "bank-crud-java8-sb2718-rebuild-v19"
+        },
+        {
+          "fixture": "record-access-without-audit",
+          "exitCode": 0,
+          "tests": 82,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 2,
+          "executed": 80,
+          "passed": 80,
+          "actualJavaVersions": [
+            "1.8"
+          ],
+          "javaHomes": [
+            "C:\\Users\\LEGION\\Documents\\ChatGPT\\212\\generator-kylin-java8\\tools\\jdk8\\jdk8u504-b01\\jre"
+          ],
+          "mysqlSkipped": 2,
+          "generatorVersion": "2.1.1-rebuild.8-java8",
+          "templateVersion": "bank-crud-java8-sb2718-rebuild-v19"
+        }
+      ]
+    },
+    "boundary": {
+      "totals": {
+        "projects": 7,
+        "tests": 298,
+        "passed": 284,
+        "skipped": 14,
+        "failures": 0,
+        "errors": 0
+      },
+      "fixtures": [
+        {
+          "fixture": "all-types-in",
+          "exitCode": 0,
+          "tests": 65,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 2,
+          "executed": 63,
+          "passed": 63,
+          "actualJavaVersions": [
+            "1.8"
+          ],
+          "javaHomes": [
+            "C:\\Users\\LEGION\\Documents\\ChatGPT\\212\\generator-kylin-java8\\tools\\jdk8\\jdk8u504-b01\\jre"
+          ],
+          "mysqlSkipped": 2,
+          "generatorVersion": "2.1.1-rebuild.8-java8",
+          "templateVersion": "bank-crud-java8-sb2718-rebuild-v19"
+        },
+        {
+          "fixture": "all-types-native-full",
+          "exitCode": 0,
+          "tests": 62,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 2,
+          "executed": 60,
+          "passed": 60,
+          "actualJavaVersions": [
+            "1.8"
+          ],
+          "javaHomes": [
+            "C:\\Users\\LEGION\\Documents\\ChatGPT\\212\\generator-kylin-java8\\tools\\jdk8\\jdk8u504-b01\\jre"
+          ],
+          "mysqlSkipped": 2,
+          "generatorVersion": "2.1.1-rebuild.8-java8",
+          "templateVersion": "bank-crud-java8-sb2718-rebuild-v19"
+        },
+        {
+          "fixture": "all-types-range",
+          "exitCode": 0,
+          "tests": 65,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 2,
+          "executed": 63,
+          "passed": 63,
+          "actualJavaVersions": [
+            "1.8"
+          ],
+          "javaHomes": [
+            "C:\\Users\\LEGION\\Documents\\ChatGPT\\212\\generator-kylin-java8\\tools\\jdk8\\jdk8u504-b01\\jre"
+          ],
+          "mysqlSkipped": 2,
+          "generatorVersion": "2.1.1-rebuild.8-java8",
+          "templateVersion": "bank-crud-java8-sb2718-rebuild-v19"
+        },
+        {
+          "fixture": "create-only",
+          "exitCode": 0,
+          "tests": 26,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 2,
+          "executed": 24,
+          "passed": 24,
+          "actualJavaVersions": [
+            "1.8"
+          ],
+          "javaHomes": [
+            "C:\\Users\\LEGION\\Documents\\ChatGPT\\212\\generator-kylin-java8\\tools\\jdk8\\jdk8u504-b01\\jre"
+          ],
+          "mysqlSkipped": 2,
+          "generatorVersion": "2.1.1-rebuild.8-java8",
+          "templateVersion": "bank-crud-java8-sb2718-rebuild-v19"
+        },
+        {
+          "fixture": "delete-only",
+          "exitCode": 0,
+          "tests": 20,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 2,
+          "executed": 18,
+          "passed": 18,
+          "actualJavaVersions": [
+            "1.8"
+          ],
+          "javaHomes": [
+            "C:\\Users\\LEGION\\Documents\\ChatGPT\\212\\generator-kylin-java8\\tools\\jdk8\\jdk8u504-b01\\jre"
+          ],
+          "mysqlSkipped": 2,
+          "generatorVersion": "2.1.1-rebuild.8-java8",
+          "templateVersion": "bank-crud-java8-sb2718-rebuild-v19"
+        },
+        {
+          "fixture": "page-only",
+          "exitCode": 0,
+          "tests": 23,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 2,
+          "executed": 21,
+          "passed": 21,
+          "actualJavaVersions": [
+            "1.8"
+          ],
+          "javaHomes": [
+            "C:\\Users\\LEGION\\Documents\\ChatGPT\\212\\generator-kylin-java8\\tools\\jdk8\\jdk8u504-b01\\jre"
+          ],
+          "mysqlSkipped": 2,
+          "generatorVersion": "2.1.1-rebuild.8-java8",
+          "templateVersion": "bank-crud-java8-sb2718-rebuild-v19"
+        },
+        {
+          "fixture": "update-only",
+          "exitCode": 0,
+          "tests": 37,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 2,
+          "executed": 35,
+          "passed": 35,
+          "actualJavaVersions": [
+            "1.8"
+          ],
+          "javaHomes": [
+            "C:\\Users\\LEGION\\Documents\\ChatGPT\\212\\generator-kylin-java8\\tools\\jdk8\\jdk8u504-b01\\jre"
+          ],
+          "mysqlSkipped": 2,
+          "generatorVersion": "2.1.1-rebuild.8-java8",
+          "templateVersion": "bank-crud-java8-sb2718-rebuild-v19"
+        }
+      ]
+    }
+  },
+  "totals": {
+    "projects": 16,
+    "tests": 851,
+    "passed": 819,
+    "skipped": 32,
+    "failures": 0,
+    "errors": 0
+  },
+  "codeAudit": {
+    "tests": 10,
+    "passed": 10,
+    "failed": 0
+  },
+  "scope": "H2/unit/generated integration tests executed on the stated JDK; MySQL acceptance is skipped and not counted as passed. Native Kylin and real production systems are not tested."
+}

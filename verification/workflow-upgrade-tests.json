@@ -1,0 +1,102 @@
+{
+  "tests": 24,
+  "failed": 0,
+  "results": [
+    {
+      "name": "contract-numbers-arrive-at-server-as-exact-original-tokens",
+      "passed": true
+    },
+    {
+      "name": "contract-rejects-duplicate-and-escaped-duplicate-keys",
+      "passed": true
+    },
+    {
+      "name": "scenario-raw-save-and-validation-preserve-large-numbers",
+      "passed": true
+    },
+    {
+      "name": "scenario-save-rejects-duplicate-request-path",
+      "passed": true
+    },
+    {
+      "name": "scenario-load-fetches-exact-json-instead-of-rounded-list-object",
+      "passed": true
+    },
+    {
+      "name": "format-json-preserves-precision-and-step-editor-does-not-round-input",
+      "passed": true
+    },
+    {
+      "name": "numeric-editor-rejects-rounded-decimals-and-unrepresentable-exponents",
+      "passed": true
+    },
+    {
+      "name": "raw-json-keeps-strings-unicode-and-prototype-named-keys",
+      "passed": true
+    },
+    {
+      "name": "json-parser-rejects-trailing-commas-leading-zeros-and-incomplete-tokens",
+      "passed": true
+    },
+    {
+      "name": "frontend-source-map-rejects-duplicate-file-paths-before-send",
+      "passed": true
+    },
+    {
+      "name": "merge-source-input-rejects-duplicate-file-paths",
+      "passed": true
+    },
+    {
+      "name": "all-paste-editors-trigger-unload-protection",
+      "passed": true
+    },
+    {
+      "name": "successful-import-acknowledges-only-submitted-text",
+      "passed": true
+    },
+    {
+      "name": "invalid-unsafe-default-cannot-enter-generation-spec",
+      "passed": true
+    },
+    {
+      "name": "raw-response-option-keeps-retrieved-precision",
+      "passed": true
+    },
+    {
+      "name": "evidence-request-preserves-original-values-and-shows-incomplete-report",
+      "passed": true
+    },
+    {
+      "name": "evidence-request-rejects-duplicate-keys",
+      "passed": true
+    },
+    {
+      "name": "evidence-response-is-discarded-when-input-changes-during-request",
+      "passed": true
+    },
+    {
+      "name": "evidence-errors-use-existing-page-error-channel",
+      "passed": true
+    },
+    {
+      "name": "evidence-upload-validates-json-without-rounding",
+      "passed": true
+    },
+    {
+      "name": "history-diagnostics-appear-after-refresh-without-bad-record-content",
+      "passed": true
+    },
+    {
+      "name": "unavailable-history-diagnostics-do-not-hide-healthy-history",
+      "passed": true
+    },
+    {
+      "name": "failed-quarantine-count-is-visible-and-cleared-after-recovery",
+      "passed": true
+    },
+    {
+      "name": "regression-diagnostics-follow-list-refresh-and-show-count-only",
+      "passed": true
+    }
+  ]
+}

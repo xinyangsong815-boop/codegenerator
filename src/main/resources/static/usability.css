@@ -1,0 +1,66 @@
+/* Keep the editor calm; reveal detail at the point where it is needed. */
+body{font-family:"Noto Sans CJK SC","Source Han Sans SC","Microsoft YaHei",Arial,sans-serif;color:#24394e;font-size:14px}
+main,.card,.grid2>*,.grid3>*,.codepanel>*,section{min-width:0}
+main:focus{outline:none}
+.skip-link{position:fixed;left:12px;top:-80px;z-index:30;background:#fff;padding:12px 18px;border:2px solid #255d92;border-radius:4px}
+.skip-link:focus{top:12px}
+aside{background:#17324d;padding-left:16px;padding-right:16px}
+.brand{font-size:17px;line-height:1.6;gap:10px}
+.brand small{font-size:11px;letter-spacing:.5px}
+nav .nav-group{display:grid;gap:2px}
+.nav-group>p{margin:17px 12px 5px;color:#a8bfd3;font-size:11px;line-height:1.4}
+.nav-group button{text-align:left;width:100%}
+aside nav button:hover{background:#244764;color:#fff}
+.mobile-menu{display:none}
+header{border-bottom:1px solid #dfe6ee;padding-bottom:16px}
+.header-actions{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:12px;font-size:12px}
+.connection-status{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;color:#62748a}
+.connection-status::before{content:"";width:7px;height:7px;border-radius:50%;background:#8a9bb0}
+.connection-status.connected{color:#16806a}.connection-status.connected::before{background:#16806a}
+.connection-status.unreachable{color:#a53c32}.connection-status.unreachable::before{background:#a53c32}
+.page-jumps{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
+.page-jumps button{border-color:transparent;background:transparent;padding:7px 12px;color:#255d92;font-weight:600}
+.page-jumps button:hover{background:#e5edf6;border-color:#d3dfed}
+#generation-basics,#generation-fields,#generation-interfaces,#generation-result{scroll-margin-top:115px}
+.card{box-shadow:none}.card h2{font-size:18px}
+.intro{border-radius:4px}.intro p{max-width:78ch}
+.task-card{min-height:134px;padding:22px;border-radius:6px;box-shadow:none;gap:12px;justify-content:center}
+.task-card strong{font-size:17px}.task-card:hover{box-shadow:none;background:#f8fbfe}
+.task-grid{gap:14px}
+button:disabled{cursor:not-allowed}
+.filebutton{position:relative}
+.filebutton input{display:block!important;position:absolute!important;opacity:0!important;width:1px!important;height:1px!important;overflow:hidden;clip-path:inset(50%);padding:0!important;margin:0!important}
+.filebutton:focus-within{outline:3px solid #91b7e6;outline-offset:2px}
+.tablewrap{max-width:100%;overscroll-behavior-x:contain}
+table.fields:not(.expanded){min-width:760px}
+table.fields:not(.expanded) th:nth-child(1){width:135px}
+table.fields:not(.expanded) th:nth-child(2){width:125px}
+table.fields:not(.expanded) th:nth-child(3){width:120px}
+table.fields:not(.expanded) th:nth-child(4){width:185px}
+table.fields:not(.expanded) th:nth-child(10){width:120px}
+table.fields.expanded{min-width:1640px}
+.field-summary{display:block;color:#63748a;font-size:11px;line-height:1.7;margin-top:7px;white-space:normal}
+pre,textarea,.filetree{font-family:"Cascadia Code",Consolas,"Noto Sans Mono CJK SC",monospace}
+.empty-state strong{font-size:17px;color:#304d70}.empty-state p{margin:8px 0 16px}
+@media(max-width:1100px){header{align-items:flex-start;gap:16px}.header-actions{max-width:210px}h1{font-size:23px}}
+@media(max-width:720px){
+ aside{height:auto;min-height:0;padding:12px 16px;border-bottom:1px solid #d4dfe9}
+ .brand{font-size:15px;padding:0 110px 0 0;min-height:40px}.brand small{display:none}
+ .logo{width:32px;height:32px;flex-shrink:0}
+ .mobile-menu{display:block;position:absolute;right:16px;top:15px;background:#244764;border-color:#4c6780;color:#fff}
+ .mobile-menu:hover,.mobile-menu:focus-visible{background:#305a7d;color:#fff}
+ aside nav{display:none;margin-top:12px}
+ aside.nav-open nav{display:grid;gap:2px;grid-template-columns:1fr}
+ .nav-group{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .nav-group>p{grid-column:1/-1;margin-top:12px}
+ .nav-group button{font-size:12px;min-height:40px;padding:9px 8px}
+ main{padding:16px}.card{padding:16px}.intro{padding:16px}
+ header{gap:12px;padding-top:0}.header-actions{max-width:135px;gap:7px}h1{font-size:21px}
+ .eyebrow{display:none}.page-jumps{gap:0}.page-jumps button{padding:7px 8px;font-size:12px}
+ .toolbar{gap:9px}.toolbar>button,.toolbar>a{max-width:100%}
+ .task-card{min-height:110px;padding:18px}.task-grid{gap:10px}
+ .busy{left:16px;right:16px;bottom:16px;font-size:13px}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+table.comparison-table{min-width:680px}.comparison-table td:nth-child(4){min-width:220px}

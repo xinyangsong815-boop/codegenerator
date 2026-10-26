@@ -1,0 +1,162 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>接口配置生成说明</title><style>body{max-width:1080px;margin:36px auto;padding:0 24px;font-family:system-ui,"Microsoft YaHei",sans-serif;line-height:1.7;color:#17243b}table{border-collapse:collapse;width:100%;font-size:14px}td,th{border:1px solid #d5deea;padding:8px;text-align:left}th{background:#edf3fb}pre{background:#f3f6fa;padding:16px;overflow:auto}h1,h2{color:#153d6b}code{font-family:Consolas,monospace}</style><body><p style="padding:12px;background:#edf2f8">本页说明接口配置；启动、依赖与验证边界见 <a href="/help.html">当前使用说明</a>。</p><h1>接口配置生成使用说明</h1>
+<p>本包 Java 8 / Spring Boot 2.7.18。生成器运行无需数据库或 Maven；生成业务工程的构建、测试需要匹配的 JDK、Maven 和完整业务依赖仓库。</p>
+<h2>1. 新增能力</h2>
+<ul>
+<li>三套默认接口规范：LEGACY、REST、BANK_POST。</li>
+<li>每个已启用 CRUD 接口可指定 HTTP 方法、相对路径、业务字段位置、ID 位置。</li>
+<li>CREATE、UPDATE、PAGE 可分别配置接收字段白名单、必填字段。</li>
+<li>bodyProperty 生成一层嵌套请求封装 DTO，执行 @NotNull 与 @Valid 级联校验。</li>
+<li>FULL 与 PARTIAL 更新。部分更新识别未传、显式 null 与具体值，动态 SQL 只更新已传字段。</li>
+<li>IN 多值查询，最多100项；拒绝空列表、null 元素和超长/超精度元素。</li>
+<li>同步生成 openapi.json、interface-config.json、frontend/api.js、requests.http 以及适配当前配置的测试。</li>
+<li>GET 查询使用正式字段白名单，拒绝未知参数及内部 offset/LIKE/范围校验属性。</li>
+<li>JSON 的 ID/整数字段拒绝小数，避免默认截断造成错误记录操作。</li>
+</ul>
+<h2>2. 替换与启动</h2><p>停止旧助手，备份 JAR、data 和外置模板。Windows 使用 start-windows.cmd，Linux 使用 bash start.sh。默认访问 <a href="http://127.0.0.1:8790">http://127.0.0.1:8790</a>；<a href="/api/config">/api/config</a> 显示本包的实际工具和模板版本。外置模板会覆盖内置模板，升级时须同步适配。本次升级不会直接改写业务源码。</p><h2>3. 页面操作</h2>
+<ol>
+<li>在“需求与代码生成”载入合同示例或导入原规格。</li>
+<li>在“接口定义”选择默认规范和修改语义。</li>
+<li>展开对应操作，设置方法、相对路径、ID位置与业务字段位置。留默认项即可继承预设；路径输入空字符串表示接口前缀本身。</li>
+<li>点击“指定接收字段”选择白名单；点击“指定必填字段”设定该接口额外的必填约束。</li>
+<li>如需 JSON 封装，填写 data、filter、changes 等属性名称。</li>
+<li>查询方式选择“多值列表”可生成 IN 查询。</li>
+<li>点击“生成并预览代码”，下载 bundle.zip；查看 Controller、DTO、Mapper 及 openapi.json。</li>
+<li>按生成包 README 编译测试，再在真实开发库联调。</li>
+</ol>
+<p>“载入接口配置示例”展示全 POST、PARTIAL、嵌套封装和列表查询。完整包 examples 目录提供 REST、全 POST、部分更新和自定义参数位置的规格。Excel/Word 仍用于基础字段导入，接口扩展配置通过页面或 JSON 设置。</p>
+<h2>4. 预设默认值</h2>
+<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>LEGACY</th>
+<th>REST</th>
+<th>BANK_POST</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CREATE</td>
+<td>POST 前缀，JSON</td>
+<td>POST 前缀，JSON</td>
+<td>POST /create，JSON</td>
+</tr>
+<tr>
+<td>UPDATE FULL</td>
+<td>PUT /{id}，路径ID＋JSON</td>
+<td>PUT /{id}，路径ID＋JSON</td>
+<td>POST /update，JSON中含ID</td>
+</tr>
+<tr>
+<td>UPDATE PARTIAL</td>
+<td>PATCH /{id}，路径ID＋JSON</td>
+<td>PATCH /{id}，路径ID＋JSON</td>
+<td>POST /update，JSON中含ID</td>
+</tr>
+<tr>
+<td>DETAIL</td>
+<td>GET /{id}</td>
+<td>GET /{id}</td>
+<td>POST /detail，JSON中含ID</td>
+</tr>
+<tr>
+<td>PAGE</td>
+<td>POST /page，JSON</td>
+<td>GET 前缀，URL查询参数</td>
+<td>POST /page，JSON</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td>DELETE /{id}</td>
+<td>DELETE /{id}</td>
+<td>POST /delete，JSON中含ID</td>
+</tr>
+</tbody></table>
+<p>以上为相对 basePath 的路径，不是完整地址。例如 basePath=/contracts，/update 表示 /contracts/update。</p>
+<h2>5. JSON 配置格式</h2>
+<p>在原 generation-spec.json 顶层增加：</p>
+<pre><code class="language-json">{
+  &quot;apiProfile&quot;: &quot;BANK_POST&quot;,
+  &quot;updateMode&quot;: &quot;PARTIAL&quot;,
+  &quot;endpoints&quot;: {
+    &quot;CREATE&quot;: {&quot;path&quot;: &quot;/add&quot;, &quot;bodyProperty&quot;: &quot;data&quot;},
+    &quot;UPDATE&quot;: {&quot;path&quot;: &quot;/edit&quot;, &quot;fields&quot;: [&quot;amount&quot;, &quot;signDate&quot;], &quot;bodyProperty&quot;: &quot;changes&quot;},
+    &quot;PAGE&quot;: {&quot;path&quot;: &quot;/search&quot;, &quot;fields&quot;: [&quot;contractNo&quot;, &quot;signDate&quot;], &quot;bodyProperty&quot;: &quot;filter&quot;}
+  }
+}
+</code></pre>
+<p>这是新增配置片段，必须与包名、实体名、表名、operations、fields 等原规格一起提交，不是完整规格。完整示例见 interface-config-spec.json。</p>
+<table>
+<thead>
+<tr>
+<th>配置项</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>apiProfile</td>
+<td>LEGACY/REST/BANK_POST；缺省 LEGACY</td>
+</tr>
+<tr>
+<td>updateMode</td>
+<td>FULL/PARTIAL；缺省 FULL；PARTIAL 要启用 UPDATE</td>
+</tr>
+<tr>
+<td>endpoints</td>
+<td>键是已启用的 CREATE/UPDATE/DETAIL/PAGE/DELETE</td>
+</tr>
+<tr>
+<td>method</td>
+<td>覆盖 HTTP 方法，使用大写</td>
+</tr>
+<tr>
+<td>path</td>
+<td>相对路径；可为空或静态路径；动态参数只支持 {id}</td>
+</tr>
+<tr>
+<td>requestIn</td>
+<td>业务 DTO 的 BODY/QUERY；QUERY 仅支持 PAGE</td>
+</tr>
+<tr>
+<td>idIn</td>
+<td>UPDATE/DETAIL/DELETE 的 PATH/QUERY/BODY；参数名固定 id</td>
+</tr>
+<tr>
+<td>fields</td>
+<td>业务字段根名称白名单；null/缺省继承默认；空数组表示没有业务字段</td>
+</tr>
+<tr>
+<td>requiredFields</td>
+<td>选中字段中必须出现的字段；null/缺省继承默认</td>
+</tr>
+<tr>
+<td>bodyProperty</td>
+<td>单层嵌套封装属性；只用于 BODY DTO；空/缺省为直接 DTO</td>
+</tr>
+</tbody></table>
+<p>范围字段在 fields/requiredFields 中填写根名 signDate，实际生成 signDateFrom/signDateTo。范围根名标为必填时起止均必填。</p>
+<p>约束：CREATE 仅 POST JSON；UPDATE FULL 支持 PUT/POST，PARTIAL 支持 PATCH/POST，均 JSON；查询支持 GET/POST；删除支持 DELETE/POST；GET 不接收请求体，DELETE 不接收 JSON ID。ID 改为 QUERY/BODY 时必须同步把路径中的 {id} 去掉。方法、路径发生冲突或配置未知字段时拒绝生成。</p>
+<p>CREATE 不能遗漏数据库 required=true 的字段，也不能放宽其必填约束。UPDATE 只能选择 editable=true 字段。PARTIAL 不允许 requiredFields 非空；字段是否可清空由原字段 required 决定。</p>
+<h2>6. 实际传输示例</h2>
+<p>新增：POST /contracts/add</p>
+<pre><code class="language-json">{&quot;data&quot;:{&quot;contractNo&quot;:&quot;HT2026-001&quot;,&quot;amount&quot;:100.00,&quot;signDate&quot;:&quot;2026-10-10&quot;}}
+</code></pre>
+<p>部分更新：POST /contracts/edit</p>
+<pre><code class="language-json">{&quot;id&quot;:1,&quot;changes&quot;:{&quot;amount&quot;:120.00}}
+</code></pre>
+<p>未传 signDate 保持原值；若 changes 中显式 signDate:null，且该列允许为空，则清空。amount 为非空列，amount:null 会返回400。只有 id 或空 changes 会返回400。</p>
+<p>列表查询（将 contractNo 的 query 改为 IN）：POST /contracts/search</p>
+<pre><code class="language-json">{&quot;filter&quot;:{&quot;page&quot;:1,&quot;size&quot;:20,&quot;contractNo&quot;:[&quot;HT2026-001&quot;,&quot;HT2026-002&quot;]}}
+</code></pre>
+<p>GET 查询使用重复参数：</p>
+<pre><code class="language-http">GET /contracts?page=1&amp;size=20&amp;contractNo=HT2026-001&amp;contractNo=HT2026-002
+</code></pre>
+<p>null 列表不限制；JSON 空列表拒绝，而不是放大成无条件查询。GET 无法区分未传列表与被客户端省略的空列表，生成的 Axios 序列化器会先拒绝空列表和空元素。日期条件使用 ISO 日期/本地日期时间。LocalDateTime 不带时区，生成文档使用自定义 local-date-time 格式；涉及跨时区系统需另行确定协议。</p>
+<p>frontend/api.js 接收行内已有 Axios 实例，例如 createContractApi(request)。调用 update(id, {amount:120}) 时包装和 ID 位置由生成代码处理。权限、Token、错误提示、金额与长整数的前端精度处理继续复用行内规范。</p>
+<h2>7. 验证边界</h2>
+<p>生成时验证规格与 Java/XML 语法，不自动编译，不连接业务库。生成结果 compilation=NOT_RUN；下载后执行 mvn verify 或配置完整依赖仓库运行 build-offline.sh/cmd。</p>
+<p>实际验证结果见对应发行包 verification-summary.json。H2、静态契约与示例宿主测试各有覆盖范围，不能代替真实 MySQL、麒麟、行内网关和业务验收。</p>
+<p>requests.http 的空对象是待填写的请求草稿，必填未填写时预期400。openapi.json 来源于相同接口配置；范围起止等跨字段约束需要运行测试确认。认证和权限尚未生成，不能根据请求样例通过判断生产就绪。</p>
+<h2>8. 支持范围与旧问题</h2>
+<p>本版仍是单表 CRUD 生成器。嵌套能力指一层请求 DTO 封装，列表能力指 IN 查询；任意对象树、合同与明细的多表写入、批量写入、审批状态机、文件上传、Header映射与认证适配需要明确业务映射后开发，不生成空业务成功接口。</p>
+<p>先前审查指出的助手其他模块问题（例如部分契约比较/校验、回归报告脱敏问题）不属于本次接口生成升级，不能据此认为已全部修复。框架基线仍按原交付保留，本次不宣称完成依赖漏洞扫描或生产上线认证。</p>
+</body></html>

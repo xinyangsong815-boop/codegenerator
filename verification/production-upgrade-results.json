@@ -1,0 +1,79 @@
+{
+  "javaVersion" : "1.8.0_504",
+  "tests" : 24,
+  "passed" : 24,
+  "failed" : 0,
+  "results" : [ {
+    "name" : "migration-unchanged-is-review-only-with-no-sql",
+    "passed" : true
+  }, {
+    "name" : "migration-nullable-addition-is-candidate-never-executed",
+    "passed" : true
+  }, {
+    "name" : "migration-required-addition-blocked-without-sql",
+    "passed" : true
+  }, {
+    "name" : "migration-database-default-addition-blocked-without-sql",
+    "passed" : true
+  }, {
+    "name" : "migration-drop-blocked-without-destructive-sql",
+    "passed" : true
+  }, {
+    "name" : "migration-renamed-column-produces-blocked-drop-and-reviewed-add",
+    "passed" : true
+  }, {
+    "name" : "migration-type-change-blocked",
+    "passed" : true
+  }, {
+    "name" : "migration-length-and-nullability-changes-blocked",
+    "passed" : true
+  }, {
+    "name" : "migration-index-change-blocked",
+    "passed" : true
+  }, {
+    "name" : "migration-table-change-blocks-all-added-column-sql",
+    "passed" : true
+  }, {
+    "name" : "migration-invalid-identifiers-cannot-enter-sql",
+    "passed" : true
+  }, {
+    "name" : "evidence-template-binds-exact-spec-version-and-file-bytes",
+    "passed" : true
+  }, {
+    "name" : "evidence-stale-spec-template-and-tool-bindings-are-explicit",
+    "passed" : true
+  }, {
+    "name" : "evidence-stale-missing-extra-and-tampered-files-cannot-match",
+    "passed" : true
+  }, {
+    "name" : "evidence-missing-rows-explicit-and-required-na-invalid",
+    "passed" : true
+  }, {
+    "name" : "evidence-duplicate-and-unknown-row-ids-reported",
+    "passed" : true
+  }, {
+    "name" : "evidence-fake-pass-without-details-is-incomplete",
+    "passed" : true
+  }, {
+    "name" : "evidence-complete-self-attestation-awaits-review-never-grants-readiness",
+    "passed" : true
+  }, {
+    "name" : "evidence-no-submitted-status-can-set-deployment-ready",
+    "passed" : true
+  }, {
+    "name" : "history-corrupt-metadata-isolated-normal-history-still-readable",
+    "passed" : true
+  }, {
+    "name" : "history-failed-quarantine-reports-unisolated-damage-and-preserves-bytes",
+    "passed" : true
+  }, {
+    "name" : "history-invalid-created-at-is-isolated-without-hiding-good-records",
+    "passed" : true
+  }, {
+    "name" : "generated-production-outbox-explicitly-uses-transactional-innodb",
+    "passed" : true
+  }, {
+    "name" : "generated-h2-reset-and-mysql-acceptance-have-separate-engine-and-init-rules",
+    "passed" : true
+  } ]
+}

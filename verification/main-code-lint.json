@@ -1,0 +1,176 @@
+{
+  "scope": "Application source compile diagnostics; warnings are not proven runtime defects",
+  "targetJava": "8",
+  "sourceCount": 59,
+  "exitCode": 0,
+  "warnings": [
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedJavaStyle.java",
+      "line": 19,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/ApiController.java",
+      "line": 176,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/ApiController.java",
+      "line": 206,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/ApiController.java",
+      "line": 223,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/ApiController.java",
+      "line": 295,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/ExtensionsController.java",
+      "line": 74,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/ExtensionsController.java",
+      "line": 109,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedContract.java",
+      "line": 65,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedContract.java",
+      "line": 66,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedJavaStyle.java",
+      "line": 43,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedJavaStyle.java",
+      "line": 43,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedJavaStyle.java",
+      "line": 43,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedJavaStyle.java",
+      "line": 98,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedJavaStyle.java",
+      "line": 98,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedJavaStyle.java",
+      "line": 99,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedJavaStyle.java",
+      "line": 107,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedJavaStyle.java",
+      "line": 107,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedJavaStyle.java",
+      "line": 107,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedJavaStyle.java",
+      "line": 184,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratorService.java",
+      "line": 129,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/SchemaResolver.java",
+      "line": 153,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/SchemaResolver.java",
+      "line": 153,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/SchemaResolver.java",
+      "line": 153,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/SchemaResolver.java",
+      "line": 255,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/SourceContractService.java",
+      "line": 473,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/SourceContractService.java",
+      "line": 473,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/SourceContractService.java",
+      "line": 494,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/SourceContractService.java",
+      "line": 494,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/SourceContractService.java",
+      "line": 494,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/SpecParser.java",
+      "line": 18,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/UpdateController.java",
+      "line": 135,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/Util.java",
+      "line": 106,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/Util.java",
+      "line": 106,
+      "category": "unchecked"
+    }
+  ],
+  "observedWarningCount": 33,
+  "diagnosticLimit": 100,
+  "diagnosticsMayBeTruncated": false
+}

@@ -1,0 +1,151 @@
+{
+  "tests": 36,
+  "passed": 36,
+  "failed": 0,
+  "results": [
+    {
+      "name": "requirement-json-import-roundtrip",
+      "passed": true
+    },
+    {
+      "name": "requirement-template-xlsx",
+      "passed": true
+    },
+    {
+      "name": "requirement-template-docx",
+      "passed": true
+    },
+    {
+      "name": "generate-and-download-code-archive",
+      "passed": true
+    },
+    {
+      "name": "ddl-import-builds-a-valid-generation-spec",
+      "passed": true
+    },
+    {
+      "name": "source-scan-keeps-all-generated-controller-routes",
+      "passed": true
+    },
+    {
+      "name": "openapi-import-and-operation-index",
+      "passed": true
+    },
+    {
+      "name": "response-sample-valid-and-invalid-verdicts",
+      "passed": true
+    },
+    {
+      "name": "contract-comparison-detects-a-response-type-change",
+      "passed": true
+    },
+    {
+      "name": "frontend-call-analysis-matches-a-contract",
+      "passed": true
+    },
+    {
+      "name": "mock-generation-and-static-http-response",
+      "passed": true
+    },
+    {
+      "name": "mock-empty-204-response",
+      "passed": true
+    },
+    {
+      "name": "mock-disable-removes-only-the-selected-profile",
+      "passed": true
+    },
+    {
+      "name": "source-diff-reports-a-changed-method",
+      "passed": true
+    },
+    {
+      "name": "regeneration-text-produces-a-candidate",
+      "passed": true
+    },
+    {
+      "name": "three-way-merge-preserves-an-unrelated-local-file",
+      "passed": true
+    },
+    {
+      "name": "real-regression-run-and-exported-reports",
+      "passed": true
+    },
+    {
+      "name": "history-filter-and-pagination",
+      "passed": true
+    },
+    {
+      "name": "missing-source-collection-returns-400-/api/contracts/source-text",
+      "passed": true
+    },
+    {
+      "name": "missing-source-collection-returns-400-/api/frontend/source-text",
+      "passed": true
+    },
+    {
+      "name": "missing-source-collection-returns-400-/api/source-diff/text",
+      "passed": true
+    },
+    {
+      "name": "invalid-entity-type-name-is-rejected-before-download",
+      "passed": true
+    },
+    {
+      "name": "anyof-required-combination-break-is-reported-through-http",
+      "passed": true
+    },
+    {
+      "name": "literal-reference-in-document-example-is-retained",
+      "passed": true
+    },
+    {
+      "name": "whole-run-conclusion-HTTP_CLEANUP",
+      "passed": true
+    },
+    {
+      "name": "whole-run-conclusion-RESET_TEST_DATABASE",
+      "passed": true
+    },
+    {
+      "name": "strict-json-rejects-duplicate-contract-keys",
+      "passed": true
+    },
+    {
+      "name": "strict-json-rejects-trailing-documents",
+      "passed": true
+    },
+    {
+      "name": "readable-html-and-markdown-are-downloadable",
+      "passed": true
+    },
+    {
+      "name": "rendered-document-escapes-untrusted-descriptions",
+      "passed": true
+    },
+    {
+      "name": "source-document-typed-default-and-class-status",
+      "passed": true
+    },
+    {
+      "name": "generated-readable-docs-match-packaged-delivery",
+      "passed": true
+    },
+    {
+      "name": "resource-tracking-failure-is-visible-in-api-and-junit",
+      "passed": true
+    },
+    {
+      "name": "response-header-comparison-preserves-review-status",
+      "passed": true
+    },
+    {
+      "name": "mixed-failure-and-warning-keeps-incompatible-display",
+      "passed": true
+    },
+    {
+      "name": "generated-bodyless-406-sample-is-consistent",
+      "passed": true
+    }
+  ]
+}

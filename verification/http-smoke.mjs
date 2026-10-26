@@ -1,0 +1,50 @@
+import fs from 'node:fs/promises';
+import assert from 'node:assert/strict';
+const origin = process.argv[2] || 'http://127.0.0.1:18891';
+const checks = [];
+const configResponse = await fetch(origin + '/api/config');
+assert.equal(configResponse.status, 200);
+const config = await configResponse.json();
+assert.equal(config.version, '2.1.1-rebuild.8-java8'); checks.push('packaged-jar-version');
+assert.match(config.java, /^1\.8\./);
+assert.equal(config.targetJava, '8');
+assert.equal(config.springBoot, '2.7.18');
+assert.equal(config.targetMybatis, '2.3.2'); checks.push('real-java8-and-spring-boot-2718-runtime');
+const headers = { 'Content-Type': 'application/json', 'X-Tool-Token': config.token, Origin: origin };
+const denied = await fetch(origin + '/api/production/check', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{}' });
+assert.equal(denied.status, 403); checks.push('local-write-token-required');
+const crossSite = await fetch(origin + '/api/config', { headers: { Origin: 'https://example.invalid' } });
+assert.equal(crossSite.status, 403); checks.push('cross-origin-rejected');
+const html = await (await fetch(origin + '/')).text();
+assert.match(html, /重建版/); checks.push('rebuilt-page-loads');
+assert.ok((await (await fetch(origin + '/rebuild-help.html')).text()).includes(config.version)); checks.push('rebuild-help-loads');
+const spec = JSON.parse(await fs.readFile('src/main/resources/static/examples/production-safe-spec.json', 'utf8'));
+const generationResponse = await fetch(origin + '/api/generate', { method: 'POST', headers, body: JSON.stringify(spec) });
+assert.equal(generationResponse.status, 200);
+const generation = await generationResponse.json();
+assert.match(generation.files['pom.xml'], /<version>2\.7\.18<\/version>/);
+assert.match(generation.files['pom.xml'], /<java.version>8<\/java.version>/);
+for (const [name, contents] of Object.entries(generation.files)) {
+  if (name.endsWith('.java')) assert.doesNotMatch(contents, /\bjakarta\.(?:validation|servlet|annotation)\b/);
+}
+checks.push('generated-project-targets-java8-and-javax');
+assert.ok(generation.files['generation-manifest.json'].includes(config.version));
+assert.equal(generation.validation.production, 'INCOMPLETE'); checks.push('production-generation-through-http');
+assert.ok(JSON.parse(generation.files['openapi.json']).components.schemas.ContractUpdateDTO.anyOf); checks.push('generated-doc-business-field-constraint');
+const savedDocResponse = await fetch(origin + '/api/contracts/text', { method: 'POST', headers, body: JSON.stringify({ label: 'HTTP smoke generated contract', document: JSON.parse(generation.files['openapi.json']) }) });
+assert.equal(savedDocResponse.status, 200);
+const savedDoc = await savedDocResponse.json();
+assert.equal(savedDoc.document['x-coverage'].complete, true); checks.push('generated-contract-import-has-supported-coverage');
+assert.match(generation.files['src/main/java/com/bank/contract/service/impl/ContractServiceImpl.java'], /checkRecord\("UPDATE"/); checks.push('generated-service-permission-check');
+const invalid = await fetch(origin + '/api/regression/scenarios/validate', { method: 'POST', headers, body: JSON.stringify({ schemaVersion: 1, id: 'invalid', name: 'invalid', steps: [{ id: 'first', name: 'first', request: { method: 'GET', path: '/' }, assertions: [{ source: 'body', pointer: '', op: 'size', expected: -1 }] }] }) });
+assert.equal(invalid.status, 400); checks.push('invalid-assertion-rejected-through-http');
+for (const [id, literal] of [['precisemoney', '1234567890123456.78'], ['precisescale', '1.230']]) {
+  const raw = '{"schemaVersion":1,"id":"' + id + '","name":"precision","steps":[{"id":"first","name":"first","request":{"method":"GET","path":"/"},"assertions":[{"source":"body","pointer":"/amount","op":"eq","expected":' + literal + '}]}]}';
+  const response = await fetch(origin + '/api/regression/scenarios', { method: 'POST', headers, body: raw });
+  assert.equal(response.status, 200);
+  const text = await response.text();
+  assert.match(text, new RegExp('"expected"\\s*:\\s*' + literal.replace('.', '\\.') + '(?:\\s|[,}])'));
+  checks.push(id + '-preserved-through-http-binding');
+}
+await fs.writeFile('verification/http-smoke.json', JSON.stringify({ tests: checks.length, passed: checks.length, failed: 0, checks }, null, 2));
+console.log(`HTTP smoke: ${checks.length} checks passed.`);

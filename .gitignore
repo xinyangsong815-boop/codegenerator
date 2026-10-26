@@ -1,0 +1,16 @@
+/build/
+/dist/
+/data/
+/target/
+**/target/
+/verification/generated/
+/verification/audit-generated-after/
+/verification/generated-next/
+/verification/generated-quality/
+/verification/repositorynext/
+/verification/workflowupgrade/
+/verification/productionupgrade/
+*.log
+.idea/
+.vscode/
+.DS_Store
