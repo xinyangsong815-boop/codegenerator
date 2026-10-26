@@ -1,0 +1,36 @@
+{
+  "version": "2.1.1-rebuild.8-java17",
+  "tests": 7,
+  "passed": 7,
+  "failed": 0,
+  "results": [
+    {
+      "name": "current-runtime-generates-separated-whitelisted-assembler",
+      "passed": true
+    },
+    {
+      "name": "case-only-column-change-has-no-duplicate-add-candidate",
+      "passed": true
+    },
+    {
+      "name": "unknown-evidence-schema-cannot-match-current-format",
+      "passed": true
+    },
+    {
+      "name": "readable-contract-documents-include-server-variables-and-auth-definition",
+      "passed": true
+    },
+    {
+      "name": "request-media-widening-does-not-report-a-breaking-removal",
+      "passed": true
+    },
+    {
+      "name": "http205-sample-rejects-a-response-body",
+      "passed": true
+    },
+    {
+      "name": "known-previous-v18-outbox-schema-does-not-invent-an-alter",
+      "passed": true
+    }
+  ]
+}

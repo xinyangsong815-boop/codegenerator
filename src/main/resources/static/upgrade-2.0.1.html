@@ -1,0 +1,44 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>2.1.0 修订说明</title><style>body{font:16px/1.8 sans-serif;max-width:1000px;margin:30px auto;padding:0 20px}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f5f7fa;padding:18px}</style><h1>2.1.0 修订与升级说明</h1><pre># 2.1.0 修订与升级说明
+
+本版修复2.0审查报告中的结论、状态和使用缺陷。工具版本2.1.0，规格schemaVersion仍支持1/2，回归场景仍使用1。Windows目标Java17／Boot3.5.16，Linux（麒麟）目标Java17／Boot3.5.16。
+
+## 升级
+
+停止旧进程并备份data；替换新JAR，通过相同--tool.data-dir路径启动。历史元数据兼容旧格式；旧Mock需重新生成。已有业务项目不会自动修改；使用更新模块预览并合并。
+
+## 新增源码检查和文本入口
+
+“代码更新与冲突”现在包含三个任务：按需求重新生成、前后源码变更检查、三方合并与人工保留。前后检查不要求generation-manifest.json，提供两个Java模块ZIP或两个文件集合。Java以类、成员、注解和方法正文展示结构事实；XML/配置展示文件文本差异，不能据此证明SQL或业务语义等价。
+
+多文件文本集合的格式为相对路径到字符串正文，例如 {&quot;src/main/java/demo/C.java&quot;:&quot;package demo; class C {}&quot;}。页面的粘贴助手可以逐个填写路径和正文并加入集合，无须手工转义所有换行。接口扫描、前端分析也支持同一方式。包含相关DTO、Mapper XML和配置，避免只提供Controller导致覆盖不足。ZIP排除target、node_modules、.git等非源码。
+
+## 三方合并
+
+1. 原始生成基线B：保留上一轮生成的完整文件正文。哈希清单本身不是基线正文。
+2. 当前工作代码L：包含实际人工修改。
+3. 新生成候选N：采用需求生成页的当前规格。
+4. L未改的文件采用N；N未改而L有人工内容时保留L；双方均改需要明确选择。需要手工编辑时先修改当前文件集合，然后选择保留当前。文件级合并不会自动猜测方法正文。
+5. 未决冲突不提供合并包。无冲突／决策齐全后检查Java和XML语法，下载merged.zip，再运行真实项目Maven编译与业务回归。清单哈希保留新生成基线，使后续仍能识别人改。
+
+“未合并候选”仍是独立生成结果：KEEP_LOCAL／零冲突不代表可以整包替换；需要三方合并或手工处理。
+
+## 校验与报告变化
+
+Controller声明的参数约束进入契约；权限注解和securitySchemes变化要求复核。非法方法键和零有效接口不视为PASS。getter重命名被识别，计算getter的真实值与可空性仍要求运行时复核。宽模型使用共享预算，超限会显示不完整，不能当成完整扫描。
+
+生成字符串校验采用CodePointSize，新增、更新、查询、可信服务端字段与OpenAPI按Unicode码点计数；原Java @Size仍保留UTF-16扩展约束，不把它误解释成同一种长度。Excel／Word可填写temporalPrecision和serverUpdate。
+
+历史支持服务端按类型分页与搜索，接口版本独立查询。结果按输入版本绑定；修改规格／文件／版本后旧结果失效。说明全文与列表短标签分开存储，长契约标题不会导致Mock失败。Mock列表显示来源名称，重新生成时页码归位。
+
+## 场景编辑
+
+编辑步骤后先保存到编辑区，再保存整个场景；步骤编辑未结束时禁用场景保存／执行。自动ID避开已有ID；调换步骤会先检查变量定义顺序。切换场景／环境有未保存内容时会提示。表单可填写场景ID／名称／草稿状态，添加断言与变量提取；复杂变量和清理策略仍可使用高级JSON。
+
+失败报告增加字段指针、预期／实际类型与失败原因，仍不持久保存原始响应或凭证。运行状态有中文解释；断言PASS与数据清理状态分开。取消不会撤销已提交操作。
+
+## 保留的生产边界
+
+工具默认本机运行；多人共享部署、Multipart回归、完整Jackson定制、业务审批／幂等／权限、真实MySQL迁移与宿主接入仍需要专门实现和验收。DDL窄整数类型转换现在标记保真缺口，不能直接将生成建表脚本替代既有库迁移。删除版本校验仍按已声明业务边界，由当前项目实现。
+
+Windows／麒麟目标系统、Java17运行时、MySQL和实际银行宿主需要现场验证；本包的自动化证据会明确实际运行环境。
+</pre></html>

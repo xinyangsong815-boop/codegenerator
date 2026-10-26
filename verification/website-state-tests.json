@@ -1,0 +1,91 @@
+{
+  "tests": 21,
+  "passed": 21,
+  "failed": 0,
+  "results": [
+    {
+      "name": "effective-scenario-save-preserves-edits-during-request",
+      "passed": true
+    },
+    {
+      "name": "effective-save-does-not-select-a-previous-scenario",
+      "passed": true
+    },
+    {
+      "name": "new-uncommitted-step-is-recognized-as-dirty",
+      "passed": true
+    },
+    {
+      "name": "new-step-draft-prevents-executing-a-saved-scenario",
+      "passed": true
+    },
+    {
+      "name": "not-exists-assertion-omits-a-numeric-expected-value",
+      "passed": true
+    },
+    {
+      "name": "ddl-does-not-discard-an-edited-generation-spec",
+      "passed": true
+    },
+    {
+      "name": "history-refresh-ignores-a-late-previous-query",
+      "passed": true
+    },
+    {
+      "name": "mock-result-stays-bound-to-the-submitted-contract",
+      "passed": true
+    },
+    {
+      "name": "ddl-result-stays-bound-to-the-submitted-input",
+      "passed": true
+    },
+    {
+      "name": "changing-frontend-input-mode-invalidates-a-visible-result",
+      "passed": true
+    },
+    {
+      "name": "late-poll-cannot-replace-another-selected-run",
+      "passed": true
+    },
+    {
+      "name": "actual-app-request-reports-local-connection-health",
+      "passed": true
+    },
+    {
+      "name": "restart-token-recovery-retries-the-identical-body-once",
+      "passed": true
+    },
+    {
+      "name": "unchanged-token-403-is-not-replayed",
+      "passed": true
+    },
+    {
+      "name": "network-failure-preserves-the-current-draft",
+      "passed": true
+    },
+    {
+      "name": "environment-save-acknowledges-only-the-submitted-environment",
+      "passed": true
+    },
+    {
+      "name": "overall-run-fails-when-cleanup-fails",
+      "passed": true
+    },
+    {
+      "name": "overall-run-awaits-manual-cleanup",
+      "passed": true
+    },
+    {
+      "name": "overall-run-accepts-confirmed-cleanup",
+      "passed": true
+    },
+    {
+      "name": "manual-reset-does-not-hide-failed-cleanup-check",
+      "passed": true
+    },
+    {
+      "name": "visible-run-table-includes-failed-cleanup-without-mutating-the-run",
+      "passed": true
+    }
+  ]
+}

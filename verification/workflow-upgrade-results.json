@@ -1,0 +1,52 @@
+{
+  "target" : "17",
+  "runtime" : "17.0.20.1",
+  "tests" : 15,
+  "failed" : 0,
+  "results" : [ {
+    "name" : "non-overlapping-lines-merge-and-compile-on-actual-target-jdk",
+    "passed" : true
+  }, {
+    "name" : "overlapping-edits-keep-explicit-conflict",
+    "passed" : true
+  }, {
+    "name" : "repeated-lines-do-not-hide-a-delete-edit-conflict",
+    "passed" : true
+  }, {
+    "name" : "delete-versus-edit-keeps-conflict",
+    "passed" : true
+  }, {
+    "name" : "same-position-different-insertions-conflict",
+    "passed" : true
+  }, {
+    "name" : "insertion-touching-replacement-stays-conservative",
+    "passed" : true
+  }, {
+    "name" : "independent-insertions-and-replacements-preserved",
+    "passed" : true
+  }, {
+    "name" : "identical-edit-shared-by-both-sides-deduplicated",
+    "passed" : true
+  }, {
+    "name" : "overlap-can-be-resolved-by-explicit-local-decision",
+    "passed" : true
+  }, {
+    "name" : "crlf-and-final-newline-preserved",
+    "passed" : true
+  }, {
+    "name" : "auto-merged-invalid-java-is-rejected",
+    "passed" : true
+  }, {
+    "name" : "target-java-record-language-gate",
+    "passed" : true
+  }, {
+    "name" : "target-java-var-language-gate",
+    "passed" : true
+  }, {
+    "name" : "target-java-switch-expression-language-gate",
+    "passed" : true
+  }, {
+    "name" : "manifest-cannot-override-distribution-target",
+    "passed" : true
+  } ]
+}

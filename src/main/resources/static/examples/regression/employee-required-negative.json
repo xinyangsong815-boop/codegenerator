@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "employee-required-negative",
+  "name": "员工姓名必填校验",
+  "variables": {},
+  "failurePolicy": "STOP",
+  "cleanupPolicy": "RESET_TEST_DATABASE",
+  "steps": [
+    {
+      "id": "missingName",
+      "name": "缺少员工姓名应被拒绝",
+      "request": {
+        "method": "POST",
+        "path": "/parking/employees",
+        "body": {
+          "employeeNo": "E0001",
+          "departmentName": "信息技术部",
+          "employmentStatus": 1,
+          "remark": "演示"
+        }
+      },
+      "assertions": [
+        {
+          "source": "status",
+          "op": "eq",
+          "expected": 400
+        }
+      ]
+    }
+  ]
+}

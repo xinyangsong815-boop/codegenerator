@@ -1,0 +1,8 @@
+{
+  "platform": "17",
+  "fixture": "production-safe-spec",
+  "sourceCount": 43,
+  "exitCode": 0,
+  "warnings": 2,
+  "log": "work/upgrade-v8/generated-lint-java17.log"
+}

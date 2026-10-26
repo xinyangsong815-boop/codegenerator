@@ -1,0 +1,7 @@
+{
+  "id": "parking-dev",
+  "name": "本地停车系统H2测试环境",
+  "baseUrl": "http://127.0.0.1:8080",
+  "pathPrefix": "/parking",
+  "authMode": "NONE"
+}

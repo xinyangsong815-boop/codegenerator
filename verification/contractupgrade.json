@@ -1,0 +1,153 @@
+{
+  "tests" : 49,
+  "passed" : 49,
+  "failed" : 0,
+  "results" : [ {
+    "name" : "response-closed-object-new-field-fails",
+    "passed" : true
+  }, {
+    "name" : "response-open-object-new-field-passes",
+    "passed" : true
+  }, {
+    "name" : "response-open-object-new-nullable-field-passes",
+    "passed" : true
+  }, {
+    "name" : "response-additional-schema-is-respected",
+    "passed" : true
+  }, {
+    "name" : "response-integer-property-fits-old-number-extra",
+    "passed" : true
+  }, {
+    "name" : "response-enum-extra-rejects-new-values",
+    "passed" : true
+  }, {
+    "name" : "request-new-optional-field-constrains-old-free-values",
+    "passed" : true
+  }, {
+    "name" : "request-closed-object-new-optional-field-widens",
+    "passed" : true
+  }, {
+    "name" : "request-number-extra-to-integer-property-fails",
+    "passed" : true
+  }, {
+    "name" : "request-integer-extra-to-number-property-passes",
+    "passed" : true
+  }, {
+    "name" : "request-added-empty-schema-does-not-restrict",
+    "passed" : true
+  }, {
+    "name" : "request-old-payload-counterexample",
+    "passed" : true
+  }, {
+    "name" : "response-new-payload-counterexample",
+    "passed" : true
+  }, {
+    "name" : "request-nested-new-field-is-checked",
+    "passed" : true
+  }, {
+    "name" : "response-referenced-additional-schema-is-checked",
+    "passed" : true
+  }, {
+    "name" : "request-removing-field-from-closed-object-fails",
+    "passed" : true
+  }, {
+    "name" : "request-removing-field-into-open-object-widens",
+    "passed" : true
+  }, {
+    "name" : "response-removing-field-into-open-object-can-expand",
+    "passed" : true
+  }, {
+    "name" : "response-removing-optional-field-into-closed-object-narrows",
+    "passed" : true
+  }, {
+    "name" : "unconstrained-extra-schema-equivalent-to-true",
+    "passed" : true
+  }, {
+    "name" : "response-number-to-integer-is-compatible",
+    "passed" : true
+  }, {
+    "name" : "response-integer-to-number-is-breaking",
+    "passed" : true
+  }, {
+    "name" : "request-integer-to-number-is-compatible",
+    "passed" : true
+  }, {
+    "name" : "request-number-to-integer-is-breaking",
+    "passed" : true
+  }, {
+    "name" : "root-server-change-requires-transport-review",
+    "passed" : true
+  }, {
+    "name" : "path-server-overrides-root",
+    "passed" : true
+  }, {
+    "name" : "path-server-change-is-located",
+    "passed" : true
+  }, {
+    "name" : "operation-server-overrides-path-and-root",
+    "passed" : true
+  }, {
+    "name" : "operation-server-variable-default-change-is-located",
+    "passed" : true
+  }, {
+    "name" : "server-description-only-is-not-breaking",
+    "passed" : true
+  }, {
+    "name" : "malformed-servers-cannot-be-complete-pass",
+    "passed" : true
+  }, {
+    "name" : "invalid-sample-status-banana",
+    "passed" : true
+  }, {
+    "name" : "invalid-sample-status-",
+    "passed" : true
+  }, {
+    "name" : "invalid-sample-status-_200",
+    "passed" : true
+  }, {
+    "name" : "invalid-sample-status-200_",
+    "passed" : true
+  }, {
+    "name" : "invalid-sample-status-099",
+    "passed" : true
+  }, {
+    "name" : "invalid-sample-status-600",
+    "passed" : true
+  }, {
+    "name" : "invalid-sample-status-999",
+    "passed" : true
+  }, {
+    "name" : "invalid-sample-status-2XX",
+    "passed" : true
+  }, {
+    "name" : "invalid-sample-status-200.0",
+    "passed" : true
+  }, {
+    "name" : "null-sample-status-is-rejected",
+    "passed" : true
+  }, {
+    "name" : "exact-response-matches-before-default",
+    "passed" : true
+  }, {
+    "name" : "range-response-matches-before-default",
+    "passed" : true
+  }, {
+    "name" : "missing-response-is-incomplete",
+    "passed" : true
+  }, {
+    "name" : "readable-documents-show-all-supported-extensions",
+    "passed" : true
+  }, {
+    "name" : "documented-constraints-have-positive-and-negative-samples",
+    "passed" : true
+  }, {
+    "name" : "unknown-doc-constraint-is-visible-and-incomplete",
+    "passed" : true
+  }, {
+    "name" : "unchanged-structure-does-not-claim-business-verification",
+    "passed" : true
+  }, {
+    "name" : "declared-business-unit-change-requires-review",
+    "passed" : true
+  } ]
+}

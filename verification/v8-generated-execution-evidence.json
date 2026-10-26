@@ -1,0 +1,347 @@
+{
+  "platform": "17",
+  "groups": {
+    "standard": {
+      "totals": {
+        "projects": 9,
+        "tests": 942,
+        "passed": 535,
+        "skipped": 407,
+        "failures": 0,
+        "errors": 0
+      },
+      "fixtures": [
+        {
+          "fixture": "contract-spec",
+          "exitCode": 0,
+          "tests": 90,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 40,
+          "executed": 50,
+          "passed": 50,
+          "actualJavaVersions": [
+            "17"
+          ],
+          "javaHomes": [
+            "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.20.101-hotspot"
+          ],
+          "mysqlSkipped": 40,
+          "generatorVersion": "2.1.1-rebuild.8-java17",
+          "templateVersion": "bank-crud-java17-sb35-rebuild-v19"
+        },
+        {
+          "fixture": "contract-v2-spec",
+          "exitCode": 0,
+          "tests": 106,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 49,
+          "executed": 57,
+          "passed": 57,
+          "actualJavaVersions": [
+            "17"
+          ],
+          "javaHomes": [
+            "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.20.101-hotspot"
+          ],
+          "mysqlSkipped": 49,
+          "generatorVersion": "2.1.1-rebuild.8-java17",
+          "templateVersion": "bank-crud-java17-sb35-rebuild-v19"
+        },
+        {
+          "fixture": "detail-only",
+          "exitCode": 0,
+          "tests": 33,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 14,
+          "executed": 19,
+          "passed": 19,
+          "actualJavaVersions": [
+            "17"
+          ],
+          "javaHomes": [
+            "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.20.101-hotspot"
+          ],
+          "mysqlSkipped": 14,
+          "generatorVersion": "2.1.1-rebuild.8-java17",
+          "templateVersion": "bank-crud-java17-sb35-rebuild-v19"
+        },
+        {
+          "fixture": "full-update",
+          "exitCode": 0,
+          "tests": 90,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 40,
+          "executed": 50,
+          "passed": 50,
+          "actualJavaVersions": [
+            "17"
+          ],
+          "javaHomes": [
+            "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.20.101-hotspot"
+          ],
+          "mysqlSkipped": 40,
+          "generatorVersion": "2.1.1-rebuild.8-java17",
+          "templateVersion": "bank-crud-java17-sb35-rebuild-v19"
+        },
+        {
+          "fixture": "interface-config-spec",
+          "exitCode": 0,
+          "tests": 116,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 54,
+          "executed": 62,
+          "passed": 62,
+          "actualJavaVersions": [
+            "17"
+          ],
+          "javaHomes": [
+            "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.20.101-hotspot"
+          ],
+          "mysqlSkipped": 54,
+          "generatorVersion": "2.1.1-rebuild.8-java17",
+          "templateVersion": "bank-crud-java17-sb35-rebuild-v19"
+        },
+        {
+          "fixture": "native-numbers",
+          "exitCode": 0,
+          "tests": 110,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 51,
+          "executed": 59,
+          "passed": 59,
+          "actualJavaVersions": [
+            "17"
+          ],
+          "javaHomes": [
+            "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.20.101-hotspot"
+          ],
+          "mysqlSkipped": 51,
+          "generatorVersion": "2.1.1-rebuild.8-java17",
+          "templateVersion": "bank-crud-java17-sb35-rebuild-v19"
+        },
+        {
+          "fixture": "production-safe-spec",
+          "exitCode": 0,
+          "tests": 144,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 54,
+          "executed": 90,
+          "passed": 90,
+          "actualJavaVersions": [
+            "17"
+          ],
+          "javaHomes": [
+            "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.20.101-hotspot"
+          ],
+          "mysqlSkipped": 54,
+          "generatorVersion": "2.1.1-rebuild.8-java17",
+          "templateVersion": "bank-crud-java17-sb35-rebuild-v19"
+        },
+        {
+          "fixture": "production-spec",
+          "exitCode": 0,
+          "tests": 119,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 51,
+          "executed": 68,
+          "passed": 68,
+          "actualJavaVersions": [
+            "17"
+          ],
+          "javaHomes": [
+            "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.20.101-hotspot"
+          ],
+          "mysqlSkipped": 51,
+          "generatorVersion": "2.1.1-rebuild.8-java17",
+          "templateVersion": "bank-crud-java17-sb35-rebuild-v19"
+        },
+        {
+          "fixture": "record-access-without-audit",
+          "exitCode": 0,
+          "tests": 134,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 54,
+          "executed": 80,
+          "passed": 80,
+          "actualJavaVersions": [
+            "17"
+          ],
+          "javaHomes": [
+            "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.20.101-hotspot"
+          ],
+          "mysqlSkipped": 54,
+          "generatorVersion": "2.1.1-rebuild.8-java17",
+          "templateVersion": "bank-crud-java17-sb35-rebuild-v19"
+        }
+      ]
+    },
+    "boundary": {
+      "totals": {
+        "projects": 7,
+        "tests": 522,
+        "passed": 284,
+        "skipped": 238,
+        "failures": 0,
+        "errors": 0
+      },
+      "fixtures": [
+        {
+          "fixture": "all-types-in",
+          "exitCode": 0,
+          "tests": 118,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 55,
+          "executed": 63,
+          "passed": 63,
+          "actualJavaVersions": [
+            "17"
+          ],
+          "javaHomes": [
+            "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.20.101-hotspot"
+          ],
+          "mysqlSkipped": 55,
+          "generatorVersion": "2.1.1-rebuild.8-java17",
+          "templateVersion": "bank-crud-java17-sb35-rebuild-v19"
+        },
+        {
+          "fixture": "all-types-native-full",
+          "exitCode": 0,
+          "tests": 110,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 50,
+          "executed": 60,
+          "passed": 60,
+          "actualJavaVersions": [
+            "17"
+          ],
+          "javaHomes": [
+            "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.20.101-hotspot"
+          ],
+          "mysqlSkipped": 50,
+          "generatorVersion": "2.1.1-rebuild.8-java17",
+          "templateVersion": "bank-crud-java17-sb35-rebuild-v19"
+        },
+        {
+          "fixture": "all-types-range",
+          "exitCode": 0,
+          "tests": 118,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 55,
+          "executed": 63,
+          "passed": 63,
+          "actualJavaVersions": [
+            "17"
+          ],
+          "javaHomes": [
+            "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.20.101-hotspot"
+          ],
+          "mysqlSkipped": 55,
+          "generatorVersion": "2.1.1-rebuild.8-java17",
+          "templateVersion": "bank-crud-java17-sb35-rebuild-v19"
+        },
+        {
+          "fixture": "create-only",
+          "exitCode": 0,
+          "tests": 43,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 19,
+          "executed": 24,
+          "passed": 24,
+          "actualJavaVersions": [
+            "17"
+          ],
+          "javaHomes": [
+            "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.20.101-hotspot"
+          ],
+          "mysqlSkipped": 19,
+          "generatorVersion": "2.1.1-rebuild.8-java17",
+          "templateVersion": "bank-crud-java17-sb35-rebuild-v19"
+        },
+        {
+          "fixture": "delete-only",
+          "exitCode": 0,
+          "tests": 32,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 14,
+          "executed": 18,
+          "passed": 18,
+          "actualJavaVersions": [
+            "17"
+          ],
+          "javaHomes": [
+            "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.20.101-hotspot"
+          ],
+          "mysqlSkipped": 14,
+          "generatorVersion": "2.1.1-rebuild.8-java17",
+          "templateVersion": "bank-crud-java17-sb35-rebuild-v19"
+        },
+        {
+          "fixture": "page-only",
+          "exitCode": 0,
+          "tests": 37,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 16,
+          "executed": 21,
+          "passed": 21,
+          "actualJavaVersions": [
+            "17"
+          ],
+          "javaHomes": [
+            "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.20.101-hotspot"
+          ],
+          "mysqlSkipped": 16,
+          "generatorVersion": "2.1.1-rebuild.8-java17",
+          "templateVersion": "bank-crud-java17-sb35-rebuild-v19"
+        },
+        {
+          "fixture": "update-only",
+          "exitCode": 0,
+          "tests": 64,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 29,
+          "executed": 35,
+          "passed": 35,
+          "actualJavaVersions": [
+            "17"
+          ],
+          "javaHomes": [
+            "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.20.101-hotspot"
+          ],
+          "mysqlSkipped": 29,
+          "generatorVersion": "2.1.1-rebuild.8-java17",
+          "templateVersion": "bank-crud-java17-sb35-rebuild-v19"
+        }
+      ]
+    }
+  },
+  "totals": {
+    "projects": 16,
+    "tests": 1464,
+    "passed": 819,
+    "skipped": 645,
+    "failures": 0,
+    "errors": 0
+  },
+  "codeAudit": {
+    "tests": 10,
+    "passed": 10,
+    "failed": 0
+  },
+  "scope": "H2/unit/generated integration tests executed on the stated JDK; MySQL acceptance is skipped and not counted as passed. Native Kylin and real production systems are not tested."
+}

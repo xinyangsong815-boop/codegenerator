@@ -1,0 +1,65 @@
+[
+  {
+    "fixture": "all-types-in",
+    "exitCode": 0,
+    "tests": 118,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 55,
+    "executed": 63
+  },
+  {
+    "fixture": "all-types-native-full",
+    "exitCode": 0,
+    "tests": 110,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 50,
+    "executed": 60
+  },
+  {
+    "fixture": "all-types-range",
+    "exitCode": 0,
+    "tests": 118,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 55,
+    "executed": 63
+  },
+  {
+    "fixture": "create-only",
+    "exitCode": 0,
+    "tests": 43,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 19,
+    "executed": 24
+  },
+  {
+    "fixture": "delete-only",
+    "exitCode": 0,
+    "tests": 32,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 14,
+    "executed": 18
+  },
+  {
+    "fixture": "page-only",
+    "exitCode": 0,
+    "tests": 37,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 16,
+    "executed": 21
+  },
+  {
+    "fixture": "update-only",
+    "exitCode": 0,
+    "tests": 64,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 29,
+    "executed": 35
+  }
+]

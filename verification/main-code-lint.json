@@ -1,0 +1,511 @@
+{
+  "scope": "Application source compile diagnostics; warnings are not proven runtime defects",
+  "targetJava": "17",
+  "sourceCount": 59,
+  "exitCode": 0,
+  "warnings": [
+    {
+      "file": "src/main/java/cn/bank/devtool/ApiController.java",
+      "line": 176,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/ApiController.java",
+      "line": 206,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/ApiController.java",
+      "line": 223,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/ApiController.java",
+      "line": 295,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/CapabilityRegistry.java",
+      "line": 89,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/CapabilityRegistry.java",
+      "line": 122,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/CodeRepository.java",
+      "line": 108,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/CodeRepository.java",
+      "line": 145,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/CodeRepository.java",
+      "line": 183,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/CodeRepository.java",
+      "line": 246,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/CodeRepository.java",
+      "line": 266,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/CodeRepository.java",
+      "line": 279,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/CompareService.java",
+      "line": 218,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/CompareService.java",
+      "line": 223,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/CompareService.java",
+      "line": 270,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/CompareService.java",
+      "line": 307,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/CompareService.java",
+      "line": 308,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/CompareService.java",
+      "line": 337,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/CompareService.java",
+      "line": 362,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/CompareService.java",
+      "line": 429,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/CompareService.java",
+      "line": 444,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/ContractService.java",
+      "line": 36,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/ContractService.java",
+      "line": 77,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/ContractService.java",
+      "line": 101,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/ContractService.java",
+      "line": 180,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/ContractService.java",
+      "line": 192,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/ContractService.java",
+      "line": 226,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/ContractService.java",
+      "line": 256,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/ContentTypes.java",
+      "line": 20,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/ContentTypes.java",
+      "line": 29,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/ContractReports.java",
+      "line": 57,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/ContractReports.java",
+      "line": 62,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/ContractReports.java",
+      "line": 93,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/ContractReports.java",
+      "line": 100,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/ContractReports.java",
+      "line": 119,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/ContractReports.java",
+      "line": 145,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/EngineeringPolicy.java",
+      "line": 50,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/ExtensionsController.java",
+      "line": 74,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/ExtensionsController.java",
+      "line": 109,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedContract.java",
+      "line": 30,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedContract.java",
+      "line": 33,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedContract.java",
+      "line": 39,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedContract.java",
+      "line": 58,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedContract.java",
+      "line": 65,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedContract.java",
+      "line": 66,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedContract.java",
+      "line": 145,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedContract.java",
+      "line": 148,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedContract.java",
+      "line": 194,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedContract.java",
+      "line": 217,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedContract.java",
+      "line": 222,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedContract.java",
+      "line": 239,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedContract.java",
+      "line": 240,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedContract.java",
+      "line": 250,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedContract.java",
+      "line": 257,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedContract.java",
+      "line": 259,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedContract.java",
+      "line": 266,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedContract.java",
+      "line": 268,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedContract.java",
+      "line": 271,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedContract.java",
+      "line": 274,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedContract.java",
+      "line": 275,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedContract.java",
+      "line": 276,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedContract.java",
+      "line": 278,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedContract.java",
+      "line": 281,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedContract.java",
+      "line": 314,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedJavaStyle.java",
+      "line": 43,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedJavaStyle.java",
+      "line": 43,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedJavaStyle.java",
+      "line": 43,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedJavaStyle.java",
+      "line": 98,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedJavaStyle.java",
+      "line": 98,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedJavaStyle.java",
+      "line": 99,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedJavaStyle.java",
+      "line": 107,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedJavaStyle.java",
+      "line": 107,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedJavaStyle.java",
+      "line": 107,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratedJavaStyle.java",
+      "line": 184,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/GeneratorService.java",
+      "line": 129,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/InterfaceDescriptor.java",
+      "line": 96,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/MockTestService.java",
+      "line": 427,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/regression/ContractScenarioService.java",
+      "line": 75,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/regression/RegressionEngine.java",
+      "line": 338,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/regression/RegressionEngine.java",
+      "line": 534,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/regression/RegressionEngine.java",
+      "line": 764,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/regression/TargetPolicy.java",
+      "line": 128,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/regression/TargetPolicy.java",
+      "line": 158,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/regression/ScenarioRules.java",
+      "line": 50,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/regression/ScenarioRules.java",
+      "line": 106,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/regression/ScenarioRules.java",
+      "line": 354,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/RequestExamples.java",
+      "line": 116,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/SampleValidator.java",
+      "line": 28,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/SampleValidator.java",
+      "line": 193,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/SchemaResolver.java",
+      "line": 153,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/SchemaResolver.java",
+      "line": 153,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/SchemaResolver.java",
+      "line": 153,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/SchemaResolver.java",
+      "line": 172,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/SchemaResolver.java",
+      "line": 255,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/SourceContractService.java",
+      "line": 273,
+      "category": "deprecation"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/SourceContractService.java",
+      "line": 473,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/SourceContractService.java",
+      "line": 473,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/SourceContractService.java",
+      "line": 494,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/SourceContractService.java",
+      "line": 494,
+      "category": "unchecked"
+    },
+    {
+      "file": "src/main/java/cn/bank/devtool/SourceContractService.java",
+      "line": 494,
+      "category": "unchecked"
+    }
+  ],
+  "observedWarningCount": 100,
+  "diagnosticLimit": 100,
+  "diagnosticsMayBeTruncated": true
+}

@@ -1,0 +1,99 @@
+{
+  "packageName": "com.bank.contract",
+  "artifactId": "contract-demo",
+  "entityName": "Contract",
+  "tableName": "biz_contract",
+  "description": "合同管理",
+  "basePath": "/contracts",
+  "operations": [
+    "CREATE",
+    "UPDATE",
+    "DETAIL",
+    "PAGE",
+    "DELETE"
+  ],
+  "fields": [
+    {
+      "name": "contractNo",
+      "column": "contract_no",
+      "javaType": "String",
+      "description": "合同编号",
+      "required": true,
+      "editable": true,
+      "exposed": true,
+      "query": "EQ",
+      "maxLength": 50,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "amount",
+      "column": "amount",
+      "javaType": "BigDecimal",
+      "description": "合同金额（元）",
+      "required": true,
+      "editable": true,
+      "exposed": true,
+      "query": "NONE",
+      "maxLength": null,
+      "precision": 18,
+      "scale": 2
+    },
+    {
+      "name": "signDate",
+      "column": "sign_date",
+      "javaType": "LocalDate",
+      "description": "签署日期",
+      "required": false,
+      "editable": true,
+      "exposed": true,
+      "query": "RANGE",
+      "maxLength": null,
+      "precision": null,
+      "scale": null
+    },
+    {
+      "name": "state",
+      "column": "state",
+      "javaType": "String",
+      "description": "数据库默认状态",
+      "required": true,
+      "editable": false,
+      "exposed": true,
+      "query": "NONE",
+      "maxLength": 20,
+      "source": "DATABASE",
+      "defaultValue": "NEW"
+    },
+    {
+      "name": "orgId",
+      "column": "org_id",
+      "javaType": "Long",
+      "description": "可信机构编号",
+      "required": true,
+      "editable": false,
+      "exposed": false,
+      "query": "NONE",
+      "source": "SERVER"
+    }
+  ],
+  "schemaVersion": 2,
+  "apiProfile": "REST",
+  "updateMode": "PARTIAL",
+  "options": {
+    "optimisticLock": true,
+    "softDelete": true,
+    "hooks": true,
+    "scopeField": "orgId"
+  },
+  "indexes": [
+    {
+      "name": "uk_org_no",
+      "unique": true,
+      "fields": [
+        "orgId",
+        "contractNo"
+      ]
+    }
+  ]
+}

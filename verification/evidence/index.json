@@ -1,0 +1,18 @@
+{
+  "generated-contract-spec": "verification\\generated\\contract-spec",
+  "generated-contract-v2-spec": "verification\\generated\\contract-v2-spec",
+  "generated-detail-only": "verification\\generated\\detail-only",
+  "generated-full-update": "verification\\generated\\full-update",
+  "generated-interface-config-spec": "verification\\generated\\interface-config-spec",
+  "generated-native-numbers": "verification\\generated\\native-numbers",
+  "generated-production-safe-spec": "verification\\generated\\production-safe-spec",
+  "generated-production-spec": "verification\\generated\\production-spec",
+  "generated-record-access-without-audit": "verification\\generated\\record-access-without-audit",
+  "audit-generated-after-all-types-in": "verification\\audit-generated-after\\all-types-in",
+  "audit-generated-after-all-types-native-full": "verification\\audit-generated-after\\all-types-native-full",
+  "audit-generated-after-all-types-range": "verification\\audit-generated-after\\all-types-range",
+  "audit-generated-after-create-only": "verification\\audit-generated-after\\create-only",
+  "audit-generated-after-delete-only": "verification\\audit-generated-after\\delete-only",
+  "audit-generated-after-page-only": "verification\\audit-generated-after\\page-only",
+  "audit-generated-after-update-only": "verification\\audit-generated-after\\update-only"
+}

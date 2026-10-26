@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": "employee-crud",
+  "name": "员工新增查询修改回归",
+  "variables": {
+    "employeeNo": {
+      "generator": "runUnique",
+      "prefix": "T",
+      "maxLength": 32
+    }
+  },
+  "failurePolicy": "STOP",
+  "cleanupPolicy": "RESET_TEST_DATABASE",
+  "steps": [
+    {
+      "id": "createEmployee",
+      "name": "新增员工",
+      "request": {
+        "method": "POST",
+        "path": "/parking/employees",
+        "body": {
+          "employeeNo": {
+            "$var": "employeeNo"
+          },
+          "employeeName": "张示例",
+          "departmentName": "信息技术部",
+          "employmentStatus": 1,
+          "remark": "演示"
+        }
+      },
+      "assertions": [
+        {
+          "source": "status",
+          "op": "eq",
+          "expected": 200
+        },
+        {
+          "source": "body",
+          "pointer": "/code",
+          "op": "eq",
+          "expected": 0
+        }
+      ],
+      "extract": [
+        {
+          "name": "employeeId",
+          "source": "body",
+          "pointer": "/data",
+          "type": "integer",
+          "required": true
+        }
+      ],
+      "resource": {
+        "pointer": "/data",
+        "type": "integer"
+      }
+    },
+    {
+      "id": "queryEmployee",
+      "name": "查询新增员工",
+      "request": {
+        "method": "GET",
+        "path": "/parking/employees/{id}",
+        "pathVariables": {
+          "id": {
+            "$var": "employeeId"
+          }
+        }
+      },
+      "assertions": [
+        {
+          "source": "status",
+          "op": "eq",
+          "expected": 200
+        },
+        {
+          "source": "body",
+          "pointer": "/code",
+          "op": "eq",
+          "expected": 0
+        },
+        {
+          "source": "body",
+          "pointer": "/data/employeeNo",
+          "op": "eq",
+          "expected": {
+            "$var": "employeeNo"
+          }
+        }
+      ]
+    },
+    {
+      "id": "updateEmployee",
+      "name": "修改员工部门",
+      "request": {
+        "method": "PUT",
+        "path": "/parking/employees/{id}",
+        "body": {
+          "employeeName": "张示例",
+          "departmentName": "回归验证部门",
+          "employmentStatus": 1,
+          "remark": "演示"
+        },
+        "pathVariables": {
+          "id": {
+            "$var": "employeeId"
+          }
+        }
+      },
+      "assertions": [
+        {
+          "source": "status",
+          "op": "eq",
+          "expected": 200
+        },
+        {
+          "source": "body",
+          "pointer": "/code",
+          "op": "eq",
+          "expected": 0
+        }
+      ]
+    },
+    {
+      "id": "verifyEmployee",
+      "name": "查询确认修改",
+      "request": {
+        "method": "GET",
+        "path": "/parking/employees/{id}",
+        "pathVariables": {
+          "id": {
+            "$var": "employeeId"
+          }
+        }
+      },
+      "assertions": [
+        {
+          "source": "status",
+          "op": "eq",
+          "expected": 200
+        },
+        {
+          "source": "body",
+          "pointer": "/code",
+          "op": "eq",
+          "expected": 0
+        },
+        {
+          "source": "body",
+          "pointer": "/data/departmentName",
+          "op": "eq",
+          "expected": "回归验证部门"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "runtime" : "17.0.20.1",
+  "tests" : 12,
+  "failed" : 0,
+  "generated" : "C:\\Users\\LEGION\\Documents\\ChatGPT\\212\\generator-rebuild\\verification\\generated-next",
+  "results" : [ {
+    "name" : "generate-and-document-contract-spec",
+    "passed" : true
+  }, {
+    "name" : "generate-and-document-contract-v2-spec",
+    "passed" : true
+  }, {
+    "name" : "generate-and-document-interface-config-spec",
+    "passed" : true
+  }, {
+    "name" : "generate-and-document-engineering-spec",
+    "passed" : true
+  }, {
+    "name" : "generate-and-document-production-spec",
+    "passed" : true
+  }, {
+    "name" : "generate-and-document-production-safe-spec",
+    "passed" : true
+  }, {
+    "name" : "existing-specific-chinese-documentation-is-preserved",
+    "passed" : true
+  }, {
+    "name" : "legacy-boilerplate-replaced-with-real-signature-and-return-contract",
+    "passed" : true
+  }, {
+    "name" : "get-prefix-does-not-invent-an-attribute-or-database-policy",
+    "passed" : true
+  }, {
+    "name" : "generated-service-and-mapper-describe-transactions-and-row-count",
+    "passed" : true
+  }, {
+    "name" : "outbox-default-compatible-explicit-worker-and-reviewed-guide",
+    "passed" : true
+  }, {
+    "name" : "audit-requires-actual-transaction-bound-to-own-data-source",
+    "passed" : true
+  } ]
+}

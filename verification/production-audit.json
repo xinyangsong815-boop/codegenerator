@@ -1,0 +1,72 @@
+{
+  "tests" : 22,
+  "passed" : 22,
+  "failed" : 0,
+  "results" : [ {
+    "name" : "request-anyof-narrowing-is-breaking",
+    "passed" : true
+  }, {
+    "name" : "request-anyof-expansion-is-compatible",
+    "passed" : true
+  }, {
+    "name" : "response-anyof-expansion-is-breaking",
+    "passed" : true
+  }, {
+    "name" : "request-body-reference-required-change-is-breaking",
+    "passed" : true
+  }, {
+    "name" : "response-reference-field-removal-is-breaking",
+    "passed" : true
+  }, {
+    "name" : "warning-does-not-report-a-clean-pass",
+    "passed" : true
+  }, {
+    "name" : "operation-index-includes-inherited-path-parameter",
+    "passed" : true
+  }, {
+    "name" : "operation-parameter-overrides-path-parameter",
+    "passed" : true
+  }, {
+    "name" : "schema-looking-business-property-does-not-poison-coverage",
+    "passed" : true
+  }, {
+    "name" : "literal-ref-in-example-is-not-a-document-reference",
+    "passed" : true
+  }, {
+    "name" : "nested-numeric-equality-is-value-based",
+    "passed" : true
+  }, {
+    "name" : "nested-numeric-ne-is-consistent",
+    "passed" : true
+  }, {
+    "name" : "array-contains-uses-value-based-numeric-equality",
+    "passed" : true
+  }, {
+    "name" : "optional-body-extract-requires-valid-json",
+    "passed" : true
+  }, {
+    "name" : "cleanup-dependencies-are-included-in-version-impact",
+    "passed" : true
+  }, {
+    "name" : "cleanup-failure-has-an-overall-failure",
+    "passed" : true
+  }, {
+    "name" : "manual-reset-does-not-erase-a-failed-cleanup-assertion",
+    "passed" : true
+  }, {
+    "name" : "manual-reset-is-not-an-overall-pass",
+    "passed" : true
+  }, {
+    "name" : "concurrent-generation-keeps-template-provenance-isolated",
+    "passed" : true
+  }, {
+    "name" : "production-assets-and-request-trace-are-generated",
+    "passed" : true
+  }, {
+    "name" : "generated-document-declares-correlation-header",
+    "passed" : true
+  }, {
+    "name" : "production-profile-enables-controlled-shutdown",
+    "passed" : true
+  } ]
+}

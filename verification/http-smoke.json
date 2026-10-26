@@ -1,0 +1,21 @@
+{
+  "tests": 14,
+  "passed": 14,
+  "failed": 0,
+  "checks": [
+    "packaged-jar-version",
+    "real-java17-and-spring-boot-3516-runtime",
+    "local-write-token-required",
+    "cross-origin-rejected",
+    "rebuilt-page-loads",
+    "rebuild-help-loads",
+    "generated-project-targets-java17-and-jakarta",
+    "production-generation-through-http",
+    "generated-doc-business-field-constraint",
+    "generated-contract-import-has-supported-coverage",
+    "generated-service-permission-check",
+    "invalid-assertion-rejected-through-http",
+    "precisemoney-preserved-through-http-binding",
+    "precisescale-preserved-through-http-binding"
+  ]
+}

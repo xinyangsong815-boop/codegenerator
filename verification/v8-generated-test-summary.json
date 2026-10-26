@@ -1,0 +1,83 @@
+[
+  {
+    "fixture": "contract-spec",
+    "exitCode": 0,
+    "tests": 90,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 40,
+    "executed": 50
+  },
+  {
+    "fixture": "contract-v2-spec",
+    "exitCode": 0,
+    "tests": 106,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 49,
+    "executed": 57
+  },
+  {
+    "fixture": "detail-only",
+    "exitCode": 0,
+    "tests": 33,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 14,
+    "executed": 19
+  },
+  {
+    "fixture": "full-update",
+    "exitCode": 0,
+    "tests": 90,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 40,
+    "executed": 50
+  },
+  {
+    "fixture": "interface-config-spec",
+    "exitCode": 0,
+    "tests": 116,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 54,
+    "executed": 62
+  },
+  {
+    "fixture": "native-numbers",
+    "exitCode": 0,
+    "tests": 110,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 51,
+    "executed": 59
+  },
+  {
+    "fixture": "production-safe-spec",
+    "exitCode": 0,
+    "tests": 144,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 54,
+    "executed": 90
+  },
+  {
+    "fixture": "production-spec",
+    "exitCode": 0,
+    "tests": 119,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 51,
+    "executed": 68
+  },
+  {
+    "fixture": "record-access-without-audit",
+    "exitCode": 0,
+    "tests": 134,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 54,
+    "executed": 80
+  }
+]

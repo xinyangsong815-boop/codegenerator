@@ -1,0 +1,67 @@
+{
+  "javaVersion" : "17.0.20.1",
+  "tests" : 20,
+  "failed" : 0,
+  "passed" : 20,
+  "results" : [ {
+    "name" : "resource-rejects-object",
+    "passed" : true
+  }, {
+    "name" : "resource-rejects-array",
+    "passed" : true
+  }, {
+    "name" : "resource-rejects-boolean",
+    "passed" : true
+  }, {
+    "name" : "resource-rejects-null",
+    "passed" : true
+  }, {
+    "name" : "resource-rejects-number",
+    "passed" : true
+  }, {
+    "name" : "resource-rejects-sensitive-field-pointer",
+    "passed" : true
+  }, {
+    "name" : "resource-allows-bounded-real-identifiers",
+    "passed" : true
+  }, {
+    "name" : "http-resource-tracks-only-id-and-exports-no-response-object",
+    "passed" : true
+  }, {
+    "name" : "http-runtime-type-mismatch-does-not-persist-object",
+    "passed" : true
+  }, {
+    "name" : "legacy-unsafe-resources-sanitized-on-disk-and-exports",
+    "passed" : true
+  }, {
+    "name" : "pagination-and-impact-all-counts-199-200-201-1000",
+    "passed" : true
+  }, {
+    "name" : "corrupt-files-isolated-with-normal-records-and-durable-diagnostics",
+    "passed" : true
+  }, {
+    "name" : "get-corruption-is-isolated-and-history-survives",
+    "passed" : true
+  }, {
+    "name" : "failed-initialization-releases-writer-lock",
+    "passed" : true
+  }, {
+    "name" : "interrupted-valid-run-never-replayed-or-passed",
+    "passed" : true
+  }, {
+    "name" : "strict-timeout-connectTimeoutMs",
+    "passed" : true
+  }, {
+    "name" : "strict-timeout-readTimeoutMs",
+    "passed" : true
+  }, {
+    "name" : "strict-timeout-stepTimeoutMs",
+    "passed" : true
+  }, {
+    "name" : "strict-timeout-scenarioTimeoutMs",
+    "passed" : true
+  }, {
+    "name" : "strict-schema-version-and-generated-length",
+    "passed" : true
+  } ]
+}

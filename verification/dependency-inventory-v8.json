@@ -1,0 +1,20 @@
+{
+  "failed": 0,
+  "failures": {},
+  "passed": 19,
+  "realArtifact": {
+    "allLibraryHashesVerified": true,
+    "artifact": {
+      "bomRef": "application:sha256:9f3fe862b48e6aa162a916f0a2745e7087d4d6260301770705cd4c8e957ed482",
+      "filename": "offline-dev-assistant-2.1.1-rebuild.8-java17.jar",
+      "sha256": "9f3fe862b48e6aa162a916f0a2745e7087d4d6260301770705cd4c8e957ed482",
+      "size": 45260426
+    },
+    "bootInfLibEntries": 46,
+    "components": 46,
+    "licenseReview": "REVIEW_REQUIRED",
+    "unidentified": 20,
+    "vulnerabilityScan": "NOT_RUN"
+  },
+  "tests": 19
+}

@@ -1,0 +1,56 @@
+{
+  "version": "2.1.1-rebuild.8-java17",
+  "tests": 12,
+  "passed": 12,
+  "failed": 0,
+  "results": [
+    {
+      "name": "create-local-repository",
+      "passed": true
+    },
+    {
+      "name": "first-snapshot-keeps-relative-src-path",
+      "passed": true
+    },
+    {
+      "name": "file-preview-returns-plain-source",
+      "passed": true
+    },
+    {
+      "name": "second-snapshot-and-add-modify-diff",
+      "passed": true
+    },
+    {
+      "name": "concurrent-stale-head-is-409-without-overwrite",
+      "passed": true
+    },
+    {
+      "name": "branch-starts-from-explicit-historical-commit",
+      "passed": true
+    },
+    {
+      "name": "restore-creates-a-new-commit-and-keeps-old-history",
+      "passed": true
+    },
+    {
+      "name": "archive-reimport-is-path-and-content-preserving",
+      "passed": true
+    },
+    {
+      "name": "credential-and-traversal-files-are-rejected-without-moving-head",
+      "passed": true
+    },
+    {
+      "name": "history-pagination-has-explicit-more-state",
+      "passed": true
+    },
+    {
+      "name": "generation-output-can-be-versioned-without-manual-file-assembly",
+      "passed": true
+    },
+    {
+      "name": "invalid-regression-json-definition-is-400",
+      "passed": true
+    }
+  ]
+}

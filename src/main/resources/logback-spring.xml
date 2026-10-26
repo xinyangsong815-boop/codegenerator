@@ -1,0 +1,1 @@
+<configuration><turboFilter class="cn.bank.devtool.regression.HttpPrivacyLogFilter"/><include resource="org/springframework/boot/logging/logback/base.xml"/></configuration>

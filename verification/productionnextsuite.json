@@ -1,0 +1,25 @@
+{
+  "tests" : 6,
+  "passed" : 6,
+  "failed" : 0,
+  "runtime" : "17.0.20.1",
+  "results" : [ {
+    "name" : "null-array-and-scalar-regression-definitions-fail-as-400-input-errors",
+    "passed" : true
+  }, {
+    "name" : "old-outbox-template-needs-three-column-migration-even-for-same-spec",
+    "passed" : true
+  }, {
+    "name" : "current-template-does-not-invent-an-outbox-upgrade",
+    "passed" : true
+  }, {
+    "name" : "unknown-template-requires-review-and-does-not-invent-alter-sql",
+    "passed" : true
+  }, {
+    "name" : "table-rename-does-not-apply-old-outbox-alter-to-new-table",
+    "passed" : true
+  }, {
+    "name" : "source-fact-checker-respects-distribution-java-language",
+    "passed" : true
+  } ]
+}

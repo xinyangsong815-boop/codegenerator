@@ -1,0 +1,330 @@
+{
+  "schemaVersion": 1,
+  "id": "parking-flow",
+  "name": "员工车辆车位停车登记关联回归",
+  "variables": {
+    "employeeNo": {
+      "generator": "runUnique",
+      "prefix": "T",
+      "maxLength": 32
+    },
+    "spaceCode": {
+      "generator": "runUnique",
+      "prefix": "S",
+      "maxLength": 32
+    },
+    "registrationNo": {
+      "generator": "runUnique",
+      "prefix": "R",
+      "maxLength": 32
+    }
+  },
+  "failurePolicy": "STOP",
+  "cleanupPolicy": "RESET_TEST_DATABASE",
+  "steps": [
+    {
+      "id": "createEmployee",
+      "name": "新增员工",
+      "request": {
+        "method": "POST",
+        "path": "/parking/employees",
+        "body": {
+          "employeeNo": {
+            "$var": "employeeNo"
+          },
+          "employeeName": "张示例",
+          "departmentName": "信息技术部",
+          "employmentStatus": 1,
+          "remark": "演示"
+        }
+      },
+      "assertions": [
+        {
+          "source": "status",
+          "op": "eq",
+          "expected": 200
+        },
+        {
+          "source": "body",
+          "pointer": "/code",
+          "op": "eq",
+          "expected": 0
+        }
+      ],
+      "extract": [
+        {
+          "name": "employeeId",
+          "source": "body",
+          "pointer": "/data",
+          "type": "integer",
+          "required": true
+        }
+      ],
+      "resource": {
+        "pointer": "/data",
+        "type": "integer"
+      }
+    },
+    {
+      "id": "createVehicle",
+      "name": "新增员工车辆",
+      "request": {
+        "method": "POST",
+        "path": "/parking/vehicles",
+        "body": {
+          "employeeId": {
+            "$var": "employeeId"
+          },
+          "plateNumber": "京A12345",
+          "vehicleType": 1,
+          "vehicleStatus": 1,
+          "remark": "演示"
+        }
+      },
+      "assertions": [
+        {
+          "source": "status",
+          "op": "eq",
+          "expected": 200
+        },
+        {
+          "source": "body",
+          "pointer": "/code",
+          "op": "eq",
+          "expected": 0
+        }
+      ],
+      "extract": [
+        {
+          "name": "vehicleId",
+          "source": "body",
+          "pointer": "/data",
+          "type": "integer",
+          "required": true
+        }
+      ],
+      "resource": {
+        "pointer": "/data",
+        "type": "integer"
+      }
+    },
+    {
+      "id": "createSpace",
+      "name": "新增停车位",
+      "request": {
+        "method": "POST",
+        "path": "/parking/spaces",
+        "body": {
+          "spaceCode": {
+            "$var": "spaceCode"
+          },
+          "zoneName": "A区",
+          "spaceType": 1,
+          "spaceStatus": 1,
+          "remark": "演示"
+        }
+      },
+      "assertions": [
+        {
+          "source": "status",
+          "op": "eq",
+          "expected": 200
+        },
+        {
+          "source": "body",
+          "pointer": "/code",
+          "op": "eq",
+          "expected": 0
+        }
+      ],
+      "extract": [
+        {
+          "name": "spaceId",
+          "source": "body",
+          "pointer": "/data",
+          "type": "integer",
+          "required": true
+        }
+      ],
+      "resource": {
+        "pointer": "/data",
+        "type": "integer"
+      }
+    },
+    {
+      "id": "createRegistration",
+      "name": "新增停车登记",
+      "request": {
+        "method": "POST",
+        "path": "/parking/registrations",
+        "body": {
+          "registrationNo": {
+            "$var": "registrationNo"
+          },
+          "employeeId": {
+            "$var": "employeeId"
+          },
+          "vehicleId": {
+            "$var": "vehicleId"
+          },
+          "spaceId": {
+            "$var": "spaceId"
+          },
+          "validFrom": "2026-01-01",
+          "validTo": "2026-12-31",
+          "registrationStatus": 1,
+          "remark": "演示"
+        }
+      },
+      "assertions": [
+        {
+          "source": "status",
+          "op": "eq",
+          "expected": 200
+        },
+        {
+          "source": "body",
+          "pointer": "/code",
+          "op": "eq",
+          "expected": 0
+        }
+      ],
+      "extract": [
+        {
+          "name": "registrationId",
+          "source": "body",
+          "pointer": "/data",
+          "type": "integer",
+          "required": true
+        }
+      ],
+      "resource": {
+        "pointer": "/data",
+        "type": "integer"
+      }
+    },
+    {
+      "id": "queryRegistration",
+      "name": "查询停车登记",
+      "request": {
+        "method": "GET",
+        "path": "/parking/registrations/{id}",
+        "pathVariables": {
+          "id": {
+            "$var": "registrationId"
+          }
+        }
+      },
+      "assertions": [
+        {
+          "source": "status",
+          "op": "eq",
+          "expected": 200
+        },
+        {
+          "source": "body",
+          "pointer": "/code",
+          "op": "eq",
+          "expected": 0
+        },
+        {
+          "source": "body",
+          "pointer": "/data/employeeId",
+          "op": "eq",
+          "expected": {
+            "$var": "employeeId"
+          }
+        },
+        {
+          "source": "body",
+          "pointer": "/data/vehicleId",
+          "op": "eq",
+          "expected": {
+            "$var": "vehicleId"
+          }
+        },
+        {
+          "source": "body",
+          "pointer": "/data/spaceId",
+          "op": "eq",
+          "expected": {
+            "$var": "spaceId"
+          }
+        }
+      ]
+    },
+    {
+      "id": "updateRegistration",
+      "name": "修改登记备注",
+      "request": {
+        "method": "PUT",
+        "path": "/parking/registrations/{id}",
+        "body": {
+          "employeeId": {
+            "$var": "employeeId"
+          },
+          "vehicleId": {
+            "$var": "vehicleId"
+          },
+          "spaceId": {
+            "$var": "spaceId"
+          },
+          "validFrom": "2026-01-01",
+          "validTo": "2026-12-31",
+          "registrationStatus": 1,
+          "remark": "回归修改已完成"
+        },
+        "pathVariables": {
+          "id": {
+            "$var": "registrationId"
+          }
+        }
+      },
+      "assertions": [
+        {
+          "source": "status",
+          "op": "eq",
+          "expected": 200
+        },
+        {
+          "source": "body",
+          "pointer": "/code",
+          "op": "eq",
+          "expected": 0
+        }
+      ]
+    },
+    {
+      "id": "verifyRegistration",
+      "name": "查询确认登记修改",
+      "request": {
+        "method": "GET",
+        "path": "/parking/registrations/{id}",
+        "pathVariables": {
+          "id": {
+            "$var": "registrationId"
+          }
+        }
+      },
+      "assertions": [
+        {
+          "source": "status",
+          "op": "eq",
+          "expected": 200
+        },
+        {
+          "source": "body",
+          "pointer": "/code",
+          "op": "eq",
+          "expected": 0
+        },
+        {
+          "source": "body",
+          "pointer": "/data/remark",
+          "op": "eq",
+          "expected": "回归修改已完成"
+        }
+      ]
+    }
+  ]
+}

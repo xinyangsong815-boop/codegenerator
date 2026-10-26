@@ -1,0 +1,12 @@
+{
+  "release": "2.1.1-rebuild.8",
+  "platform": "java17",
+  "sourceArchive": "offline-dev-assistant-2.1.1-rebuild.8-java17-source.zip",
+  "sourceArchiveSha256": "119faf1d98171fcebf7c53c41a18593a27cd91cc2f60833ca6491e85af7cc520",
+  "originalFileChecksums": "SHA256SUMS.txt",
+  "addedRepositoryFiles": [
+    ".gitignore",
+    ".gitattributes",
+    "GITHUB-SOURCE-IMPORT.json"
+  ]
+}

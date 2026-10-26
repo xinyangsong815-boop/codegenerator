@@ -1,0 +1,34 @@
+{
+  "tests" : 9,
+  "passed" : 9,
+  "failed" : 0,
+  "runtime" : "17.0.20.1",
+  "results" : [ {
+    "name" : "case-only-column-change-never-suggests-duplicate-add-and-drop",
+    "passed" : true
+  }, {
+    "name" : "case-change-with-type-change-is-still-an-alter-review",
+    "passed" : true
+  }, {
+    "name" : "unsupported-evidence-schema-is-not-a-matching-evidence-format",
+    "passed" : true
+  }, {
+    "name" : "missing-evidence-schema-does-not-silently-assume-current",
+    "passed" : true
+  }, {
+    "name" : "string-evidence-schema-does-not-coerce-to-an-integer",
+    "passed" : true
+  }, {
+    "name" : "malformed-evidence-row-is-explicitly-flagged",
+    "passed" : true
+  }, {
+    "name" : "numeric-pass-metadata-is-not-accepted-as-human-attestation",
+    "passed" : true
+  }, {
+    "name" : "current-format-does-not-grant-production-readiness",
+    "passed" : true
+  }, {
+    "name" : "known-v18-outbox-schema-does-not-invent-an-alter",
+    "passed" : true
+  } ]
+}

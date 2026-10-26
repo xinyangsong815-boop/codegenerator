@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.bank.contract.CrudIntegrationTest" time="10.314" tests="48" errors="0" skipped="0" failures="0" flakes="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="C:\Users\LEGION\Documents\ChatGPT\212\generator-rebuild\verification\audit-generated-after\all-types-native-full\target\test-classes;C:\Users\LEGION\Documents\ChatGPT\212\generator-rebuild\verification\audit-generated-after\all-types-native-full\target\classes;C:\Users\LEGION\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.5.16\spring-boot-starter-web-3.5.16.jar;C:\Users\LEGION\.m2\repository\org\springframework\boot\spring-boot-starter\3.5.16\spring-boot-starter-3.5.16.jar;C:\Users\LEGION\.m2\repository\org\springframework\boot\spring-boot\3.5.16\spring-boot-3.5.16.jar;C:\Users\LEGION\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.5.16\spring-boot-autoconfigure-3.5.16.jar;C:\Users\LEGION\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.5.16\spring-boot-starter-logging-3.5.16.jar;C:\Users\LEGION\.m2\repository\ch\qos\logback\logback-classic\1.5.34\logback-classic-1.5.34.jar;C:\Users\LEGION\.m2\repository\ch\qos\logback\logback-core\1.5.34\logback-core-1.5.34.jar;C:\Users\LEGION\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.24.3\log4j-to-slf4j-2.24.3.jar;C:\Users\LEGION\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\LEGION\.m2\repository\org\slf4j\jul-to-slf4j\2.0.18\jul-to-slf4j-2.0.18.jar;C:\Users\LEGION\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\LEGION\.m2\repository\org\yaml\snakeyaml\2.4\snakeyaml-2.4.jar;C:\Users\LEGION\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.5.16\spring-boot-starter-json-3.5.16.jar;C:\Users\LEGION\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.21.4\jackson-databind-2.21.4.jar;C:\Users\LEGION\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.21\jackson-annotations-2.21.jar;C:\Users\LEGION\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.21.4\jackson-core-2.21.4.jar;C:\Users\LEGION\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.21.4\jackson-datatype-jdk8-2.21.4.jar;C:\Users\LEGION\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.21.4\jackson-datatype-jsr310-2.21.4.jar;C:\Users\LEGION\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.21.4\jackson-module-parameter-names-2.21.4.jar;C:\Users\LEGION\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.5.16\spring-boot-starter-tomcat-3.5.16.jar;C:\Users\LEGION\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.55\tomcat-embed-core-10.1.55.jar;C:\Users\LEGION\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.55\tomcat-embed-websocket-10.1.55.jar;C:\Users\LEGION\.m2\repository\org\springframework\spring-web\6.2.19\spring-web-6.2.19.jar;C:\Users\LEGION\.m2\repository\org\springframework\spring-beans\6.2.19\spring-beans-6.2.19.jar;C:\Users\LEGION\.m2\repository\io\micrometer\micrometer-observation\1.15.12\micrometer-observation-1.15.12.jar;C:\Users\LEGION\.m2\repository\io\micrometer\micrometer-commons\1.15.12\micrometer-commons-1.15.12.jar;C:\Users\LEGION\.m2\repository\org\springframework\spring-webmvc\6.2.19\spring-webmvc-6.2.19.jar;C:\Users\LEGION\.m2\repository\org\springframework\spring-aop\6.2.19\spring-aop-6.2.19.jar;C:\Users\LEGION\.m2\repository\org\springframework\spring-context\6.2.19\spring-context-6.2.19.jar;C:\Users\LEGION\.m2\repository\org\springframework\spring-expression\6.2.19\spring-expression-6.2.19.jar;C:\Users\LEGION\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.5.16\spring-boot-starter-validation-3.5.16.jar;C:\Users\LEGION\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.55\tomcat-embed-el-10.1.55.jar;C:\Users\LEGION\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.3.Final\hibernate-validator-8.0.3.Final.jar;C:\Users\LEGION\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\LEGION\.m2\repository\org\jboss\logging\jboss-logging\3.6.3.Final\jboss-logging-3.6.3.Final.jar;C:\Users\LEGION\.m2\repository\com\fasterxml\classmate\1.7.3\classmate-1.7.3.jar;C:\Users\LEGION\.m2\repository\org\mybatis\spring\boot\mybatis-spring-boot-starter\3.0.5\mybatis-spring-boot-starter-3.0.5.jar;C:\Users\LEGION\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.5.16\spring-boot-starter-jdbc-3.5.16.jar;C:\Users\LEGION\.m2\repository\com\zaxxer\HikariCP\6.3.3\HikariCP-6.3.3.jar;C:\Users\LEGION\.m2\repository\org\springframework\spring-jdbc\6.2.19\spring-jdbc-6.2.19.jar;C:\Users\LEGION\.m2\repository\org\springframework\spring-tx\6.2.19\spring-tx-6.2.19.jar;C:\Users\LEGION\.m2\repository\org\mybatis\spring\boot\mybatis-spring-boot-autoconfigure\3.0.5\mybatis-spring-boot-autoconfigure-3.0.5.jar;C:\Users\LEGION\.m2\repository\org\mybatis\mybatis\3.5.19\mybatis-3.5.19.jar;C:\Users\LEGION\.m2\repository\org\mybatis\mybatis-spring\3.0.5\mybatis-spring-3.0.5.jar;C:\Users\LEGION\.m2\repository\com\mysql\mysql-connector-j\9.7.0\mysql-connector-j-9.7.0.jar;C:\Users\LEGION\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.5.16\spring-boot-starter-test-3.5.16.jar;C:\Users\LEGION\.m2\repository\org\springframework\boot\spring-boot-test\3.5.16\spring-boot-test-3.5.16.jar;C:\Users\LEGION\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.5.16\spring-boot-test-autoconfigure-3.5.16.jar;C:\Users\LEGION\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\LEGION\.m2\repository\org\slf4j\slf4j-api\2.0.18\slf4j-api-2.0.18.jar;C:\Users\LEGION\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.5\jakarta.xml.bind-api-4.0.5.jar;C:\Users\LEGION\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.4\jakarta.activation-api-2.1.4.jar;C:\Users\LEGION\.m2\repository\net\minidev\json-smart\2.5.2\json-smart-2.5.2.jar;C:\Users\LEGION\.m2\repository\net\minidev\accessors-smart\2.5.2\accessors-smart-2.5.2.jar;C:\Users\LEGION\.m2\repository\org\ow2\asm\asm\9.7.1\asm-9.7.1.jar;C:\Users\LEGION\.m2\repository\org\assertj\assertj-core\3.27.7\assertj-core-3.27.7.jar;C:\Users\LEGION\.m2\repository\net\bytebuddy\byte-buddy\1.17.8\byte-buddy-1.17.8.jar;C:\Users\LEGION\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\LEGION\.m2\repository\org\hamcrest\hamcrest\3.0\hamcrest-3.0.jar;C:\Users\LEGION\.m2\repository\org\junit\jupiter\junit-jupiter\5.12.2\junit-jupiter-5.12.2.jar;C:\Users\LEGION\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.12.2\junit-jupiter-api-5.12.2.jar;C:\Users\LEGION\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\LEGION\.m2\repository\org\junit\platform\junit-platform-commons\1.12.2\junit-platform-commons-1.12.2.jar;C:\Users\LEGION\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\LEGION\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.12.2\junit-jupiter-params-5.12.2.jar;C:\Users\LEGION\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.12.2\junit-jupiter-engine-5.12.2.jar;C:\Users\LEGION\.m2\repository\org\junit\platform\junit-platform-engine\1.12.2\junit-platform-engine-1.12.2.jar;C:\Users\LEGION\.m2\repository\org\mockito\mockito-core\5.17.0\mockito-core-5.17.0.jar;C:\Users\LEGION\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.8\byte-buddy-agent-1.17.8.jar;C:\Users\LEGION\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\LEGION\.m2\repository\org\mockito\mockito-junit-jupiter\5.17.0\mockito-junit-jupiter-5.17.0.jar;C:\Users\LEGION\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\LEGION\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\LEGION\.m2\repository\org\springframework\spring-core\6.2.19\spring-core-6.2.19.jar;C:\Users\LEGION\.m2\repository\org\springframework\spring-jcl\6.2.19\spring-jcl-6.2.19.jar;C:\Users\LEGION\.m2\repository\org\springframework\spring-test\6.2.19\spring-test-6.2.19.jar;C:\Users\LEGION\.m2\repository\org\xmlunit\xmlunit-core\2.10.4\xmlunit-core-2.10.4.jar;C:\Users\LEGION\.m2\repository\com\h2database\h2\2.3.232\h2-2.3.232.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.20.101-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\LEGION\AppData\Local\Temp\surefire2929678914313826669\surefirebooter-20261026095649077_3.jar C:\Users\LEGION\AppData\Local\Temp\surefire2929678914313826669 2026-10-26T09-56-48_753-jvmRun1 surefire-20261026095649077_1tmp surefire_0-20261026095649077_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\LEGION\Documents\ChatGPT\212\generator-rebuild\verification\audit-generated-after\all-types-native-full\target\test-classes;C:\Users\LEGION\Documents\ChatGPT\212\generator-rebuild\verification\audit-generated-after\all-types-native-full\target\classes;C:\Users\LEGION\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.5.16\spring-boot-starter-web-3.5.16.jar;C:\Users\LEGION\.m2\repository\org\springframework\boot\spring-boot-starter\3.5.16\spring-boot-starter-3.5.16.jar;C:\Users\LEGION\.m2\repository\org\springframework\boot\spring-boot\3.5.16\spring-boot-3.5.16.jar;C:\Users\LEGION\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.5.16\spring-boot-autoconfigure-3.5.16.jar;C:\Users\LEGION\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.5.16\spring-boot-starter-logging-3.5.16.jar;C:\Users\LEGION\.m2\repository\ch\qos\logback\logback-classic\1.5.34\logback-classic-1.5.34.jar;C:\Users\LEGION\.m2\repository\ch\qos\logback\logback-core\1.5.34\logback-core-1.5.34.jar;C:\Users\LEGION\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.24.3\log4j-to-slf4j-2.24.3.jar;C:\Users\LEGION\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\LEGION\.m2\repository\org\slf4j\jul-to-slf4j\2.0.18\jul-to-slf4j-2.0.18.jar;C:\Users\LEGION\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\LEGION\.m2\repository\org\yaml\snakeyaml\2.4\snakeyaml-2.4.jar;C:\Users\LEGION\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.5.16\spring-boot-starter-json-3.5.16.jar;C:\Users\LEGION\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.21.4\jackson-databind-2.21.4.jar;C:\Users\LEGION\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.21\jackson-annotations-2.21.jar;C:\Users\LEGION\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.21.4\jackson-core-2.21.4.jar;C:\Users\LEGION\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.21.4\jackson-datatype-jdk8-2.21.4.jar;C:\Users\LEGION\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.21.4\jackson-datatype-jsr310-2.21.4.jar;C:\Users\LEGION\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.21.4\jackson-module-parameter-names-2.21.4.jar;C:\Users\LEGION\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.5.16\spring-boot-starter-tomcat-3.5.16.jar;C:\Users\LEGION\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.55\tomcat-embed-core-10.1.55.jar;C:\Users\LEGION\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.55\tomcat-embed-websocket-10.1.55.jar;C:\Users\LEGION\.m2\repository\org\springframework\spring-web\6.2.19\spring-web-6.2.19.jar;C:\Users\LEGION\.m2\repository\org\springframework\spring-beans\6.2.19\spring-beans-6.2.19.jar;C:\Users\LEGION\.m2\repository\io\micrometer\micrometer-observation\1.15.12\micrometer-observation-1.15.12.jar;C:\Users\LEGION\.m2\repository\io\micrometer\micrometer-commons\1.15.12\micrometer-commons-1.15.12.jar;C:\Users\LEGION\.m2\repository\org\springframework\spring-webmvc\6.2.19\spring-webmvc-6.2.19.jar;C:\Users\LEGION\.m2\repository\org\springframework\spring-aop\6.2.19\spring-aop-6.2.19.jar;C:\Users\LEGION\.m2\repository\org\springframework\spring-context\6.2.19\spring-context-6.2.19.jar;C:\Users\LEGION\.m2\repository\org\springframework\spring-expression\6.2.19\spring-expression-6.2.19.jar;C:\Users\LEGION\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.5.16\spring-boot-starter-validation-3.5.16.jar;C:\Users\LEGION\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.55\tomcat-embed-el-10.1.55.jar;C:\Users\LEGION\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.3.Final\hibernate-validator-8.0.3.Final.jar;C:\Users\LEGION\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\LEGION\.m2\repository\org\jboss\logging\jboss-logging\3.6.3.Final\jboss-logging-3.6.3.Final.jar;C:\Users\LEGION\.m2\repository\com\fasterxml\classmate\1.7.3\classmate-1.7.3.jar;C:\Users\LEGION\.m2\repository\org\mybatis\spring\boot\mybatis-spring-boot-starter\3.0.5\mybatis-spring-boot-starter-3.0.5.jar;C:\Users\LEGION\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.5.16\spring-boot-starter-jdbc-3.5.16.jar;C:\Users\LEGION\.m2\repository\com\zaxxer\HikariCP\6.3.3\HikariCP-6.3.3.jar;C:\Users\LEGION\.m2\repository\org\springframework\spring-jdbc\6.2.19\spring-jdbc-6.2.19.jar;C:\Users\LEGION\.m2\repository\org\springframework\spring-tx\6.2.19\spring-tx-6.2.19.jar;C:\Users\LEGION\.m2\repository\org\mybatis\spring\boot\mybatis-spring-boot-autoconfigure\3.0.5\mybatis-spring-boot-autoconfigure-3.0.5.jar;C:\Users\LEGION\.m2\repository\org\mybatis\mybatis\3.5.19\mybatis-3.5.19.jar;C:\Users\LEGION\.m2\repository\org\mybatis\mybatis-spring\3.0.5\mybatis-spring-3.0.5.jar;C:\Users\LEGION\.m2\repository\com\mysql\mysql-connector-j\9.7.0\mysql-connector-j-9.7.0.jar;C:\Users\LEGION\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.5.16\spring-boot-starter-test-3.5.16.jar;C:\Users\LEGION\.m2\repository\org\springframework\boot\spring-boot-test\3.5.16\spring-boot-test-3.5.16.jar;C:\Users\LEGION\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.5.16\spring-boot-test-autoconfigure-3.5.16.jar;C:\Users\LEGION\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\LEGION\.m2\repository\org\slf4j\slf4j-api\2.0.18\slf4j-api-2.0.18.jar;C:\Users\LEGION\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.5\jakarta.xml.bind-api-4.0.5.jar;C:\Users\LEGION\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.4\jakarta.activation-api-2.1.4.jar;C:\Users\LEGION\.m2\repository\net\minidev\json-smart\2.5.2\json-smart-2.5.2.jar;C:\Users\LEGION\.m2\repository\net\minidev\accessors-smart\2.5.2\accessors-smart-2.5.2.jar;C:\Users\LEGION\.m2\repository\org\ow2\asm\asm\9.7.1\asm-9.7.1.jar;C:\Users\LEGION\.m2\repository\org\assertj\assertj-core\3.27.7\assertj-core-3.27.7.jar;C:\Users\LEGION\.m2\repository\net\bytebuddy\byte-buddy\1.17.8\byte-buddy-1.17.8.jar;C:\Users\LEGION\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\LEGION\.m2\repository\org\hamcrest\hamcrest\3.0\hamcrest-3.0.jar;C:\Users\LEGION\.m2\repository\org\junit\jupiter\junit-jupiter\5.12.2\junit-jupiter-5.12.2.jar;C:\Users\LEGION\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.12.2\junit-jupiter-api-5.12.2.jar;C:\Users\LEGION\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\LEGION\.m2\repository\org\junit\platform\junit-platform-commons\1.12.2\junit-platform-commons-1.12.2.jar;C:\Users\LEGION\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\LEGION\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.12.2\junit-jupiter-params-5.12.2.jar;C:\Users\LEGION\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.12.2\junit-jupiter-engine-5.12.2.jar;C:\Users\LEGION\.m2\repository\org\junit\platform\junit-platform-engine\1.12.2\junit-platform-engine-1.12.2.jar;C:\Users\LEGION\.m2\repository\org\mockito\mockito-core\5.17.0\mockito-core-5.17.0.jar;C:\Users\LEGION\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.8\byte-buddy-agent-1.17.8.jar;C:\Users\LEGION\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\LEGION\.m2\repository\org\mockito\mockito-junit-jupiter\5.17.0\mockito-junit-jupiter-5.17.0.jar;C:\Users\LEGION\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\LEGION\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\LEGION\.m2\repository\org\springframework\spring-core\6.2.19\spring-core-6.2.19.jar;C:\Users\LEGION\.m2\repository\org\springframework\spring-jcl\6.2.19\spring-jcl-6.2.19.jar;C:\Users\LEGION\.m2\repository\org\springframework\spring-test\6.2.19\spring-test-6.2.19.jar;C:\Users\LEGION\.m2\repository\org\xmlunit\xmlunit-core\2.10.4\xmlunit-core-2.10.4.jar;C:\Users\LEGION\.m2\repository\com\h2database\h2\2.3.232\h2-2.3.232.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\LEGION"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-08-18"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.20.101-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="style.color" value="never"/>
+    <property name="basedir" value="C:\Users\LEGION\Documents\ChatGPT\212\generator-rebuild\verification\audit-generated-after\all-types-native-full"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="GBK"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\LEGION\AppData\Local\Temp\surefire2929678914313826669\surefirebooter-20261026095649077_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.20.1+1"/>
+    <property name="user.name" value="LEGION"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.20.1+1"/>
+    <property name="localRepository" value="C:\Users\LEGION\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\LEGION\AppData\Local\Temp\"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="17.0.20.1"/>
+    <property name="user.dir" value="C:\Users\LEGION\Documents\ChatGPT\212\generator-rebuild\verification\audit-generated-after\all-types-native-full"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="13732"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="GBK"/>
+    <property name="native.encoding" value="GBK"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.20.101-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-17.0.20.101-hotspot\bin;C:\Users\LEGION\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell;C:\Users\LEGION\.codex\tmp\arg0-windows\codex-arg0sbkg1g;C:\Users\LEGION\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\libheif\libheif\bin;C:\Users\LEGION\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\jxrlib\jxrlib\bin;C:\Users\LEGION\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin;C:\Users\LEGION\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\override;C:\Program Files\Eclipse Adoptium\jdk-17.0.20.101-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\mingw64\bin;C:\Program Files\nodejs\;C:\Users\LEGION\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell;C:\Users\LEGION\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\LEGION\AppData\Roaming\npm;C:\Users\LEGION\AppData\Local\Programs\Apache\Maven\apache-maven-3.9.16\bin;C:\Users\LEGION\AppData\Local\Microsoft\WindowsApps;C:\Users\LEGION\.cache\codex-runtimes\codex-primary-runtime\dependencies\bin\fallback;C:\Users\LEGION\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin;C:\Users\LEGION\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd;C:\Users\LEGION\AppData\Local\OpenAI\Codex\bin\2d8a5d5756dbf318;C:\Users\LEGION\AppData\Local\OpenAI\Codex\bin\37f54d68e5533a51;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.20.1+1"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="value4ListHttpBindingMatchesDatabase" classname="com.bank.contract.CrudIntegrationTest" time="2.396">
+    <system-out><![CDATA[09:56:51.294 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.bank.contract.CrudIntegrationTest]: CrudIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+09:56:51.654 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.bank.contract.Application for test class com.bank.contract.CrudIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-10-26T09:56:52.597+08:00  INFO 13732 --- [           main] com.bank.contract.CrudIntegrationTest    : Starting CrudIntegrationTest using Java 17.0.20.1 with PID 13732 (started by LEGION in C:\Users\LEGION\Documents\ChatGPT\212\generator-rebuild\verification\audit-generated-after\all-types-native-full)
+2026-10-26T09:56:52.600+08:00  INFO 13732 --- [           main] com.bank.contract.CrudIntegrationTest    : The following 1 profile is active: "test"
+2026-10-26T09:56:55.600+08:00  INFO 13732 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-26T09:56:56.297+08:00  INFO 13732 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:contract_demo_test user=SA
+2026-10-26T09:56:56.302+08:00  INFO 13732 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-26T09:56:57.674+08:00  INFO 13732 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-26T09:56:57.675+08:00  INFO 13732 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-26T09:56:57.681+08:00  INFO 13732 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2026-10-26T09:56:57.742+08:00  INFO 13732 --- [           main] com.bank.contract.CrudIntegrationTest    : Started CrudIntegrationTest in 5.791 seconds (process running for 8.452)
+2026-10-26T09:57:00.060+08:00  INFO 13732 --- [           main] c.b.contract.common.RequestTraceFilter   : request_completed method=GET status=200 completed=true durationMs=568 requestId=69bff809-d80d-45a1-b0d7-0faf8be52088
+]]></system-out>
+  </testcase>
+  <testcase name="deepOffsetIsRejectedBeforeCounting" classname="com.bank.contract.CrudIntegrationTest" time="0.012"/>
+  <testcase name="configuredDETAILHttpEndpointIsCallable" classname="com.bank.contract.CrudIntegrationTest" time="0.026">
+    <system-out><![CDATA[2026-10-26T09:57:00.212+08:00  INFO 13732 --- [           main] c.b.contract.common.RequestTraceFilter   : request_completed method=GET status=200 completed=true durationMs=12 requestId=9d730375-fe23-49c1-8664-fa0f04ac1571
+]]></system-out>
+  </testcase>
+  <testcase name="value5ListMatchesAndRejectsEmptyInput" classname="com.bank.contract.CrudIntegrationTest" time="0.07"/>
+  <testcase name="applicationAndTestDatabaseStart" classname="com.bank.contract.CrudIntegrationTest" time="0.006"/>
+  <testcase name="value5ListHttpBindingMatchesDatabase" classname="com.bank.contract.CrudIntegrationTest" time="0.03">
+    <system-out><![CDATA[2026-10-26T09:57:00.325+08:00  INFO 13732 --- [           main] c.b.contract.common.RequestTraceFilter   : request_completed method=GET status=200 completed=true durationMs=18 requestId=edb1b21a-508e-4a0e-81c1-4e29f5d72cef
+]]></system-out>
+  </testcase>
+  <testcase name="incompatibleAcceptIsRejectedBeforeBusinessDispatch" classname="com.bank.contract.CrudIntegrationTest" time="0.038">
+    <system-out><![CDATA[2026-10-26T09:57:00.361+08:00  INFO 13732 --- [           main] c.b.contract.common.RequestTraceFilter   : request_completed method=POST status=406 completed=true durationMs=13 requestId=237109ab-7d86-4da4-b071-a654e7a022ed
+]]></system-out>
+  </testcase>
+  <testcase name="paginationReportsTotalAndUsesDescendingIds" classname="com.bank.contract.CrudIntegrationTest" time="0.026"/>
+  <testcase name="value6ListHttpBindingMatchesDatabase" classname="com.bank.contract.CrudIntegrationTest" time="0.026">
+    <system-out><![CDATA[2026-10-26T09:57:00.423+08:00  INFO 13732 --- [           main] c.b.contract.common.RequestTraceFilter   : request_completed method=GET status=200 completed=true durationMs=13 requestId=abcfc75b-c98a-46e7-83b2-f7738ed5268c
+]]></system-out>
+  </testcase>
+  <testcase name="configuredUPDATEHttpEndpointIsCallable" classname="com.bank.contract.CrudIntegrationTest" time="0.117">
+    <system-out><![CDATA[2026-10-26T09:57:00.543+08:00  INFO 13732 --- [           main] c.b.contract.common.RequestTraceFilter   : request_completed method=PUT status=200 completed=true durationMs=103 requestId=ccc3dc7c-fa3b-4bfe-8ce6-c73f3967d084
+]]></system-out>
+  </testcase>
+  <testcase name="configuredPAGEHttpEndpointIsCallable" classname="com.bank.contract.CrudIntegrationTest" time="0.021">
+    <system-out><![CDATA[2026-10-26T09:57:00.567+08:00  INFO 13732 --- [           main] c.b.contract.common.RequestTraceFilter   : request_completed method=GET status=200 completed=true durationMs=9 requestId=73227356-59eb-422a-ab15-f45b44348b67
+]]></system-out>
+  </testcase>
+  <testcase name="deepOffsetHasHttp400" classname="com.bank.contract.CrudIntegrationTest" time="0.026">
+    <system-out><![CDATA[2026-10-26T09:57:00.596+08:00  INFO 13732 --- [           main] c.b.contract.common.RequestTraceFilter   : request_completed method=GET status=400 completed=true durationMs=15 requestId=8e27da9c-529c-4a99-8e77-f4025d2a4ea7
+]]></system-out>
+  </testcase>
+  <testcase name="malformedIdUsesUniformEnvelope" classname="com.bank.contract.CrudIntegrationTest" time="0.017">
+    <system-out><![CDATA[2026-10-26T09:57:00.615+08:00  INFO 13732 --- [           main] c.b.contract.common.RequestTraceFilter   : request_completed method=GET status=400 completed=true durationMs=7 requestId=b7c9b1e7-bc97-4c7c-a4dd-e4ea86cd8613
+]]></system-out>
+  </testcase>
+  <testcase name="mismatchedUpdateIdsReturnPublicHttp400" classname="com.bank.contract.CrudIntegrationTest" time="0.025">
+    <system-out><![CDATA[2026-10-26T09:57:00.636+08:00  INFO 13732 --- [           main] c.b.contract.common.RequestTraceFilter   : request_completed method=PUT status=400 completed=true durationMs=6 requestId=180d4fbf-d940-4ab6-b7b3-ccd0acc3463a
+]]></system-out>
+  </testcase>
+  <testcase name="validCorrelationHeaderSurvivesAnActualMvcError" classname="com.bank.contract.CrudIntegrationTest" time="0.017">
+    <system-out><![CDATA[2026-10-26T09:57:00.655+08:00  WARN 13732 --- [           main] o.s.web.servlet.PageNotFound             : No mapping for GET /__generated_missing_route
+2026-10-26T09:57:00.659+08:00  INFO 13732 --- [           main] c.b.contract.common.RequestTraceFilter   : request_completed method=GET status=404 completed=true durationMs=4 requestId=mvc-correlation-check
+]]></system-out>
+  </testcase>
+  <testcase name="updateWritesEditableColumnsAndAllowsRepeatedValues" classname="com.bank.contract.CrudIntegrationTest" time="0.012"/>
+  <testcase name="fullUpdateClearsNullableEditableField" classname="com.bank.contract.CrudIntegrationTest" time="0.015"/>
+  <testcase name="value0ListMatchesAndRejectsEmptyInput" classname="com.bank.contract.CrudIntegrationTest" time="0.017"/>
+  <testcase name="decimalPrecisionIsRejectedBeforeSql" classname="com.bank.contract.CrudIntegrationTest" time="0.015"/>
+  <testcase name="value2ListMatchesAndRejectsEmptyInput" classname="com.bank.contract.CrudIntegrationTest" time="0.018"/>
+  <testcase name="internalOffsetCannotBeProvidedByClient" classname="com.bank.contract.CrudIntegrationTest" time="0.017">
+    <system-out><![CDATA[2026-10-26T09:57:00.768+08:00  INFO 13732 --- [           main] c.b.contract.common.RequestTraceFilter   : request_completed method=GET status=400 completed=true durationMs=7 requestId=ad263878-190f-4a6f-95b8-0e4ef5d0de3d
+]]></system-out>
+  </testcase>
+  <testcase name="correlationHeaderIsPresentForAnActualMvcError" classname="com.bank.contract.CrudIntegrationTest" time="0.01">
+    <system-out><![CDATA[2026-10-26T09:57:00.789+08:00  WARN 13732 --- [           main] o.s.web.servlet.PageNotFound             : No mapping for GET /__generated_missing_route
+2026-10-26T09:57:00.791+08:00  INFO 13732 --- [           main] c.b.contract.common.RequestTraceFilter   : request_completed method=GET status=404 completed=true durationMs=2 requestId=0eec0418-569d-4259-8d5c-88d4a79e4122
+]]></system-out>
+  </testcase>
+  <testcase name="value4ListMatchesAndRejectsEmptyInput" classname="com.bank.contract.CrudIntegrationTest" time="0.011"/>
+  <testcase name="overlongStringIsRejectedBeforeSql" classname="com.bank.contract.CrudIntegrationTest" time="0.008"/>
+  <testcase name="value6ListMatchesAndRejectsEmptyInput" classname="com.bank.contract.CrudIntegrationTest" time="0.011"/>
+  <testcase name="unknownJsonFieldIsRejected" classname="com.bank.contract.CrudIntegrationTest" time="0.016">
+    <system-out><![CDATA[2026-10-26T09:57:00.842+08:00  INFO 13732 --- [           main] c.b.contract.common.RequestTraceFilter   : request_completed method=POST status=400 completed=true durationMs=7 requestId=e6ca9197-70b0-4b2f-b7b8-32f44c5a117b
+]]></system-out>
+  </testcase>
+  <testcase name="unsupportedMethodUsesUniformEnvelope" classname="com.bank.contract.CrudIntegrationTest" time="0.011">
+    <system-out><![CDATA[2026-10-26T09:57:00.857+08:00  INFO 13732 --- [           main] c.b.contract.common.RequestTraceFilter   : request_completed method=PATCH status=405 completed=true durationMs=2 requestId=dffb5b79-7f2b-44c2-b8ff-4d0191ed2354
+]]></system-out>
+  </testcase>
+  <testcase name="createReturnsPersistedId" classname="com.bank.contract.CrudIntegrationTest" time="0.012"/>
+  <testcase name="missingRecordHasNotFoundStatus" classname="com.bank.contract.CrudIntegrationTest" time="0.007"/>
+  <testcase name="unicodeLengthUsesCodePoints" classname="com.bank.contract.CrudIntegrationTest" time="0.02"/>
+  <testcase name="deleteRemovesOnlyRequestedRow" classname="com.bank.contract.CrudIntegrationTest" time="0.009"/>
+  <testcase name="value0ListHttpBindingMatchesDatabase" classname="com.bank.contract.CrudIntegrationTest" time="0.018">
+    <system-out><![CDATA[2026-10-26T09:57:00.930+08:00  INFO 13732 --- [           main] c.b.contract.common.RequestTraceFilter   : request_completed method=GET status=200 completed=true durationMs=10 requestId=5213717d-7b88-4cc4-b126-a3ec689ccfff
+]]></system-out>
+  </testcase>
+  <testcase name="invalidPaginationIsRejected" classname="com.bank.contract.CrudIntegrationTest" time="0.009"/>
+  <testcase name="configuredCREATEHttpEndpointIsCallable" classname="com.bank.contract.CrudIntegrationTest" time="0.023">
+    <system-out><![CDATA[2026-10-26T09:57:00.955+08:00  INFO 13732 --- [           main] c.b.contract.common.RequestTraceFilter   : request_completed method=POST status=200 completed=true durationMs=6 requestId=66c087f1-8084-4a3b-afa2-78149800c934
+]]></system-out>
+  </testcase>
+  <testcase name="malformedJsonIsRejected" classname="com.bank.contract.CrudIntegrationTest" time="0.011">
+    <system-out><![CDATA[2026-10-26T09:57:00.977+08:00  INFO 13732 --- [           main] c.b.contract.common.RequestTraceFilter   : request_completed method=POST status=400 completed=true durationMs=2 requestId=9fc210d6-03fd-4555-b8fa-22b1e5602abf
+]]></system-out>
+  </testcase>
+  <testcase name="mismatchedUpdateIdsAreRejectedBeforeMutation" classname="com.bank.contract.CrudIntegrationTest" time="0.007"/>
+  <testcase name="serviceIdConstraintRunsBeforeSql" classname="com.bank.contract.CrudIntegrationTest" time="0.005"/>
+  <testcase name="unsupportedContentTypeIsRejected" classname="com.bank.contract.CrudIntegrationTest" time="0.009">
+    <system-out><![CDATA[2026-10-26T09:57:01.002+08:00  INFO 13732 --- [           main] c.b.contract.common.RequestTraceFilter   : request_completed method=POST status=415 completed=true durationMs=1 requestId=05076a8a-7d82-4d4a-a1cf-cd51327fb0c9
+]]></system-out>
+  </testcase>
+  <testcase name="value1ListHttpBindingMatchesDatabase" classname="com.bank.contract.CrudIntegrationTest" time="0.017">
+    <system-out><![CDATA[2026-10-26T09:57:01.021+08:00  INFO 13732 --- [           main] c.b.contract.common.RequestTraceFilter   : request_completed method=GET status=200 completed=true durationMs=10 requestId=742761f0-de40-4433-a151-85ad31c3739e
+]]></system-out>
+  </testcase>
+  <testcase name="nullServiceInputIsRejected" classname="com.bank.contract.CrudIntegrationTest" time="0.006"/>
+  <testcase name="nonPositiveIdIsRejected" classname="com.bank.contract.CrudIntegrationTest" time="0.013">
+    <system-out><![CDATA[2026-10-26T09:57:01.043+08:00  INFO 13732 --- [           main] c.b.contract.common.RequestTraceFilter   : request_completed method=GET status=400 completed=true durationMs=6 requestId=e17c4752-5aac-40ce-a611-001360eb51f3
+]]></system-out>
+  </testcase>
+  <testcase name="configuredDELETEHttpEndpointIsCallable" classname="com.bank.contract.CrudIntegrationTest" time="0.013">
+    <system-out><![CDATA[2026-10-26T09:57:01.056+08:00  INFO 13732 --- [           main] c.b.contract.common.RequestTraceFilter   : request_completed method=DELETE status=200 completed=true durationMs=3 requestId=1978f4a0-53aa-405f-a5ea-165c76db2d2f
+]]></system-out>
+  </testcase>
+  <testcase name="value2ListHttpBindingMatchesDatabase" classname="com.bank.contract.CrudIntegrationTest" time="0.013">
+    <system-out><![CDATA[2026-10-26T09:57:01.073+08:00  INFO 13732 --- [           main] c.b.contract.common.RequestTraceFilter   : request_completed method=GET status=200 completed=true durationMs=5 requestId=faa2e145-ea5d-4825-84c8-5a03383c4ca4
+]]></system-out>
+  </testcase>
+  <testcase name="detailReturnsViewForPersistedRow" classname="com.bank.contract.CrudIntegrationTest" time="0.01"/>
+  <testcase name="missingRouteUsesUniformEnvelope" classname="com.bank.contract.CrudIntegrationTest" time="0.006">
+    <system-out><![CDATA[2026-10-26T09:57:01.089+08:00  WARN 13732 --- [           main] o.s.web.servlet.PageNotFound             : No mapping for GET /contracts/missing/route
+2026-10-26T09:57:01.090+08:00  INFO 13732 --- [           main] c.b.contract.common.RequestTraceFilter   : request_completed method=GET status=404 completed=true durationMs=1 requestId=f12fe6d5-ad01-4ce1-86da-7f4817890a24
+]]></system-out>
+  </testcase>
+  <testcase name="value1ListMatchesAndRejectsEmptyInput" classname="com.bank.contract.CrudIntegrationTest" time="0.01"/>
+  <testcase name="value3ListHttpBindingMatchesDatabase" classname="com.bank.contract.CrudIntegrationTest" time="0.018">
+    <system-out><![CDATA[2026-10-26T09:57:01.120+08:00  INFO 13732 --- [           main] c.b.contract.common.RequestTraceFilter   : request_completed method=GET status=200 completed=true durationMs=8 requestId=a3b6583a-7e62-4bba-a890-2fe09bd463b9
+]]></system-out>
+  </testcase>
+  <testcase name="value3ListMatchesAndRejectsEmptyInput" classname="com.bank.contract.CrudIntegrationTest" time="0.015"/>
+</testsuite>
